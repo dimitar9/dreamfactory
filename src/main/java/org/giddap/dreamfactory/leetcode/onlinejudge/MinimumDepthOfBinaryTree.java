@@ -14,6 +14,6 @@ import org.giddap.dreamfactory.commons.TreeNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/277/minimum-depth-of-binary-tree">Leetcode discussion</a>
  */
-public interface Q111MinimumDepthOfBinaryTree {
+public interface MinimumDepthOfBinaryTree {
     int minDepth(TreeNode root);
 }
