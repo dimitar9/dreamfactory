@@ -1,0 +1,313 @@
+package org.giddap.dreamfactory.leetcode.onlinejudge;
+
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q087ScrambleStringDfsImpl;
+import org.junit.Test;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class Q087ScrambleStringTest {
+    private Q087ScrambleString solution = new Q087ScrambleStringDfsImpl();
+//    private Q087ScrambleString solution = new Q087ScrambleStringDpImpl();
+
+    @Test
+    public void small01() {
+        assertTrue(solution.isScramble("great", "rgeat"));
+    }
+
+    @Test
+    public void small02() {
+        assertTrue(solution.isScramble("great", "rgate"));
+    }
+
+    @Test
+    public void small03() {
+        assertFalse(solution.isScramble("ccabcbabcbabbbbcbb", "bbbbabccccbbbabcba"));
+    }
+}
+
+/*
+Test cases
+Input	 Output	 Expected
+"a", "a"	true	true
+"a", "b"	false	false
+"b", "a"	false	false
+"aa", "aa"	true	true
+"aa", "ab"	false	false
+"ab", "aa"	false	false
+"ab", "ab"	true	true
+"ab", "ba"	true	true
+"ba", "ab"	true	true
+"abb", "abb"	true	true
+"abb", "bab"	true	true
+"abb", "bba"	true	true
+"abc", "abc"	true	true
+"abc", "acb"	true	true
+"abc", "bac"	true	true
+"abc", "bca"	true	true
+"abc", "cab"	true	true
+"abc", "cba"	true	true
+"abab", "abab"	true	true
+"abab", "baba"	true	true
+"baba", "abab"	true	true
+"abab", "aabb"	true	true
+"aabb", "abab"	true	true
+"abab", "bbaa"	true	true
+"bbaa", "abab"	true	true
+"abab", "abba"	true	true
+"abba", "abab"	true	true
+"abab", "baab"	true	true
+"baab", "abab"	true	true
+"abcd", "abcd"	true	true
+"abcd", "abdc"	true	true
+"abcd", "acbd"	true	true
+"abcd", "acdb"	true	true
+"abcd", "adbc"	true	true
+"abcd", "adcb"	true	true
+"abcd", "bacd"	true	true
+"abcd", "badc"	true	true
+"abcd", "bcad"	true	true
+"abcd", "bcda"	true	true
+"abcd", "bdca"	true	true
+"abcd", "cabd"	true	true
+"abcd", "cbad"	true	true
+"abcd", "cbda"	true	true
+"abcd", "cdab"	true	true
+"abcd", "cdba"	true	true
+"abcd", "dabc"	true	true
+"abcd", "dacb"	true	true
+"abcd", "dbac"	true	true
+"abcd", "dbca"	true	true
+"abcd", "dcab"	true	true
+"abcd", "dcba"	true	true
+"dcba", "abcd"	true	true
+"abcd", "bdac"	false	false
+"bdac", "abcd"	false	false
+"abcd", "cadb"	false	false
+"cadb", "abcd"	false	false
+"abcdd", "dbdac"	false	false
+"dbdac", "abcdd"	false	false
+"great", "rgeat"	true	true
+"rgeat", "great"	true	true
+"great", "rgtae"	true	true
+"rgtae", "great"	true	true
+"abcde", "ecadb"	false	false
+"ecadb", "abcde"	false	false
+"abcde", "eacdb"	true	true
+"eacdb", "abcde"	true	true
+"aaccd", "acaad"	false	false
+"great", "retga"	false	false
+"great", "rtage"	false	false
+"great", "rtega"	false	false
+"great", "rtgae"	false	false
+"great", "tegar"	false	false
+"great", "trage"	false	false
+"great", "aegtr"	false	false
+"aaccb", "cabac"	false	false
+"caabb", "abcba"	false	false
+"bccab", "abccb"	true	true
+"cbbbc", "cbcbb"	true	true
+"great", "great"	true	true
+"great", "greta"	true	true
+"great", "grtae"	true	true
+"great", "grtea"	true	true
+"great", "gtaer"	true	true
+"great", "gtare"	true	true
+"great", "gtear"	true	true
+"great", "gtera"	true	true
+"great", "gtrae"	true	true
+"great", "gtrea"	true	true
+"great", "raegt"	true	true
+"great", "raetg"	true	true
+"great", "raget"	false	false
+"great", "ragte"	false	false
+"great", "rateg"	true	true
+"great", "ratge"	false	false
+"great", "reagt"	true	true
+"great", "reatg"	true	true
+"great", "regat"	true	true
+"great", "regta"	true	true
+"great", "retag"	true	true
+"great", "rgaet"	true	true
+"great", "rgate"	true	true
+"great", "rgeta"	true	true
+"great", "rgtea"	true	true
+"great", "rtaeg"	true	true
+"great", "rteag"	true	true
+"great", "rtgea"	false	false
+"great", "taegr"	true	true
+"great", "taerg"	true	true
+"great", "tager"	true	true
+"great", "tagre"	true	true
+"great", "tareg"	true	true
+"great", "targe"	true	true
+"great", "teagr"	true	true
+"great", "tearg"	true	true
+"great", "tegra"	true	true
+"great", "terag"	true	true
+"great", "terga"	true	true
+"great", "tgaer"	true	true
+"great", "tgare"	true	true
+"great", "tgear"	true	true
+"great", "tgera"	true	true
+"great", "tgrae"	true	true
+"great", "tgrea"	true	true
+"great", "traeg"	true	true
+"great", "treag"	true	true
+"great", "trega"	true	true
+"great", "trgae"	true	true
+"great", "trgea"	true	true
+"great", "aegrt"	true	true
+"great", "aergt"	true	true
+"great", "aertg"	true	true
+"great", "aetgr"	true	true
+"great", "aetrg"	true	true
+"great", "agert"	true	true
+"great", "agetr"	false	false
+"great", "agret"	true	true
+"great", "agrte"	false	false
+"great", "agter"	false	false
+"great", "agtre"	false	false
+"great", "aregt"	true	true
+"great", "aretg"	true	true
+"great", "arget"	true	true
+"great", "argte"	false	false
+"great", "arteg"	false	false
+"great", "artge"	false	false
+"great", "ategr"	true	true
+"great", "aterg"	true	true
+"great", "atger"	true	true
+"great", "atgre"	true	true
+"great", "atreg"	true	true
+"great", "atrge"	true	true
+"great", "eagrt"	true	true
+"great", "eagtr"	false	false
+"great", "eargt"	true	true
+"great", "eartg"	true	true
+"great", "eatgr"	true	true
+"great", "eatrg"	true	true
+"great", "egart"	false	false
+"great", "egatr"	false	false
+"great", "egrat"	true	true
+"great", "egrta"	true	true
+"great", "egtar"	false	false
+"great", "egtra"	false	false
+"great", "eragt"	true	true
+"great", "eratg"	true	true
+"great", "ergat"	true	true
+"great", "ergta"	true	true
+"great", "ertag"	true	true
+"great", "ertga"	false	false
+"great", "etagr"	true	true
+"great", "etarg"	true	true
+"great", "etgar"	false	false
+"great", "etgra"	false	false
+"great", "etrag"	false	false
+"great", "etrga"	false	false
+"great", "gaert"	true	true
+"great", "gaetr"	true	true
+"great", "garet"	true	true
+"great", "garte"	false	false
+"great", "gater"	true	true
+"great", "gatre"	true	true
+"great", "geart"	true	true
+"great", "geatr"	true	true
+"great", "gerat"	true	true
+"great", "gerta"	true	true
+"great", "getar"	true	true
+"great", "getra"	false	false
+"great", "graet"	true	true
+"great", "grate"	true	true
+"abcdefghij", "efghijcadb"	false	false
+"abcdefghijklmn", "efghijklmncadb"	false	false
+"abcdefghijklmnopq", "efghijklmnopqcadb"	false	false
+"adaya", "aydaa"	true	true
+"npfgmkuleygms", "ygksfmpngumle"	false	false
+"chqtxf", "qxthcf"	true	true
+"amcsjerqm", "memjrqcsa"	false	false
+"nrumwuspeu", "swenpuuumr"	false	false
+"pknsvxobynprj", "kobvyxnjrppsn"	false	false
+"gljxctmu", "mgtjlxuc"	false	false
+"kpngwxxxc", "xwxcpngkx"	false	false
+"oxbghmyrlh", "mlhgbrohyx"	false	false
+"epxqcntk", "nxqkecpt"	false	false
+"attkadzge", "getadzkta"	true	true
+"gcqjz", "zcjgq"	false	false
+"bdzwpbarjgsav", "bwjasgbavzpdr"	false	false
+"vfldiodffghyq", "vdgyhfqfdliof"	true	true
+"lrgroncryswd", "orwcsdlnrgyr"	false	false
+"hshldvwwdq", "hvdqhdwwls"	false	false
+"lcgerrxufa", "rexrfculga"	false	false
+"axrrkvm", "avmkrxr"	true	true
+"unuzp", "nzuup"	true	true
+"dcoiorfhkqdwp", "rdpihwfkcooqd"	false	false
+"uzqae", "zqeau"	true	true
+"rskuqzchcsc", "shccucrkqzs"	false	false
+"uhblulvqcpczfd", "lbzfcuphucvqld"	false	false
+"vkhdnszy", "khsvdyzn"	false	false
+"aacrbfya", "ycbarfaa"	false	false
+"vmlwnbnqfe", "fwlenqmbvn"	false	false
+"gmwcilna", "wncamgli"	false	false
+"bcmxwpcor", "crpbxcmwo"	false	false
+"yxsifqizluw", "xiusfwqlzyi"	false	false
+"ogcsqpb", "cbposqg"	false	false
+"fiacc", "iacfc"	true	true
+"wpzfdnl", "pzdwlfn"	false	false
+"wkrsqxasbe", "swsqbkreax"	false	false
+"pelzkikbv", "ilzvekpbk"	false	false
+"zixqwfri", "wiirzqxf"	false	false
+"ettztrgij", "irttgetzj"	false	false
+"phlvandlvyupcq", "paplyvvdhnulcq"	false	false
+"hobobyrqd", "hbyorqdbo"	true	true
+"qvqdjfruhhjt", "jtrvquqdfhjh"	false	false
+"hhpwqoonfrx", "hrqoohxnfwp"	false	false
+"ejsejxhmgobegp", "ggjeohbpejemsx"	false	false
+"gsdqnhbko", "qhngbkosd"	false	false
+"cbnzpmnfbkw", "wbfnmkpzbcn"	true	true
+"fugseyalbey", "eyugslfaybe"	false	false
+"iuzwkza", "azzukiw"	false	false
+"mehlicyzdm", "clmemdizhy"	false	false
+"qjxygzxicawij", "iyqxzcxjgjiaw"	false	false
+"hdtivdhujgt", "ihdudgtvtjh"	false	false
+"cbcbb", "bcbbc"	true	true
+"cbcbabc", "bbbccca"	false	false
+"ccabcbabcbabbbbcbb", "bbbbabccccbbbabcba"	false	false
+"bbbcacaaaba", "cabbaababca"	false	false
+"babbcbaccac", "bbcaabcabcc"	false	false
+"cbbcacababcbc", "bacbabbbcccca"	false	false
+"ababcbaccbabbcbca", "bbbbbaaaacccccbba"	false	false
+"bcbbcccbcbcaaacbb", "acbcabbbbacccbbcc"	false	false
+"aacaacccacbcbcbcbb", "bcacabbbaaabcccccc"	false	false
+"bacacbcbbba", "cbbaabacbcb"	false	false
+"ccbbcaccbccbbbcca", "ccbbcbbaabcccbccc"	false	false
+"cacbcccbcbaccbabbc", "ccbbbcbbbacaaccccc"	false	false
+"abbbcbaaccacaacc", "acaaaccabcabcbcb"	true	true
+"babcbccbccbacbaccc", "accacccacbcbcbbcbb"	true	true
+"cbccbcbcacaaaaaa", "cabaabcaaacaccbc"	true	true
+"cabccccbcacab", "caccbbacccbca"	true	true
+"bcabcbbbbabaacbaa", "cabaacbaabbacbbbb"	true	true
+"acccacbcaaaabbaaa", "aacaacbabacbacaac"	true	true
+"caccaaabcccacaab", "ccbcaacacaaabacc"	true	true
+"cbcccccbbabcbac", "bbccaccbcbcabcc"	true	true
+"bbbaaaaccaabbbaa", "baababaababacabc"	true	true
+"xstjzkfpkggnhjzkpfjoguxvkbuopi", "xbouipkvxugojfpkzjhnggkpfkzjts"	true	true
+"oatzzffqpnwcxhejzjsnpmkmzngneo", "acegneonzmkmpnsjzjhxwnpqffzzto"	true	true
+"sqksrqzhhmfmlmqvlbnaqcmebbkqfy", "abbkyfqemcqnblvqmlmfmhhzqrskqs"	true	true
+"aqpuhhtophtbvhtqvudvkhkoilayta", "aayatliokhkvduvqthvbthpothhupq"	true	true
+"tqxpxeknttgwoppemjkivrulaflayn", "afaylnlurvikjmeppowgttnkexpxqt"	true	true
+"tdfiajsnfmvbanthzcrjaidnkjbljo", "aaablojjkndijrczhtnbvmfnsjifdt"	true	true
+"dsanujiiqwfsysnfsrwbrfhhpqicbw", "dabbciwqphhfrwrsfnsysfwqiijuns"	true	true
+"eqxuljcvzyatwvicnaaqthxaxpibrh", "eaaaahribpxxhtqncivwtyzvcjluxq"	true	true
+"xxyrijvdlveesbnwopygiggjfxtgoa", "xbatgoxfjggigypownseevldvjiryx"	true	true
+"oyifgtdmeyslstaojpppxvxiavcije", "oaacejivixvxpppjotslsyemdtgfiy"	true	true
+"ymjmfxshglxwrrgufcvvzjuietjzzz", "fxczujvmwizrzgxgjmvzelyjthusrf"	false	false
+"hijumxroduxuvbcooeneehtpvqefav", "ufevdurtcxaopuomvibxqovheejenh"	false	false
+"eswjvddvalysqvfywjvcywpwssqgzt", "vwsyywweljdftwsjqdpzassgcyvvqv"	false	false
+"onpaghkfbpchutcxqxxynyecrhmcce", "ocyhcnxqcexptnfbxrcegpuhckhyam"	false	false
+"iydzdwbqbfixognqhbmimhwyhmdnrm", "nmbywdbnmmfybqqighdriizmxdhwho"	false	false
+"qircluqkyzmiqlhnzxrnbgqoqshpyr", "xmuhqrpqcgynlnlbzhiyrqiqoqskzr"	false	false
+"ackbdflwqhqarscoepmmxyymcarbjn", "mphoebfamrmcscdblwryqykaaqjcnx"	false	false
+"sdsjnggafzfpkmqovhyvlvsnretogb", "psgekbdfsvayjvfztsmngnolqhvogr"	false	false
+"molsevndlihckceamwlgovkavcfcna", "alknclsklamvndvcocwhfcgmoveaie"	false	false
+"pcighfdjnbwfkohtklrecxnooxyipj", "npodkfchrfpxliocgtnykhxwjbojie"	false	false
+*/
