@@ -5,43 +5,37 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.MinimumDepthOfBinaryTree;
 
 /**
  * DFS with pruning.
- *
+ * <p/>
  * Use a variable to store the 'current min depth'. If the depth of the next
  * level is not less than the 'current min depth', we prune that branch.
  */
 public class MinimumDepthOfBinaryTreeDfsWithPruningImpl implements MinimumDepthOfBinaryTree {
     @Override
     public int minDepth(TreeNode root) {
-
-        if (root == null) {
-            return 0;
-        }
-        minDepth = Integer.MAX_VALUE;
-        finMinDepth(root, 0);
-        return minDepth;
+        return finMinDepth(root, 0, Integer.MAX_VALUE);
     }
 
-    private int minDepth = Integer.MAX_VALUE;
-
-    public void finMinDepth(TreeNode root, final int currDepth) {
-        if (root == null) {
-            return;
+    private int finMinDepth(TreeNode root, final int depth, int minDep) {
+        if (root == null || depth >= minDep) {
+            return depth;
         }
-        final int newDepth = currDepth + 1;
 
         if (root.left == null && root.right == null) {
-            minDepth = Math.min(minDepth, newDepth);
-            return;
+            return depth + 1;
         }
 
-        if (newDepth < minDepth) {
+        if (depth < minDep) {
             if (root.left != null) {
-                finMinDepth(root.left, newDepth);
+                minDep = Math.min(minDep,
+                        finMinDepth(root.left, depth + 1, minDep));
             }
 
             if (root.right != null) {
-                finMinDepth(root.right, newDepth);
+                minDep = Math.min(minDep,
+                        finMinDepth(root.right, depth + 1, minDep));
             }
         }
+
+        return minDep;
     }
 }
