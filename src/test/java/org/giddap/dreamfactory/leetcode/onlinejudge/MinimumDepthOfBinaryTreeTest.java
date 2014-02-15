@@ -2,12 +2,13 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MinimumDepthOfBinaryTreeDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MinimumDepthOfBinaryTreeDfsWithPruningImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class MinimumDepthOfBinaryTreeTest {
-    private MinimumDepthOfBinaryTree solution = new MinimumDepthOfBinaryTreeDfsImpl();
+    private MinimumDepthOfBinaryTree solution = new MinimumDepthOfBinaryTreeDfsWithPruningImpl();
 
     @Test
     public void small01() {
