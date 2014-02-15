@@ -6,7 +6,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.MinimumDepthOfBinaryTree;
 /**
  * DFS with pruning.
  *
- * Use a variable to store the current 'minDepth'. If the depth of the next
+ * Use a variable to store the 'current min depth'. If the depth of the next
  * level is not less than the 'current min depth', we prune that branch.
  */
 public class MinimumDepthOfBinaryTreeDfsWithPruningImpl implements MinimumDepthOfBinaryTree {
