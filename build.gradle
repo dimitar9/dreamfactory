@@ -39,7 +39,7 @@ repositories {
 
 // Publish to github
 githubPages {
-    repoUri = 'git@github.com:b1m4w3n/dreamfactory.git'
+    repoUri = 'https://github.com/b1m4w3n/dreamfactory.git'
     pages {
         from(javadoc.outputs.files) {
             into 'docs/javadoc'
