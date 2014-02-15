@@ -1,13 +1,19 @@
 description = 'A factory where dreams are being made!'
 apply plugin: 'java'
+apply plugin: 'github-pages'
 defaultTasks 'release'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.6
 version = '1.0'
 jar {
     manifest {
         attributes 'Implementation-Title': 'org-giddap-dreamfactory', 'Implementation-Version': version
     }
+}
+
+buildscript {
+    repositories { mavenCentral() }
+    dependencies { classpath 'org.ajoberstar:gradle-git:0.6.3' }
 }
 
 
@@ -31,9 +37,20 @@ repositories {
     mavenCentral()
 }
 
+// Publish to github
+githubPages {
+    repoUri = 'git@github.com:b1m4w3n/dreamfactory.git'
+    pages {
+        from(javadoc.outputs.files) {
+            into 'docs/javadoc'
+        }
+    }
+    workingPath = 'build/private/github-pages'
+}
+
 dependencies {
 
-    compile group: 'org.ajoberstar', name: 'gradle-git', version: '0.6.3'
+    //compile group: 'org.ajoberstar', name: 'gradle-git', version: '0.6.3'
 
     compile group: 'com.google.guava', name: 'guava', version: '14.0.1'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
