@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * BFS is typically more efficient in finding depth as the program terminates
  * at the first leaf node.
- *
+ * <p/>
  * Another thing to note is that we shall leverage the fact that the alphabet
  * contains only 26 characters. Instead of iterating through the dict,
  * which might be huge, we could just change the word one char at a time to
