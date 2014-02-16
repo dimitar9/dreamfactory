@@ -1,15 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q127WordLadderImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WordLadderBfsImpl;
 import org.junit.Test;
 
 import java.util.HashSet;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q127WordLadderTest {
-    private Q127WordLadder solution = new Q127WordLadderImpl();
+public class WordLadderTest {
+    private WordLadder solution = new WordLadderBfsImpl();
 
     @Test
     public void small01() {

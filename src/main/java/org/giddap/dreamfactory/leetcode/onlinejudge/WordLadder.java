@@ -34,7 +34,9 @@ import java.util.HashSet;
  * @see <a href="http://discuss.leetcode.com/questions/1108/word-ladder">Leetcode discussion</a>
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101j1xl.html">A Blog from peking2</a>
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32325007.html">mitbbs discussion</a>
+ * @see <a href="http://n00tc0d3r.blogspot.com/2013/07/word-ladder
+ * .html">N00tc0d3r</a>
  */
-public interface Q127WordLadder {
+public interface WordLadder {
     int ladderLength(String start, String end, HashSet<String> dict);
 }

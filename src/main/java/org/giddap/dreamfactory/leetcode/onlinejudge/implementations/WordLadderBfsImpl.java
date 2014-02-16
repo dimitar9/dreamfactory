@@ -1,14 +1,23 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q127WordLadder;
+import org.giddap.dreamfactory.leetcode.onlinejudge.WordLadder;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-
-public class Q127WordLadderImpl implements Q127WordLadder {
+/**
+ * BFS is typically more efficient in finding depth as the program terminates
+ * at the first leaf node.
+ *
+ * Another thing to note is that we shall leverage the fact that the alphabet
+ * contains only 26 characters. Instead of iterating through the dict,
+ * which might be huge, we could just change the word one char at a time to
+ * get all possible transformations and use that to query the dict for better
+ * performance.
+ */
+public class WordLadderBfsImpl implements WordLadder {
     @Override
     public int ladderLength(String start, String end, HashSet<String> dict) {
         // Start typing your Java solution below
