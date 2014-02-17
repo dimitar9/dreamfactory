@@ -15,9 +15,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * you must  sell the stock before you buy again).
  * <p/>
  * Links:
- * http://discuss.leetcode.com/questions/287/best-time-to-buy-and-sell-stock-iii
  * http://blog.unieagle.net/2012/12/05/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Abest-time-to-buy-and-sell-stock-iii%EF%BC%8C%E4%B8%80%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/
- * http://gongxuns.blogspot.com/2012/12/leetcodebest-time-to-buy-and-sell-stock_28.html
+ * http://n00tc0d3r.blogspot.com/2013/01/best-time-to-buy-and-sell-stock.html
  */
 public interface BestTimeToBuyAndSellStockIII {
     int maxProfit(int[] prices);
