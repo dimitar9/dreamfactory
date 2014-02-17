@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q123BestTimeToBuyAndSellStockIII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII;
 
-public class Q123BestTimeToBuyAndSellStockIIIOn2Impl implements Q123BestTimeToBuyAndSellStockIII {
+public class BestTimeToBuyAndSellStockIIIOn2Impl implements BestTimeToBuyAndSellStockIII {
     @Override
     public int maxProfit(int[] prices) {
         // Note: The Solution object is instantiated only once and is reused by each test case.
