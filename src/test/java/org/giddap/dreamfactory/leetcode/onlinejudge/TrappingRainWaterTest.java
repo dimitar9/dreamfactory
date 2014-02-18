@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q042TrappingRainWaterImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.TrappingRainWaterOofNImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q042TrappingRainWaterTest {
-    private Q042TrappingRainWater solution = new Q042TrappingRainWaterImpl();
+public class TrappingRainWaterTest {
+    private TrappingRainWater solution = new TrappingRainWaterOofNImpl();
 
     @Test
     public void small01() {

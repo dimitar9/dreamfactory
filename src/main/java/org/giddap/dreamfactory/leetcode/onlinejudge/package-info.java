@@ -3,7 +3,11 @@
  * <p>
  * <ul>
  * <li>
- * Maximum subarray: 'best to buy and sell stocks III'
+ * Maximum subarray:
+ * <ul>
+ * <li>Best Time to Buy and Sell Stocks III {@link org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII}</li>
+ * <li>Trapping Rain Water {@link org.giddap.dreamfactory.leetcode.onlinejudge.TrappingRainWater}</li>
+ * </ul>
  * </li>
  * <li>
  * Level-by-level BST to find depth: 'Minimum/Maximum depth of binary trees',
