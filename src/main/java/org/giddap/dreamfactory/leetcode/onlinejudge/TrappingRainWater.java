@@ -16,6 +16,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://discuss.leetcode.com/questions/220/trapping-rain-water
  * http://fisherlei.blogspot.com/2013/01/leetcode-trapping-rain-water.html
  * http://coding-exercise.blogspot.com/2013/03/leetcode-trapping-rain-water.html
+ *
  */
 public interface TrappingRainWater {
     int trap(int[] A);
