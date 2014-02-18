@@ -9,7 +9,9 @@
  * Level-by-level BST to find depth: 'Minimum/Maximum depth of binary trees',
  * 'word ladder'.
  * </li>
- *
+ * <li>
+ * DFS with Backtracking and Pruning: 'Word Search'.
+ * </li>
  * </ul>
  *
  * @since 1.0
