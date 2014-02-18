@@ -28,6 +28,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/254/word-search">Leetcode discussion</a>
  */
-public interface Q079WordSearch {
+public interface WordSearch {
     boolean exist(char[][] board, String word);
 }

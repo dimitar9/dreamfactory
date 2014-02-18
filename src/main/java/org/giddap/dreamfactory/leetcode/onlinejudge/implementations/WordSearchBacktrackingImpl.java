@@ -1,8 +1,35 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q079WordSearch;
+import org.giddap.dreamfactory.leetcode.onlinejudge.WordSearch;
 
-public class Q079WordSearchBacktrackingImpl implements Q079WordSearch {
+/**
+ * 弼馬溫注解：
+ * <ul>
+ * <li>Classical DFS with Backtracking and Pruning.</li>
+ * <li>Time complexity: n*m*3^k</li>
+ * <li>Space complexity: n*m</li>
+ * <li>Note we use the following to represent possible movements:
+ * <pre>
+ * int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+ * ...
+ * for (int[] dir : DIRS) {
+ *     int nextRow = row + dir[0];
+ *     int nextColumn = column + dir[1];
+ *     ...
+ * }
+ * </pre>
+ * </li>
+ * <li>Pruning condition:
+ * <ol>
+ * <li>Still within bournds.</li>
+ * <li>Haven't visited before.</li>
+ * <li>Matching character.</li>
+ * </ol>
+ * </li>
+ * <li>We use a m*n matrix to track visitaion history.</li>
+ * </ul>
+ */
+public class WordSearchBacktrackingImpl implements WordSearch {
 
     private static final int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
