@@ -5,16 +5,23 @@
  * <li>
  * Maximum subarray:
  * <ul>
- * <li>Best Time to Buy and Sell Stocks III {@link org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII}</li>
- * <li>Trapping Rain Water {@link org.giddap.dreamfactory.leetcode.onlinejudge.TrappingRainWater}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.TrappingRainWater}</li>
  * </ul>
  * </li>
  * <li>
- * Level-by-level BST to find depth: 'Minimum/Maximum depth of binary trees',
- * 'word ladder'.
+ * Level-by-level BST to find depth:
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.MinimumDepthOfBinaryTree}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Q104MaximumDepthOfBinaryTree}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.WordLadder}</li>
+ * </ul>
  * </li>
  * <li>
- * DFS with Backtracking and Pruning: 'Word Search'.
+ * DFS with Backtracking and Pruning
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.WordSearch}</li>
+ * </ul>
  * </li>
  * </ul>
  *
