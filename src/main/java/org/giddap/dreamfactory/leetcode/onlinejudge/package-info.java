@@ -26,6 +26,7 @@
  * <li>
  * Two pointers with arrays
  * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.RemoveDuplicatesFromSortedArray}</li>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.RemoveDuplicatesFromSortedArrayII}</li>
  * </ul>
  * </li>
