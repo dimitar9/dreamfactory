@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://blog.unieagle.net/2012/10/16/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Aremove-duplicates-from-sorted-array-ii/
  */
-public interface Q080RemoveDuplicatesFromSortedArrayII {
+public interface RemoveDuplicatesFromSortedArrayII {
     int removeDuplicates(int[] A);
 }
