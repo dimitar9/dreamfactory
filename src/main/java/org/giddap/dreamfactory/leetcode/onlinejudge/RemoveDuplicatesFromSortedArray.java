@@ -18,6 +18,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/207/remove-duplicates-from-sorted-array">leetcode discussion</a>
  */
-public interface Q026RemoveDuplicatesFromSortedArray {
+public interface RemoveDuplicatesFromSortedArray {
     int removeDuplicates(int[] A);
 }
