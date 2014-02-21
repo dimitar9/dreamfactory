@@ -30,6 +30,13 @@
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.RemoveDuplicatesFromSortedArrayII}</li>
  * </ul>
  * </li>
+ * <li>
+ * Binary Search Approach
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Power}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.InsertionSortList}</li>
+ * </ul>
+ * </li>
  * </ul>
  *
  * @since 1.0
