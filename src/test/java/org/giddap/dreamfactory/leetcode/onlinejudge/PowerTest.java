@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q050PowerImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PowerRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q050PowerTest {
-    private Q050Power solution = new Q050PowerImpl();
+public class PowerTest {
+    private Power solution = new PowerRecursiveImpl();
 
     @Test
     public void small01() {

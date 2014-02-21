@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q050Power;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Power;
 
-public class Q050PowerImpl implements Q050Power {
+public class PowerImpl implements Power {
     @Override
     public double pow(double x, int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int y = Math.abs(n);
+        long y = Math.abs((long) n);
         double ret = 1L;
 
         while (y > 0) {

@@ -12,6 +12,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://en.wikipedia.org/wiki/Exponentiation_by_squaring">wikpedia discussion</a>
  * @see <a href="http://www.cnblogs.com/wpcockroach/archive/2009/03/14/2441422.html">cnblogs discussion</a>
  */
-public interface Q050Power {
+public interface Power {
     double pow(double x, int n);
 }
