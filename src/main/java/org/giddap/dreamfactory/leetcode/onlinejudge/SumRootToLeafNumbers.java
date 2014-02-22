@@ -29,6 +29,6 @@ import org.giddap.dreamfactory.commons.TreeNode;
  * @see <a href="http://discuss.leetcode.com/questions/1189/sum-root-to-leaf-numbers">Leetcode discussion</a>
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101iv6l.html">Blog from peking2</a>
  */
-public interface Q129SumRootToLeafNumbers {
+public interface SumRootToLeafNumbers {
     int sumNumbers(TreeNode root);
 }

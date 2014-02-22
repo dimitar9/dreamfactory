@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q129SumRootToLeafNumbers;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SumRootToLeafNumbers;
 
-public class Q129SumRootToLeafNumbersImpl implements Q129SumRootToLeafNumbers {
+public class SumRootToLeafNumbersImpl implements SumRootToLeafNumbers {
     @Override
     public int sumNumbers(TreeNode root) {
         if (root == null) {

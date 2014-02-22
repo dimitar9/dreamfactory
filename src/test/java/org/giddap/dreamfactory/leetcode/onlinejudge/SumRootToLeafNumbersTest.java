@@ -2,13 +2,13 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q129SumRootToLeafNumbersImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SumRootToLeafNumbersImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q129SumRootToLeafNumbersTest {
-    private Q129SumRootToLeafNumbers solution = new Q129SumRootToLeafNumbersImpl();
+public class SumRootToLeafNumbersTest {
+    private SumRootToLeafNumbers solution = new SumRootToLeafNumbersImpl();
 
     @Test
     public void small01() {
