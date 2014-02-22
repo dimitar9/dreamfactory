@@ -1,16 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q101SymmetricTreeIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SymmetricTreeIterativeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 
-public class Q101SymmetricTreeTest {
-    //    private Q101SymmetricTree solution = new Q101SymmetricTreeRecursiveImpl();
-    private Q101SymmetricTree solution = new Q101SymmetricTreeIterativeImpl();
+public class SymmetricTreeTest {
+    //    private SymmetricTree solution = new SymmetricTreeRecursiveImpl();
+    private SymmetricTree solution = new SymmetricTreeIterativeImpl();
 
     @Test
     public void small01() {

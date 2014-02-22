@@ -32,6 +32,6 @@ import org.giddap.dreamfactory.commons.TreeNode;
  * http://discuss.leetcode.com/questions/274/symmetric-tree
  * http://www.mitbbs.com/article_t/JobHunting/32294441.html
  */
-public interface Q101SymmetricTree {
+public interface SymmetricTree {
     boolean isSymmetric(TreeNode root);
 }

@@ -3,6 +3,16 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.SumRootToLeafNumbers;
 
+/**
+ * 弼馬溫注解：
+ * <ul>
+ * <li>Time complexity: O(n)</li>
+ * <li>Space complexity: O(log(n))</li>
+ * <li>Thought Process: DFS. Pass the curr base to next recursion level.
+ * Returns the sum at the end of tail recursion.
+ * </li>
+ * </ul>
+ */
 public class SumRootToLeafNumbersImpl implements SumRootToLeafNumbers {
     @Override
     public int sumNumbers(TreeNode root) {

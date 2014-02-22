@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q101SymmetricTree;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SymmetricTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Q101SymmetricTreeIterativeImpl implements Q101SymmetricTree {
+public class SymmetricTreeIterativeImpl implements SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
