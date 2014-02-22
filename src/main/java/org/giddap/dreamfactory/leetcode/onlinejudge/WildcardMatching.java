@@ -1,7 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 /**
- * http://oj.leetcode.com/problems/wildcard-matching/
+ * <a href="http://oj.leetcode.com/problems/wildcard-matching/">Wildcard
+ * Matching</a>
+ * <p/>
+ * Copyright 2013 LeetCode
  * <p/>
  * Implement wildcard pattern matching with support for '?' and '*'.
  * <p/>
@@ -34,6 +37,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://blog.csdn.net/hopeztm/article/details/8039777
  * http://swtch.com/~rsc/regexp/regexp1.html
  */
-public interface Q044WildcardMatching {
+public interface WildcardMatching {
     boolean isMatch(String s, String p);
 }

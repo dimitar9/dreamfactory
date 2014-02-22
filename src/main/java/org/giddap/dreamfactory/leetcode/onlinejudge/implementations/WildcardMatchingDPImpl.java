@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q044WildcardMatching;
+import org.giddap.dreamfactory.leetcode.onlinejudge.WildcardMatching;
 
 import java.util.Arrays;
 
-public class Q044WildcardMatchingDPImpl implements Q044WildcardMatching {
+public class WildcardMatchingDPImpl implements WildcardMatching {
     @Override
     public boolean isMatch(String s, String p) {
         // Start typing your Java solution below
