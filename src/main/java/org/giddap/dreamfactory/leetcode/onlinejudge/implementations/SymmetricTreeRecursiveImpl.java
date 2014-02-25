@@ -22,3 +22,4 @@ public class SymmetricTreeRecursiveImpl implements SymmetricTree {
         return isSymmetric(a.left, b.right) && isSymmetric(a.right, b.left);
     }
 }
+
