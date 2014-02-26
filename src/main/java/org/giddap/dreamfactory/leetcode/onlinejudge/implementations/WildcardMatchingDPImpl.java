@@ -2,32 +2,53 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.WildcardMatching;
 
-import java.util.Arrays;
-
+/**
+ * 弼馬溫注解：
+ * <ul>
+ * <li>m (p.length) * n (s.legnth) table</li>
+ * <li>row by row to fill the array (n).</li>
+ * <li>calculate the first 'true'.</li>
+ * <li>From right to left to avoid having to use 2 arrays.</li>
+ * </ul>
+ */
 public class WildcardMatchingDPImpl implements WildcardMatching {
     @Override
     public boolean isMatch(String s, String p) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int n = s.length();
-        int m = p.length();
-        boolean[][] dp = new boolean[2][n + 1];
-        dp[m % 2][n] = true;
-        for (int i = m - 1; i >= 0; i--) {
-            Arrays.fill(dp[i % 2], false);
-            if (p.charAt(i) == '*') {
-                for (int j = n; j >= 0; j--) {
-                    if (dp[(i + 1) % 2][j]) {
-                        for (; j >= 0; j--)
-                            dp[i % 2][j] = true;
-                    }
+        final int sLen = s.length();
+        boolean[] matched = new boolean[sLen + 1];
+        matched[0] = true;
+
+        for (int i = 0; i < p.length(); i++) {
+            char pCh = p.charAt(i);
+            // Skip repeated '*'
+            if (i > 0 && pCh == '*' && p.charAt(i - 1) == '*') {
+                continue;
+            }
+            // Find out the first 'matched' from previous row
+            int j = 0;
+            while (j < matched.length && !matched[j]) {
+                j++;
+            }
+            if (j == matched.length) { // no 'matched' from previous row
+                return false;
+            }
+            if (pCh == '*') {
+                for (; j < matched.length; j++) {
+                    matched[j] = true;
                 }
             } else {
-                for (int j = n - 1; j >= 0; j--)
-                    dp[i % 2][j] = (p.charAt(i) == s.charAt(j) || p.charAt(i) == '?') && dp[(i + 1) % 2]
-                            [j + 1];
+                for (int k = s.length(); k >= 0; --k) {
+                    if (k <= j) {
+                        matched[k] = false;
+                    } else {
+                        matched[k] = matched[k - 1]
+                                && (pCh == s.charAt(k - 1) || pCh == '?');
+                    }
+                }
             }
         }
-        return dp[0][0];
+        return matched[sLen];
     }
 }
