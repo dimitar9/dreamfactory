@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q112PathSum;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PathSum;
 
 import java.util.Stack;
 
-public class Q112PathSumIterativeImpl implements Q112PathSum {
+public class PathSumIterativeImpl implements PathSum {
     @Override
     public boolean hasPathSum(TreeNode root, int sum) {
         // Start typing your Java solution below

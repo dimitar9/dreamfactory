@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q113PathSumII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PathSumII;
 
 import java.util.ArrayList;
 
-public class Q113PathSumIIDfsImpl implements Q113PathSumII {
+public class PathSumIIDfsImpl implements PathSumII {
     @Override
     public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();

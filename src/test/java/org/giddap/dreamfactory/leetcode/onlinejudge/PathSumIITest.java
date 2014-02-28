@@ -3,15 +3,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q113PathSumIIDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PathSumIIDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q113PathSumIITest {
-    private Q113PathSumII solution = new Q113PathSumIIDfsImpl();
+public class PathSumIITest {
+    private PathSumII solution = new PathSumIIDfsImpl();
 
     @Test
     public void small01() {

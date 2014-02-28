@@ -26,6 +26,6 @@ import org.giddap.dreamfactory.commons.TreeNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/278/path-sum">leetcode discussion</a>
  */
-public interface Q112PathSum {
+public interface PathSum {
     boolean hasPathSum(TreeNode root, int sum);
 }

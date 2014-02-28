@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q112PathSumRecursiveDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PathSumRecursiveDfsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 
-public class Q112PathSumTest {
-    private Q112PathSum solution = new Q112PathSumRecursiveDfsImpl();
-//    private Q112PathSumIterativeImpl solution = new Q112PathSumIterativeImpl();
+public class PathSumTest {
+    private PathSum solution = new PathSumRecursiveDfsImpl();
+//    private PathSumIterativeImpl solution = new PathSumIterativeImpl();
 
     @Test
     public void small01() {

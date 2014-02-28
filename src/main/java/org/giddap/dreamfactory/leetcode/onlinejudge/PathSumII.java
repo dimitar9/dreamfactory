@@ -32,6 +32,6 @@ import java.util.ArrayList;
  * http://gongxuns.blogspot.com/2012/12/leetcodepermutations-ii_13.html
  * http://fisherlei.blogspot.com/2012/12/leetcode-path-sum-ii.html
  */
-public interface Q113PathSumII {
+public interface PathSumII {
     ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum);
 }
