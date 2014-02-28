@@ -50,8 +50,6 @@ githubPages {
 
 dependencies {
 
-    //compile group: 'org.ajoberstar', name: 'gradle-git', version: '0.6.3'
-
     compile group: 'com.google.guava', name: 'guava', version: '14.0.1'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.12.4'

@@ -5,35 +5,52 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Q090SubsetsII;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
+/**
+ * 弼馬溫注解：
+ * <ul>
+ * <li>Approach: base case and build.
+ * <ul>
+ * <li>Start with an empty set []</li>
+ * <li>1: [] [1]</li>
+ * <li>2: [] [1] [2] [1, 2]</li>
+ * <li>2: [] [1] [2] [1, 2] [2, 2] [1, 2, 2]</li>
+ * <li>2: [] [1] [2] [1, 2] [2, 2] [1, 2, 2] [2, 2, 2] [1, 2, 2, 2]</li>
+ * </ul>
+ * </li>
+ * <li>
+ * Time complexity: O(n) on both operations.
+ * </li>
+ * <li>
+ * Space complexity: O(2^n).
+ * </li>
+ * <li>Sort the array first.</li>
+ * <li>Count the number of new subsets added from last round and use
+ * only these subsets if a duplicate number is encountered.</li>
+ * </ul>
+ */
 public class Q090SubsetsIIIterativeImpl implements Q090SubsetsII {
     @Override
     public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-        if (num.length == 0) {
-            return ret;
-        }
-
+        ArrayList<Integer> seed = new ArrayList<Integer>();
+        ret.add(seed);
         Arrays.sort(num);
-        ret.add(new ArrayList<Integer>());
-        int numOfPreviousPerms = 0;
+
+        int count = 0;
         for (int i = 0; i < num.length; i++) {
-            ArrayList<ArrayList<Integer>> tmp = new ArrayList<ArrayList<Integer>>(ret);
-            final int currSize = tmp.size();
-            int j = 0;
+            ArrayList<ArrayList<Integer>> temp = new ArrayList<ArrayList<Integer>>();
+            int start = 0;
             if (i > 0 && num[i] == num[i - 1]) {
-                j = currSize - numOfPreviousPerms;
+                start = ret.size() - count;
             }
-
-            numOfPreviousPerms = 0;
-            for (; j < currSize; j++) {
-                ArrayList<Integer> newOne = new ArrayList<Integer>(tmp.get(j));
-                newOne.add(num[i]);
-                ret.add(newOne);
-                numOfPreviousPerms++;
+            for (int j = start; j < ret.size(); j++) {
+                ArrayList<Integer> one = new ArrayList<Integer>(ret.get(j));
+                one.add(num[i]);
+                temp.add(one);
             }
+            count = temp.size();
+            ret.addAll(temp);
         }
-
         return ret;
     }
 }
