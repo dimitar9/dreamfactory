@@ -60,6 +60,12 @@
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.WildcardMatching}</li>
  * </ul>
  * </li>
+ * <li>
+ * Combination of datat structures
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.LRUCache}</li>
+ * </ul>
+ * </li>
  * </ul>
  *
  * @since 1.0
