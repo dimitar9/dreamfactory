@@ -15,6 +15,6 @@ import org.giddap.dreamfactory.commons.ListNode;
  * Links:
  * http://discuss.leetcode.com/questions/257/remove-duplicates-from-sorted-list-ii
  */
-public interface Q082RemoveDuplicatesFromSortedListII {
+public interface RemoveDuplicatesFromSortedListII {
     ListNode deleteDuplicates(ListNode head);
 }

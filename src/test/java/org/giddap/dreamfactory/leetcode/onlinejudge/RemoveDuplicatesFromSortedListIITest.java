@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q082RemoveDuplicatesFromSortedListIIImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RemoveDuplicatesFromSortedListIIImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-public class Q082RemoveDuplicatesFromSortedListIITest {
-    private Q082RemoveDuplicatesFromSortedListII solution = new Q082RemoveDuplicatesFromSortedListIIImpl();
+public class RemoveDuplicatesFromSortedListIITest {
+    private RemoveDuplicatesFromSortedListII solution = new RemoveDuplicatesFromSortedListIIImpl();
 
     @Test
     public void small01() {
