@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q099RecoverBinarySearchTreeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RecoverBinarySearchTreeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q099RecoverBinarySearchTreeTest {
-    private Q099RecoverBinarySearchTree solution = new Q099RecoverBinarySearchTreeImpl();
+public class RecoverBinarySearchTreeTest {
+    private RecoverBinarySearchTree solution = new RecoverBinarySearchTreeImpl();
 
     @Test
     public void small01() {

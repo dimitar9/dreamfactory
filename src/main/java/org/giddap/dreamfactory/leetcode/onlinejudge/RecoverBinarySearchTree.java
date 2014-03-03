@@ -18,10 +18,9 @@ import org.giddap.dreamfactory.commons.TreeNode;
  * <p/>
  *
  * @see <a href="http://discuss.leetcode.com/questions/272/recover-binary-search-tree">Leetcode discussion</a>
- * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32317597.html">Mitbbs discussion</a>
- * @see <a href="http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html">
- *      A solution based on 'Threaded Binary Tree'</a>
+ * @see <a href="http://n00tc0d3r.blogspot.com/2013/05/recover-binary-search-tree.html">
+ *      N00tC0d3r</a>
  */
-public interface Q099RecoverBinarySearchTree {
+public interface RecoverBinarySearchTree {
     void recoverTree(TreeNode root);
 }
