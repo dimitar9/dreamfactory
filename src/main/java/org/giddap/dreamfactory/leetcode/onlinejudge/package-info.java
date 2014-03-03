@@ -79,6 +79,12 @@
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Q090SubsetsII}</li>
  * </ul>
  * </li>
+ * <li>
+ * 3 Scans: Left-Right-Total
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Candy}</li>
+ * </ul>
+ * </li>
  * </ul>
  *
  * @since 1.0
