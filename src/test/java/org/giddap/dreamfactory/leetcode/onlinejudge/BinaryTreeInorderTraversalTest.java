@@ -3,15 +3,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q094BinaryTreeInorderTraversalWithStackOnlyIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeInorderTraversalMorrisTraversalImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q094BinaryTreeInorderTraversalTest {
-    private Q094BinaryTreeInorderTraversal solution = new Q094BinaryTreeInorderTraversalWithStackOnlyIterativeImpl();
+public class BinaryTreeInorderTraversalTest {
+    private BinaryTreeInorderTraversal solution = new BinaryTreeInorderTraversalMorrisTraversalImpl();
 
     @Test
     public void small01() {
@@ -24,6 +24,20 @@ public class Q094BinaryTreeInorderTraversalTest {
         root.right = right;
 
         ArrayList<Integer> expected = Lists.newArrayList(1, 3, 2);
+        assertEquals(expected, solution.inorderTraversal(root));
+    }
+
+    @Test
+    public void small02() {
+        //{3,1,#,#,2}
+        TreeNode root = new TreeNode(3);
+        TreeNode left = new TreeNode(1);
+        TreeNode right = new TreeNode(2);
+
+        root.left = left;
+        left.right = right;
+
+        ArrayList<Integer> expected = Lists.newArrayList(1, 2, 3);
         assertEquals(expected, solution.inorderTraversal(root));
     }
 }

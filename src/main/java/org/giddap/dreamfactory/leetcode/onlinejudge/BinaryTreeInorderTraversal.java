@@ -35,6 +35,6 @@ import java.util.ArrayList;
  *      http://en.wikipedia.org/wiki/Threaded_binary_tree
  *      http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_bst1.aspx#thread
  */
-public interface Q094BinaryTreeInorderTraversal {
+public interface BinaryTreeInorderTraversal {
     ArrayList<Integer> inorderTraversal(TreeNode root);
 }
