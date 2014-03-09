@@ -13,21 +13,16 @@ public class BinaryTreePreorderTraversalIterativeImpl implements BinaryTreePreor
     @Override
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> ret = new ArrayList<Integer>();
-        if (root == null) {
-            return ret;
-        }
         Stack<TreeNode> frontier = new Stack<TreeNode>();
-        frontier.push(root);
-        while (!frontier.isEmpty()) {
-            TreeNode curr = frontier.pop();
-            ret.add(curr.val);
-
-            if (curr.right != null) {
-                frontier.push(curr.right);
-            }
-
-            if (curr.left != null) {
-                frontier.push(curr.left);
+        TreeNode curr = root;
+        while (!frontier.isEmpty() || curr != null) {
+            if (curr != null) {
+                ret.add(curr.val);
+                frontier.push(curr);
+                curr = curr.left;
+            } else {
+                TreeNode tmp = frontier.pop();
+                curr = tmp.right;
             }
         }
         return ret;

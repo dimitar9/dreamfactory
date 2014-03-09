@@ -9,9 +9,6 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- *
- */
 public class BinaryTreePreorderTraversalTest {
     private BinaryTreePreorderTraversal solution = new BinaryTreePreorderTraversalIterativeImpl();
 
