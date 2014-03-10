@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreePreorderTraversalIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreePreorderTraversalMorrisTraversalImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
 public class BinaryTreePreorderTraversalTest {
-    private BinaryTreePreorderTraversal solution = new BinaryTreePreorderTraversalIterativeImpl();
+    private BinaryTreePreorderTraversal solution = new BinaryTreePreorderTraversalMorrisTraversalImpl();
 
     @Test
     public void small01() {

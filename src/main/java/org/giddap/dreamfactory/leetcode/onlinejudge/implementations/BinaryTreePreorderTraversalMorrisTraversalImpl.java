@@ -13,6 +13,27 @@ public class BinaryTreePreorderTraversalMorrisTraversalImpl
         implements BinaryTreePreorderTraversal {
     @Override
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
-        return null;
+        ArrayList<Integer> ret = new ArrayList<Integer>();
+        TreeNode curr = root;
+        while (curr != null) {
+            ret.add(curr.val);
+            TreeNode tPrev = curr.left;
+            if (tPrev != null) {
+                while (tPrev.right != null && tPrev.right != curr) {
+                    tPrev = tPrev.right;
+                }
+                if (tPrev.right == null) {
+                    tPrev.right = curr;
+                    curr = curr.left;
+                } else if (tPrev.right == curr) {
+                    ret.remove(ret.size() - 1);
+                    tPrev.right = null;
+                    curr = curr.right;
+                }
+            } else {
+                curr = curr.right;
+            }
+        }
+        return ret;
     }
 }
