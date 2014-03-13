@@ -9,6 +9,9 @@ import java.util.Stack;
 /**
  * 弼馬溫注解：
  * Use 'curr' and 'prev' to track the movement: up or down, with a stack.
+ *
+ * Time complexity: O(n).
+ * Space complexity: O(n).
  */
 public class BinaryTreePostorderTraversalIterativeWithStackImpl implements
         BinaryTreePostorderTraversal {
