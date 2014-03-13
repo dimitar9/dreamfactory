@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q024SwapNodesInPairsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SwapNodesInPairsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class Q024SwapNodesInPairsTest {
-    private Q024SwapNodesInPairs solution = new Q024SwapNodesInPairsImpl();
+public class SwapNodesInPairsTest {
+    private SwapNodesInPairs solution = new SwapNodesInPairsImpl();
 
     @Test
     public void small01() {

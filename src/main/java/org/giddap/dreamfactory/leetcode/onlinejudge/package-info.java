@@ -44,6 +44,7 @@
  * Two pointers with list
  * <ul>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.RemoveDuplicatesFromSortedListII}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.SwapNodesInPairs}</li>
  * </ul>
  * </li>
  * <li>

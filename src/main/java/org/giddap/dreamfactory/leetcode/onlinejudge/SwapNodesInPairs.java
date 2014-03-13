@@ -20,6 +20,6 @@ import org.giddap.dreamfactory.commons.ListNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/205/swap-nodes-in-pairs">Leetcode discussion</a>
  */
-public interface Q024SwapNodesInPairs {
+public interface SwapNodesInPairs {
     ListNode swapPairs(ListNode head);
 }
