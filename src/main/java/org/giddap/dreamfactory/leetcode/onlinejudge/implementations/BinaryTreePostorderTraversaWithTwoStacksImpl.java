@@ -35,11 +35,11 @@ public class BinaryTreePostorderTraversaWithTwoStacksImpl implements
         while (!first.isEmpty()) {
             TreeNode curr = first.pop();
             second.push(curr);
-            if (curr.right != null) {
-                first.push(curr.right);
-            }
             if (curr.left != null) {
                 first.push(curr.left);
+            }
+            if (curr.right != null) {
+                first.push(curr.right);
             }
         }
         while (!second.isEmpty()) {
