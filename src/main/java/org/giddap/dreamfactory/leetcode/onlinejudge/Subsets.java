@@ -36,6 +36,6 @@ import java.util.ArrayList;
  * @see <a href="http://compprog.wordpress.com/2007/10/10/generating-subsets/">compprog blog</a>
  * @see <a href="http://www.stefan-pochmann.info/spots/tutorials/sets_subsets/">Another online tutorial</a>
  */
-public interface Q078Subsets {
+public interface Subsets {
     ArrayList<ArrayList<Integer>> subsets(int[] S);
 }

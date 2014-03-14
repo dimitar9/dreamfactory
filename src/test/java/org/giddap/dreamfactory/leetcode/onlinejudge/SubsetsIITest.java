@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q090SubsetsIIIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SubsetsIIIterativeImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q090SubsetsIITest {
-    private Q090SubsetsII solution = new Q090SubsetsIIIterativeImpl();
+public class SubsetsIITest {
+    private SubsetsII solution = new SubsetsIIIterativeImpl();
 
     @Test
     public void small01() {

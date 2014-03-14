@@ -33,6 +33,6 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/265/subsets-ii">Leetcode discussion</a>
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32171823.html">Mitbbs discussion</a>
  */
-public interface Q090SubsetsII {
+public interface SubsetsII {
     ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num);
 }

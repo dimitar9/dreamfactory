@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q090SubsetsII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SubsetsII;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,7 +28,7 @@ import java.util.Arrays;
  * only these subsets if a duplicate number is encountered.</li>
  * </ul>
  */
-public class Q090SubsetsIIIterativeImpl implements Q090SubsetsII {
+public class SubsetsIIIterativeImpl implements SubsetsII {
     @Override
     public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();

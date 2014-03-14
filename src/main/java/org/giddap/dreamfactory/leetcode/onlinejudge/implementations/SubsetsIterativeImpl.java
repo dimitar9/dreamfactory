@@ -1,10 +1,17 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q078Subsets;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Subsets;
 
 import java.util.ArrayList;
 
-public class Q078SubsetsIterativeImpl implements Q078Subsets {
+/**
+ * 弼馬溫注解：
+ * <p/>
+ * <p/>
+ * Time complexity: O(n^2).
+ * Space complexity: O(n^2).
+ */
+public class SubsetsIterativeImpl implements Subsets {
     @Override
     public ArrayList<ArrayList<Integer>> subsets(int[] S) {
         // Start typing your Java solution below

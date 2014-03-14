@@ -13,6 +13,12 @@
  * </ul>
  * </li>
  * <li>
+ * Mathematical
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.SqrtX}</li>
+ * </ul>
+ * </li>
+ * <li>
  * Maximum subarray:
  * <ul>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII}</li>
@@ -77,7 +83,8 @@
  * <li>
  * Subsets
  * <ul>
- * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Q090SubsetsII}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Subsets}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.SubsetsII}</li>
  * </ul>
  * </li>
  * <li>

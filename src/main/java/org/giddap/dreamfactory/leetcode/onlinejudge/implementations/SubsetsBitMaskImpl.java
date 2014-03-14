@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q078Subsets;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Subsets;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Q078SubsetsBitMaskImpl implements Q078Subsets {
+public class SubsetsBitMaskImpl implements Subsets {
     @Override
     public ArrayList<ArrayList<Integer>> subsets(int[] S) {
         // Start typing your Java solution below
