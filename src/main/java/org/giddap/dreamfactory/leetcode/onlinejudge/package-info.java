@@ -16,6 +16,7 @@
  * Mathematical
  * <ul>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.SqrtX}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.PlusOne}</li>
  * </ul>
  * </li>
  * <li>

@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q066PlusOneImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PlusOneImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q066PlusOneTest {
-    private Q066PlusOne solution = new Q066PlusOneImpl();
+public class PlusOneTest {
+    private PlusOne solution = new PlusOneImpl();
 
     @Test
     public void small01() {

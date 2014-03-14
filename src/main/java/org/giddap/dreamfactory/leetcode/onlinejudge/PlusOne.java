@@ -8,6 +8,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/242/plus-one
  */
-public interface Q066PlusOne {
+public interface PlusOne {
     int[] plusOne(int[] digits);
 }
