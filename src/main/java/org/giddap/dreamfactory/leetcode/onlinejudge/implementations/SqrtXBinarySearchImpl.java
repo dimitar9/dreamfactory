@@ -1,11 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q069SqrtX;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SqrtX;
 
 /**
- *
+ * 弼馬溫注解：
+ * Binary-search like approach to find the square root.
+ * <p/>
+ * Time complexity: O(log(x)).
+ * Space complexity: O(1).
  */
-public class SqrtXBinarySearchImpl implements Q069SqrtX {
+public class SqrtXBinarySearchImpl implements SqrtX {
     @Override
     public int sqrt(int x) {
         // low * low <= x < high * high

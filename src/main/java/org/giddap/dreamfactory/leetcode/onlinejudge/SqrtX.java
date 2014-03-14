@@ -12,6 +12,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/245/sqrtx">leetcode discussion</a>
  */
-public interface Q069SqrtX {
+public interface SqrtX {
     int sqrt(int x);
 }

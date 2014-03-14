@@ -5,9 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q069SqrtXTest {
-    //    private Q069SqrtX solution = new Q069SqrtXNewtonImpl();
-    private Q069SqrtX solution = new SqrtXBinarySearchImpl();
+public class SqrtXTest {
+    //    private SqrtX solution = new SqrtXNewtonImpl();
+    private SqrtX solution = new SqrtXBinarySearchImpl();
 
     @Test
     public void small01() {

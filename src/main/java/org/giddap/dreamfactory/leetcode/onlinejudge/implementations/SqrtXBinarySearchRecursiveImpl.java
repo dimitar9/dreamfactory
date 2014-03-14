@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q069SqrtX;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SqrtX;
 
 /**
  *
  */
-public class SqrtXBinarySearchRecursiveImpl implements Q069SqrtX {
+public class SqrtXBinarySearchRecursiveImpl implements SqrtX {
     @Override
     public int sqrt(int x) {
         return (int) calcSqrt(x, -1, (long) x + 1);

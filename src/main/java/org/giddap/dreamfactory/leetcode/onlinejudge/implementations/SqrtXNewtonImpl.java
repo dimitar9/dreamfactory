@@ -1,8 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q069SqrtX;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SqrtX;
 
-public class Q069SqrtXNewtonImpl implements Q069SqrtX {
+/**
+ * 弼馬溫注解：
+ * Newton method
+ * <p/>
+ * Time complexity: O(log(x)).
+ * Space complexity: O(1).
+ */
+public class SqrtXNewtonImpl implements SqrtX {
     @Override
     public int sqrt(int x) {
         // Start typing your Java solution below
