@@ -2,6 +2,9 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q029DivideTwoIntegers;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Q029DivideTwoIntegersImpl implements Q029DivideTwoIntegers {
 
     @Override
@@ -11,12 +14,22 @@ public class Q029DivideTwoIntegersImpl implements Q029DivideTwoIntegers {
         long a = Math.abs((long) dividend);
         long b = Math.abs((long) divisor);
 
+        List<Long> divisors = new ArrayList<Long>();
+        divisors.add(b);
+        long c = b;
+        while (c <= a) {
+            c <<= 1;
+            divisors.add(c);
+        }
+
         long ret = 0;
-        while (a >= b) {
-            long c = b;
-            for (int i = 0; a >= c; ++i, c <<= 1) {
-                a -= c;
+        int i = divisors.size() - 1;
+        while (i >= 0) {
+            if (a >= divisors.get(i)) {
+                a -= divisors.get(i);
                 ret += 1 << i;
+            } else {
+                i--;
             }
         }
 
