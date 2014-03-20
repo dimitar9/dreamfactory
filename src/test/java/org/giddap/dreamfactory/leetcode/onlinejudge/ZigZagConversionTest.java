@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q006ZigZagConversionIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ZigZagConversionIterativeImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Q006ZigZagConversionTest {
-    private Q006ZigZagConversion converter = new Q006ZigZagConversionIterativeImpl();
+public class ZigZagConversionTest {
+    private ZigZagConversion converter = new ZigZagConversionIterativeImpl();
 
     @Test
     public void small01() {

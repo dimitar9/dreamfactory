@@ -5,6 +5,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  * http://discuss.leetcode.com/questions/190/zigzag-conversion
  */
-public interface Q006ZigZagConversion {
+public interface ZigZagConversion {
     String convert(String s, int nRows);
 }

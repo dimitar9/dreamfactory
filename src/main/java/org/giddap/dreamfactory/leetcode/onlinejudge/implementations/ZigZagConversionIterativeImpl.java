@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q006ZigZagConversion;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ZigZagConversion;
 
 /**
  * http://oj.leetcode.com/problems/zigzag-conversion/
  */
-public class Q006ZigZagConversionIterativeImpl implements Q006ZigZagConversion {
+public class ZigZagConversionIterativeImpl implements ZigZagConversion {
     @Override
     public String convert(String s, int nRows) {
         // Start typing your Java solution below
