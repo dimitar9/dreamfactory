@@ -8,6 +8,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://leetcode.com/2012/01/palindrome-number.html
  */
-public interface Q009PalindromeNumber {
+public interface PalindromeNumber {
     boolean isPalindrome(int x);
 }
