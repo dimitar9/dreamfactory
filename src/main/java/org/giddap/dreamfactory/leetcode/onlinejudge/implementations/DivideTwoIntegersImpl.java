@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q029DivideTwoIntegers;
+import org.giddap.dreamfactory.leetcode.onlinejudge.DivideTwoIntegers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q029DivideTwoIntegersImpl implements Q029DivideTwoIntegers {
+public class DivideTwoIntegersImpl implements DivideTwoIntegers {
 
     @Override
     public int divide(int dividend, int divisor) {

@@ -11,6 +11,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://www.matrix67.com/blog/archives/266
  * http://www.matrix67.com/blog/archives/268
  */
-public interface Q029DivideTwoIntegers {
+public interface DivideTwoIntegers {
     int divide(int dividend, int divisor);
 }

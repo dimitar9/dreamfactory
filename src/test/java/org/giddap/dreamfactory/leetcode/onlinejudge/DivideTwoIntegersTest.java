@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q029DivideTwoIntegersImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DivideTwoIntegersImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q029DivideTwoIntegersTest {
-    private Q029DivideTwoIntegers solution = new Q029DivideTwoIntegersImpl();
+public class DivideTwoIntegersTest {
+    private DivideTwoIntegers solution = new DivideTwoIntegersImpl();
 
     @Test
     public void small01() {
