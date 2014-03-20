@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q062UniquePathsDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.UniquePathsDPImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q062UniquePathsTest {
-    //    private Q062UniquePathsRecursiveDfsImpl solution = new Q062UniquePathsRecursiveDfsImpl();
-    private Q062UniquePaths solution = new Q062UniquePathsDPImpl();
+public class UniquePathsTest {
+    //    private UniquePathsRecursiveDfsImpl solution = new UniquePathsRecursiveDfsImpl();
+    private UniquePaths solution = new UniquePathsDPImpl();
 
     @Test
     public void small01() {

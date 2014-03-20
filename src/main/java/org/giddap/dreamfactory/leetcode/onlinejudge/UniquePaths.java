@@ -15,6 +15,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://leetcode.com/2010/11/unique-paths.html">leetcode discussion</a>
  */
-public interface Q062UniquePaths {
+public interface UniquePaths {
     int uniquePaths(int m, int n);
 }

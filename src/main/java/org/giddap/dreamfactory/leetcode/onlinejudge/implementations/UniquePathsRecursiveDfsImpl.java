@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q062UniquePaths;
+import org.giddap.dreamfactory.leetcode.onlinejudge.UniquePaths;
 
 /**
  * TLE on Judge Large
  */
-public class Q062UniquePathsRecursiveDfsImpl implements Q062UniquePaths {
+public class UniquePathsRecursiveDfsImpl implements UniquePaths {
     @Override
     public int uniquePaths(int m, int n) {
         // Start typing your Java solution below
