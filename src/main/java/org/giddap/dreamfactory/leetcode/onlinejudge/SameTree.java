@@ -14,7 +14,7 @@ import org.giddap.dreamfactory.commons.TreeNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/273/same-tree">leetcode discussion</a>
  */
-public interface Q100SameTree {
+public interface SameTree {
     boolean isSameTree(TreeNode p, TreeNode q);
 }
 

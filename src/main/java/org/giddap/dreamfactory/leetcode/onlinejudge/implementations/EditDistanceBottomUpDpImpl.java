@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q072EditDistance;
+import org.giddap.dreamfactory.leetcode.onlinejudge.EditDistance;
 
-public class Q072EditDistanceBottomUpDpImpl implements Q072EditDistance {
+public class EditDistanceBottomUpDpImpl implements EditDistance {
     @Override
     public int minDistance(String word1, String word2) {
 

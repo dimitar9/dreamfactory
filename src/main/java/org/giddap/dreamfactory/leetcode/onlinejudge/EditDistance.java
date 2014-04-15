@@ -15,9 +15,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/248/edit-distance
  * http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
- * http://gongxuns.blogspot.ca/2012/12/edit-distance-given-two-words-word1.html
  * http://blog.unieagle.net/2012/09/19/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Aedit-distance%EF%BC%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%EF%BC%8C%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/
  */
-public interface Q072EditDistance {
+public interface EditDistance {
     int minDistance(String word1, String word2);
 }
