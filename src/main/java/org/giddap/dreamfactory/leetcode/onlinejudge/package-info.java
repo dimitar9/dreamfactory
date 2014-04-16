@@ -21,6 +21,12 @@
  * </ul>
  * </li>
  * <li>
+ * Bits and Bytes
+ * <ul>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.SingleNumber}</li>
+ * </ul>
+ * </li>
+ * <li>
  * Maximum subarray:
  * <ul>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.BestTimeToBuyAndSellStockIII}</li>
