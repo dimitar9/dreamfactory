@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q081SearchInRotatedSortedArrayIIImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SearchInRotatedSortedArrayIIImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Q081SearchInRotatedSortedArrayIITest {
-    private Q081SearchInRotatedSortedArrayII solution = new Q081SearchInRotatedSortedArrayIIImpl();
+public class SearchInRotatedSortedArrayIITest {
+    private SearchInRotatedSortedArrayII solution = new SearchInRotatedSortedArrayIIImpl();
 
     @Test
     public void small01() {

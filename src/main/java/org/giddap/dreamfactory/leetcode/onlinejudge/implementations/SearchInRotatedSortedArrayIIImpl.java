@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q081SearchInRotatedSortedArrayII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SearchInRotatedSortedArrayII;
 
-public class Q081SearchInRotatedSortedArrayIIImpl implements Q081SearchInRotatedSortedArrayII {
+public class SearchInRotatedSortedArrayIIImpl implements SearchInRotatedSortedArrayII {
     @Override
     public boolean search(int[] A, int target) {
         // Start typing your Java solution below
