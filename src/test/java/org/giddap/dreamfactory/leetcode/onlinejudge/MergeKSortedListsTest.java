@@ -2,13 +2,13 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q023MergeKSortedListsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeKSortedListsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q023MergeKSortedListsTest {
-    private Q023MergeKSortedLists solution = new Q023MergeKSortedListsImpl();
+public class MergeKSortedListsTest {
+    private MergeKSortedLists solution = new MergeKSortedListsImpl();
 
     @Test
     public void small01() {

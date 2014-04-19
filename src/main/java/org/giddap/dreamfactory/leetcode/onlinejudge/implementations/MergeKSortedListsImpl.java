@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q023MergeKSortedLists;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MergeKSortedLists;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Q023MergeKSortedListsImpl implements Q023MergeKSortedLists {
+public class MergeKSortedListsImpl implements MergeKSortedLists {
     @Override
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
         // Start typing your Java solution below

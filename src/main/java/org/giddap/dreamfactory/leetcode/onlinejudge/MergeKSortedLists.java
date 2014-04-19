@@ -26,6 +26,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://gongxuns.blogspot.com/2012/12/leetcode-merge-k-sorted-lists.html">Leetcode discussion</a>
  */
-public interface Q023MergeKSortedLists {
+public interface MergeKSortedLists {
     ListNode mergeKLists(ArrayList<ListNode> lists);
 }
