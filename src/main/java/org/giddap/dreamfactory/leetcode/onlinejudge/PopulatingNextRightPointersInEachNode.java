@@ -44,8 +44,9 @@ import org.giddap.dreamfactory.commons.TreeLinkNode;
  * <p/>
  * Links:
  * http://leetcode.com/2010/03/first-on-site-technical-interview.html
+ * http://n00tc0d3r.blogspot.com/2013/05/populating-next-right-pointers-for-each.html
  */
-public interface Q116PopulatingNextRightPointersInEachNode {
+public interface PopulatingNextRightPointersInEachNode {
     void connect(TreeLinkNode root);
 }
 

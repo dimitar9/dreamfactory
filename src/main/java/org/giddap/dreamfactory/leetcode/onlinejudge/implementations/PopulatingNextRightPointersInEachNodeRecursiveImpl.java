@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.commons.TreeLinkNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q116PopulatingNextRightPointersInEachNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PopulatingNextRightPointersInEachNode;
 
-public class Q116PopulatingNextRightPointersInEachNodeImpl implements Q116PopulatingNextRightPointersInEachNode {
+public class PopulatingNextRightPointersInEachNodeRecursiveImpl implements PopulatingNextRightPointersInEachNode {
     @Override
     public void connect(TreeLinkNode root) {
         // Start typing your Java solution below
