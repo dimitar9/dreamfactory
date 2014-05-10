@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q096UniqueBinarySearchTrees;
+import org.giddap.dreamfactory.leetcode.onlinejudge.UniqueBinarySearchTrees;
 
 
-public class Q096UniqueBinarySearchTreesRecursiveImpl implements Q096UniqueBinarySearchTrees {
+public class UniqueBinarySearchTreesRecursiveImpl implements UniqueBinarySearchTrees {
     private int[] dp;
 
     @Override

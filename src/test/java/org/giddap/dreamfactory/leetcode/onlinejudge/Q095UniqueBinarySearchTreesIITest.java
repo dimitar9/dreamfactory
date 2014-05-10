@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q095UniqueBinarySearchTreesIIDfsImpl;
 import org.junit.Test;
 

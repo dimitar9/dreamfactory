@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
  * <a href="http://oj.leetcode.com/problems/recover-binary-search-tree/">Recover Binary Search Tree</a>
@@ -19,7 +19,7 @@ import org.giddap.dreamfactory.commons.TreeNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/272/recover-binary-search-tree">Leetcode discussion</a>
  * @see <a href="http://n00tc0d3r.blogspot.com/2013/05/recover-binary-search-tree.html">
- *      N00tC0d3r</a>
+ * N00tC0d3r</a>
  */
 public interface RecoverBinarySearchTree {
     void recoverTree(TreeNode root);

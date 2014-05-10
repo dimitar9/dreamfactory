@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 
 /**
  * 这是另一道题的扩展，利用快慢指针判断出是否有环后，还需要找出环的起点，分析如下：

@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q019RemoveNthNodeFromEndOfListImpl;
 import org.junit.Test;
 

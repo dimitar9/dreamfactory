@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
  * <a href="http://oj.leetcode.com/problems/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree</a>

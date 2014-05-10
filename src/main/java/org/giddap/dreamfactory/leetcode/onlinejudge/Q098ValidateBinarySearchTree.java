@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
  * <a href="http://oj.leetcode.com/problems/validate-binary-search-tree">Q098 Validate Binary Search Tree</a>

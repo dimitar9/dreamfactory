@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q104MaximumDepthOfBinaryTree;
 
 public class Q104MaximumDepthOfBinaryTreeRecursiveImpl implements Q104MaximumDepthOfBinaryTree {

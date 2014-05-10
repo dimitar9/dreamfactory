@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.cc150;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 
 public class Q0202FindNthNodeFromTheEnd {
     public ListNode findKthNodeFromEnd(ListNode root, int k) {

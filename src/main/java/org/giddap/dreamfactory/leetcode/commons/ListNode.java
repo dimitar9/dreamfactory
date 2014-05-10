@@ -1,4 +1,4 @@
-package org.giddap.dreamfactory.commons;
+package org.giddap.dreamfactory.leetcode.commons;
 
 /**
  * Common data structure to represent a node in a list.

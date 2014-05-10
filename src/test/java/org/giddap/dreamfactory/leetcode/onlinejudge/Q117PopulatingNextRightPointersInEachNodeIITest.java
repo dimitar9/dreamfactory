@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeLinkNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q117PopulatingNextRightPointersInEachNodeIIIterativeImpl;
 import org.junit.Test;
 

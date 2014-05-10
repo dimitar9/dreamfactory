@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 import java.util.ArrayList;
 
@@ -32,8 +32,8 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/23/binary-tree-inorder-traversal">Leetcode discussion</a>
  * @see <a href="http://leetcode.com/2010/04/binary-search-tree-in-order-traversal.html">Leetcode blog</a>
  * @see <a href="http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/">Geeksforgeeks blog</a>
- *      http://en.wikipedia.org/wiki/Threaded_binary_tree
- *      http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_bst1.aspx#thread
+ * http://en.wikipedia.org/wiki/Threaded_binary_tree
+ * http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_bst1.aspx#thread
  */
 public interface BinaryTreeInorderTraversal {
     ArrayList<Integer> inorderTraversal(TreeNode root);

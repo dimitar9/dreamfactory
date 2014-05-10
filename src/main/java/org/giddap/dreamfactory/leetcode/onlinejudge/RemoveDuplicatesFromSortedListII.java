@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 
 /**
  * http://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/

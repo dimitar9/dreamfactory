@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeKSortedListsImpl;
 import org.junit.Test;
 

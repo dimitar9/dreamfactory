@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
  * http://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/

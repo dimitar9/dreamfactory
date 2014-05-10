@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q108ConvertSortedArrayToBinarySearchTree;
 
 public class Q108ConvertSortedArrayToBinarySearchTreeRecursiveImpl implements Q108ConvertSortedArrayToBinarySearchTree {

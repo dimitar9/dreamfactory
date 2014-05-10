@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q061RotateList;
 
 public class Q061RotateListImpl implements Q061RotateList {

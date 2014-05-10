@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.commons.Interval;
+import org.giddap.dreamfactory.leetcode.commons.Interval;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q056MergeIntervalsImpl;
 import org.junit.Test;
 

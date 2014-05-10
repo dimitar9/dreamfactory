@@ -1,9 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.Point;
+import org.giddap.dreamfactory.leetcode.commons.Point;
 import org.giddap.dreamfactory.leetcode.onlinejudge.WordSearch;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
 
 /**
  * 弼馬溫注解：
@@ -59,8 +61,8 @@ public class WordSearchDfsIterativeImpl implements WordSearch {
                 if ((0 <= nextCell.getX() && nextCell.getX() < board.length
                         && 0 <= nextCell.getY()
                         && nextCell.getY() < board[0].length)
-                    && !cellAndAncestors.ancestors.contains(nextCell)
-                    && board[nextCell.getX()][nextCell.getY()] ==
+                        && !cellAndAncestors.ancestors.contains(nextCell)
+                        && board[nextCell.getX()][nextCell.getY()] ==
                         remaining.charAt(0)) {
                     CellAndAncestors next = new CellAndAncestors();
                     next.ancestors.addAll(cellAndAncestors.ancestors);

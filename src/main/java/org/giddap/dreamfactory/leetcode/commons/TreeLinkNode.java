@@ -1,4 +1,4 @@
-package org.giddap.dreamfactory.commons;
+package org.giddap.dreamfactory.leetcode.commons;
 
 /**
  * Definition for binary tree with next pointer.

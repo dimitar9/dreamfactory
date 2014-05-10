@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.cc150;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.SortList;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SortListDivideAndConquerImpl;
 import org.junit.Test;

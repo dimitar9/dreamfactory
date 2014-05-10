@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.RandomListNode;
+import org.giddap.dreamfactory.leetcode.commons.RandomListNode;
 
 import java.util.HashMap;
 

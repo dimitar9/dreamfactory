@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.Interval;
+import org.giddap.dreamfactory.leetcode.commons.Interval;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q056MergeIntervals;
 
 import java.util.ArrayList;

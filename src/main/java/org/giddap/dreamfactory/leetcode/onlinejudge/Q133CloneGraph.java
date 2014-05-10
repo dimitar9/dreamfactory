@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.UndirectedGraphNode;
+import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
 
 /**
  * <a href="http://oj.leetcode.com/problems/clone-graph/">Clone Graph</a>

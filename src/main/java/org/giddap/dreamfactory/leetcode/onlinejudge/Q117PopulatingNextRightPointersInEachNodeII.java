@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.TreeLinkNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
 
 /**
  * Follow up for problem "Populating Next Right Pointers in Each Node".

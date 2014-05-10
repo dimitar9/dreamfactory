@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.commons.UndirectedGraphNode;
+import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q133CloneGraphBfsImpl;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.Point;
+import org.giddap.dreamfactory.leetcode.commons.Point;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q085MaximalRectangle;
 
 /**

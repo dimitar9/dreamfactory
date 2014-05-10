@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.UndirectedGraphNode;
+import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q133CloneGraph;
 
 import java.util.HashMap;

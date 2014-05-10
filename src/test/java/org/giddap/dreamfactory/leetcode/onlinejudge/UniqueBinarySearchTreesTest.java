@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q096UniqueBinarySearchTreesBottomUpDpImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.UniqueBinarySearchTreesBottomUpDpImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q096UniqueBinarySearchTreesTest {
-    //    private Q096UniqueBinarySearchTrees solution = new Q096UniqueBinarySearchTreesRecursiveImpl();
-    private Q096UniqueBinarySearchTrees solution = new Q096UniqueBinarySearchTreesBottomUpDpImpl();
+public class UniqueBinarySearchTreesTest {
+    //    private UniqueBinarySearchTrees solution = new UniqueBinarySearchTreesRecursiveImpl();
+    private UniqueBinarySearchTrees solution = new UniqueBinarySearchTreesBottomUpDpImpl();
 
     @Test
     public void small01() {

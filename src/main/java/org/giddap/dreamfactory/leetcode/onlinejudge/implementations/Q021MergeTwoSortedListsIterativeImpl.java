@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Q021MergeTwoSortedLists;
 
 public class Q021MergeTwoSortedListsIterativeImpl implements Q021MergeTwoSortedLists {

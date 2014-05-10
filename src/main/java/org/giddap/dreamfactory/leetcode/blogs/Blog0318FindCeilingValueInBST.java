@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.blogs;
 
-import org.giddap.dreamfactory.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
  *
