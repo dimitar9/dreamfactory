@@ -6,10 +6,6 @@ defaultTasks 'generatePdfJavadoc'
 sourceCompatibility = 1.6
 version = '1.0'
 
-configurations {
-    pdfDoclet
-}
-
 repositories {
     mavenCentral()
     flatDir {
@@ -18,7 +14,6 @@ repositories {
 }
 
 dependencies {
-    pdfDoclet 'pdfdoclet:pdfdoclet:1.0.3'
     compile group: 'com.google.guava', name: 'guava', version: '14.0.1'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.12.4'
@@ -57,7 +52,7 @@ task generatePdfJavadoc(dependsOn: [configurations.pdfDoclet]) {
     )
 }
 
-task release(dependsOn: [jar, generatePdfJavadoc]) << {
+task release(dependsOn: [jar, githubPages]) << {
     println 'releasing source'
 }
 
