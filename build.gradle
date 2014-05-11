@@ -1,16 +1,16 @@
 description = 'A factory where dreams are being made!'
 apply plugin: 'java'
-apply plugin: 'github-pages'
-defaultTasks 'generatePdfJavadoc'
+defaultTasks 'jar'
 
 sourceCompatibility = 1.6
 version = '1.0'
 
+buildscript {
+    repositories { mavenCentral() }
+}
+
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
 }
 
 dependencies {
@@ -27,47 +27,15 @@ jar {
     }
 }
 
-buildscript {
-    repositories { mavenCentral() }
-    dependencies { classpath 'org.ajoberstar:gradle-git:0.6.3' }
-}
-
-
 tasks.withType(Compile) {
     options.encoding = 'UTF-8'
 }
 
-//task generatePdfJavadoc(dependsOn: [configurations.pdfDoclet], type: javadoc) {
-task generatePdfJavadoc(dependsOn: [configurations.pdfDoclet]) {
-
-    ant.javadoc(
-            classpath: configurations.compile.asPath,
-            sourcepath: file("src${File.separator}main${File.separator}java"),
-            //destdir: "${docsDir.absolutePath}${File.separator}pdf",
-            docletpath: configurations.pdfDoclet.asPath,
-            doclet: "com.tarsec.javadoc.pdfdoclet.PDFDoclet"
-            //Windowtitle: "${project.name}-api",
-            //Doctitle: "${project.name}-api",
-            //Footer: "Generated ${new Date().dateTimeString}"
-    )
-}
-
-task release(dependsOn: [jar, githubPages]) << {
+task release(dependsOn: [jar]) << {
     println 'releasing source'
 }
 
 task readme() << {
     println project.description
-}
-
-// Publish to github
-githubPages {
-    repoUri = 'https://github.com/b1m4w3n/dreamfactory.git'
-    pages {
-        from(javadoc.outputs.files) {
-            into 'docs/javadoc'
-        }
-    }
-    workingPath = 'build/private/github-pages'
 }
 
