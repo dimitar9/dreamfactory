@@ -17,6 +17,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/231/maximum-subarray">leetcode discussion</a>
  */
-public interface Q053MaximumSubarray {
+public interface MaximumSubarray {
     int maxSubArray(int[] A);
 }

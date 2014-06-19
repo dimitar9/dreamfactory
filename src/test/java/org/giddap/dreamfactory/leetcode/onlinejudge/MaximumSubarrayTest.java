@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q053MaximumSubarrayImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MaximumSubarrayImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q053MaximumSubarrayTest {
-    private Q053MaximumSubarray solution = new Q053MaximumSubarrayImpl();
+public class MaximumSubarrayTest {
+    private MaximumSubarray solution = new MaximumSubarrayImpl();
 
     @Test
     public void small01() {
