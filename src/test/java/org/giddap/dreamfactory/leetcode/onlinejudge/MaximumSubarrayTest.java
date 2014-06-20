@@ -1,12 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MaximumSubarrayDivideAndConquerImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MaximumSubarrayImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class MaximumSubarrayTest {
-    private MaximumSubarray solution = new MaximumSubarrayImpl();
+    private MaximumSubarray solution = new MaximumSubarrayDivideAndConquerImpl();
 
     @Test
     public void small01() {
@@ -24,6 +25,18 @@ public class MaximumSubarrayTest {
     public void small03() {
         int[] input = {1, 2, -1, -2, 2, 1, -2, 1, 4, -5, 4};
         assertEquals(6, solution.maxSubArray(input));
+    }
+
+    @Test
+    public void small04() {
+        int[] input = {1};
+        assertEquals(1, solution.maxSubArray(input));
+    }
+
+    @Test
+    public void small05() {
+        int[] input = {1, 2};
+        assertEquals(3, solution.maxSubArray(input));
     }
 }
 
