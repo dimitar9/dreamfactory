@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q001TwoSumImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.TwoSumImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q001TwoSumImplTest {
-    private Q001TwoSum twoSumSolution = new Q001TwoSumImpl();
+public class TwoSumImplTest {
+    private TwoSum twoSumSolution = new TwoSumImpl();
 
     @Test
     public void small01() {

@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 /**
- * <a href="http://leetcode.com/onlinejudge#question_1">Q001 Two Sum</a>
+ * <a href="https://oj.leetcode.com/problems/two-sum/">Two Sum</a>
  * <p/>
  * Copyright 2013 LeetCode
  * <p/>
@@ -21,6 +21,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/188/two-sum">Leetcode discussion</a>
  */
-public interface Q001TwoSum {
+public interface TwoSum {
     int[] twoSum(int[] numbers, int target);
 }

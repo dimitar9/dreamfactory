@@ -1,18 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q001TwoSum;
+import org.giddap.dreamfactory.leetcode.onlinejudge.TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class Q001TwoSumImpl implements Q001TwoSum {
+public class TwoSumImpl implements TwoSum {
 
     @Override
     public int[] twoSum(int[] numbers, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         Map<Integer, Integer> delta = new HashMap<Integer, Integer>();
         // Iterating through the array to find the delta
         int[] ret = new int[2];
