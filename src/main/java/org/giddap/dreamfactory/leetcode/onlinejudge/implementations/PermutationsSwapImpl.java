@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q046Permutations;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Permutations;
 
 import java.util.ArrayList;
 
 
-public class Q046PermutationsSwapImpl implements Q046Permutations {
+public class PermutationsSwapImpl implements Permutations {
     @Override
     public ArrayList<ArrayList<Integer>> permute(int[] num) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();

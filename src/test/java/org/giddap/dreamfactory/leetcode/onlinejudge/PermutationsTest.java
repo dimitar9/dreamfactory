@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q046PermutationsSwapImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PermutationsSwapImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q046PermutationsTest {
-    private Q046PermutationsSwapImpl solution = new Q046PermutationsSwapImpl();
-//    private Q046PermutationsDfsImpl solution = new Q046PermutationsDfsImpl();
+public class PermutationsTest {
+    private PermutationsSwapImpl solution = new PermutationsSwapImpl();
+//    private PermutationsDfsImpl solution = new PermutationsDfsImpl();
 
     @Test
     public void small01() {

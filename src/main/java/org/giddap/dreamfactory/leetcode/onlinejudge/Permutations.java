@@ -27,6 +27,6 @@ import java.util.ArrayList;
  * @see <a href="http://www.geeksforgeeks.org/print-all-permutations-with-repetition-of-characters/">Permutations with duplicates from Geeksforgeeks</a>
  * @see <a href="http://www.geeksforgeeks.org/forums/topic/permutations-of-a-string-without-repeatition-2/">Permutations without duplicates from Geeksforgeeks</a>
  */
-public interface Q046Permutations {
+public interface Permutations {
     ArrayList<ArrayList<Integer>> permute(int[] num);
 }
