@@ -8,34 +8,36 @@ import java.util.ArrayList;
 public class PermutationsSwapImpl implements Permutations {
     @Override
     public ArrayList<ArrayList<Integer>> permute(int[] num) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> results =
+                new ArrayList<ArrayList<Integer>>();
         if (num.length == 0) {
-            return ret;
+            return results;
         }
-        doPermutation(ret, num, num.length - 1);
-        return ret;
+        permute(results, num, 0);
+        return results;
     }
 
-    private void doPermutation(ArrayList<ArrayList<Integer>> ret, int[] nums, int curr) {
-        if (curr == 0) {
-            ArrayList<Integer> one = new ArrayList<Integer>();
-            for (int n : nums) {
-                one.add(n);
+    public void permute(
+            ArrayList<ArrayList<Integer>> results, int[] numbers, int currIdx) {
+        if (currIdx == numbers.length) {
+            ArrayList<Integer> onePerm = new ArrayList<Integer>();
+            for (int n : numbers) {
+                onePerm.add(n);
             }
-            ret.add(one);
+            results.add(onePerm);
             return;
         }
 
-        for (int i = 0; i <= curr; i++) {
-            swap(nums, i, curr);
-            doPermutation(ret, nums, curr - 1);
-            swap(nums, i, curr);
+        for (int i = currIdx; i < numbers.length; i++) {
+            swap(numbers, currIdx, i);
+            permute(results, numbers, currIdx + 1);
+            swap(numbers, i, currIdx);
         }
     }
 
-    private void swap(int[] nums, int a, int b) {
-        int tmp = nums[a];
-        nums[a] = nums[b];
-        nums[b] = tmp;
+    private void swap(int[] numbers, int i, int j) {
+        int tmp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = tmp;
     }
 }
