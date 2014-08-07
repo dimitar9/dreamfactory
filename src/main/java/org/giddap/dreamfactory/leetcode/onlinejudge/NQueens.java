@@ -3,7 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import java.util.ArrayList;
 
 /**
- * http://leetcode.com/onlinejudge#question_51
+ * https://oj.leetcode.com/problems/n-queens/
  * <p/>
  * The n-queens puzzle is the problem of placing n queens on an nxn chessboard such that no two queens attack
  * each other.
@@ -34,8 +34,10 @@ import java.util.ArrayList;
  * http://blog.unieagle.net/2012/10/16/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9An-queens%EF%BC%8C%E5%9B%9E%E6%BA%AF/
  * http://gongxuns.blogspot.com/2012/12/leetcoden-queens.html
  * http://www.matrix67.com/blog/archives/266
+ * http://hairycode.org/2013/04/12/back-to-the-n-queens-with-backtracking/
+ * http://n00tc0d3r.blogspot.com/2013/04/n-queens.html?q=n-queens
  */
-public class Q051NQueens {
+public class NQueens {
     public ArrayList<String[]> solveNQueens(int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
