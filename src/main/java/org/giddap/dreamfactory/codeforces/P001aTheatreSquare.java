@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
- * instead of having to use '%', use '+ a - 1' / a to mimic 'n % a == 0 ? 0 : 1'
+ * Implementing 'ceiling of a / b' by using '(a + b - 1) / b'
  */
 public class P001aTheatreSquare implements Runnable {
 
