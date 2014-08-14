@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '14.0.1'
+    compile group: 'com.google.guava', name: 'guava', version: '18.+'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.12.4'
 

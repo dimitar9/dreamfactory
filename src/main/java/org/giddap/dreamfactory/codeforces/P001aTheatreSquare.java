@@ -37,7 +37,5 @@ public class P001aTheatreSquare implements Runnable {
             in.close();
             out.close();
         }
-
-
     }
 }
