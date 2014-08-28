@@ -42,9 +42,45 @@ import java.io.*;
  * 1.00000000
  * </pre>
  */
-public class P001cAncientBerlandCircus implements Runnable {
+public class P001cAncientBerlandCircus {
 
+    public static void main (String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        double[] x = new double[6];
+        for (int i = 0; i < 3; i++) {
+            String[] p = br.readLine().split(" ");
+            x[2 * i] = Double.parseDouble(p[0]);
+            x[2 * i + 1] = Double.parseDouble(p[1]);
+        }
+        double x1 = x[4] - x[0], y1 = x[5] - x[1];
+        double x2 = x[2] - x[0], y2 = x[3] - x[1];
+        double dx = x1 - x2, dy = y1 - y2;
+        double area = Math.abs(x1 * y2 - x2 * y1) / 2;
+        double a = Math.sqrt(x1 * x1 + y1 * y1);
+        double b = Math.sqrt(x2 * x2 + y2 * y2);
+        double c = Math.sqrt(dx * dx + dy * dy);
+        double radius = a * b * c / area / 4;
+        double alpha = 2 * Math.asin(a / 2 / radius);
+        double beta = 2 * Math.asin(b / 2 / radius);
+        double theta = gcd(gcd(alpha, beta, Math.PI / 1000),
+                2 * Math.PI - alpha - beta, Math.PI / 1000);
+        System.out.println(Math.PI / theta * radius * radius * Math.sin(theta));
+    }
+    private static double gcd (double a, double b, double e) {
+        double x = Math.max(a, b);
+        double y = Math.min(a, b);
+        while (y >= e) {
+            do { x -= y; } while (y - e <= x);
+            double t = x; x = y; y = t;
+        }
+        // System.out.printf("%f, %f\n", a, b);
+        // System.out.println(x);
+        return x;
+    }
+
+    /*
     double solve(Point p1, Point p2, Point p3) {
+
         return 0.0;
     }
 
@@ -97,6 +133,7 @@ public class P001cAncientBerlandCircus implements Runnable {
     public static void main(String[] args) {
         new P001cAncientBerlandCircus().run();
     }
+    */
 }
 
 class Point {
