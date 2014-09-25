@@ -7,6 +7,12 @@ import java.io.PrintWriter;
 
 /**
  * http://codeforces.com/problemset/problem/2/B
+ *
+ * http://codeforces.com/problemset/status/2/problem/B
+ * http://codeforces.com/blog/entry/109
+ * http://www.darrensun.com/codeforces-round-2/
+ * http://helloacm.com/coding-exercise-c-codeforces-b-the-least-round-way-dynamic-programming/
+ *
  * <p/>
  * There is a square matrix n × n, consisting of non-negative integer numbers.
  * You should find such a way on it that
@@ -44,6 +50,11 @@ import java.io.PrintWriter;
  * </pre>
  */
 public class P002bTheLeastRoundWay implements Runnable {
+
+    public static void main(String[] args) {
+        new Thread(new P002bTheLeastRoundWay()).run();
+    }
+
     String[] solve(int[][] grid) {
         final int maxRow = grid.length - 1;
         final int maxCol = grid[0].length - 1;
@@ -71,6 +82,10 @@ public class P002bTheLeastRoundWay implements Runnable {
             }
             return;
         } else {
+            final long tmp = currMulti * grid[currRow][currCol];
+            if (countTrailingZeros(tmp) >= Long.parseLong(output[0])) {
+                return;
+            }
             if (currRow + 1 <= maxRow) {
                 solve(grid,
                         maxRow,
@@ -123,14 +138,16 @@ public class P002bTheLeastRoundWay implements Runnable {
                 int[] numbers = new int[stringNumbers.length];
                 int j = 0;
                 for (String stringNumber : stringNumbers) {
-                    numbers[i] = Integer.parseInt(stringNumber.trim());
-                    j++;
+                    numbers[j++] = Integer.parseInt(stringNumber.trim());
                 }
-                grid[i] = numbers;
-                i++;
+                grid[i++] = numbers;
             }
 
-            out.println(solve(grid));
+            String[] solution = solve(grid);
+            for (String sol : solution) {
+                out.println(sol);
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
