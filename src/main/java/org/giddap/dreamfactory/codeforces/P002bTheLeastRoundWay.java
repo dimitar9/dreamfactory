@@ -58,10 +58,53 @@ public class P002bTheLeastRoundWay implements Runnable {
     String[] solve(int[][] grid) {
         final int maxRow = grid.length - 1;
         final int maxCol = grid[0].length - 1;
+
+        long[][] countsTwo = new long[maxRow + 1][maxCol + 1];
+        long[][] countsFive = new long[maxRow + 1][maxCol + 1];
+
+        boolean hasZero = false;
+
+        for (int i = 0; i <= maxRow; i++) {
+            for (int j = 0; j < maxCol; j++) {
+                final int value = grid[i][j];
+                if (value == 0) {
+                    hasZero = true;
+                }
+                countsTwo[i][j] = countNumberOfFactorOfTwo(value);
+                countsFive[i][j] = countNumberOfFactorOfFive(value);
+            }
+        }
+
+        StringBuilder path = new StringBuilder();
+
+        int minNumberOfTrailingZeros = Integer.MAX_VALUE;
+
+        // Top line
+        for (int i = 1; i <= maxCol; i++) {
+            countsTwo[0][i] += countsTwo[0][i - 1];
+            countsFive[0][i] += countsFive[0][i - 1];
+        }
+
+        // Left-most row
+        // Top line
+        for (int i = 1; i <= maxRow; i++) {
+            countsTwo[i][0] += countsTwo[i - 1][0];
+            countsFive[i][0] += countsFive[i - 1][0];
+        }
+
+        // Remaining cells
+        for (int i = 1; i <= maxRow; i++) {
+            for (int j = 1; j < maxCol; j++) {
+                countsTwo[i][j] += Math.min(countsTwo[i - 1][j], countsTwo[i][j - 1]);
+                countsFive[i][j] += Math.min(countsFive[i - 1][j], countsFive[i][j - 1]);
+            }
+        }
+
+
+        // Construct the output
         String[] output = new String[2];
         output[0] = Long.MAX_VALUE + "";
         output[1] = "";
-        solve(grid, maxRow, maxCol, 0, 0, 1, "", output);
         return output;
     }
 
@@ -111,9 +154,21 @@ public class P002bTheLeastRoundWay implements Runnable {
     }
 
     private long countTrailingZeros(long num) {
+        return findNumberOfFactor(num, 10);
+    }
+
+    private long countNumberOfFactorOfFive(long num) {
+        return findNumberOfFactor(num, 5);
+    }
+
+    private long countNumberOfFactorOfTwo(long num) {
+        return findNumberOfFactor(num, 2);
+    }
+
+    private long findNumberOfFactor(long num, final long base) {
         long i = 0;
-        while (num > 0 && num % 10 == 0) {
-            num /= 10;
+        while (num > 0 && num % base == 0) {
+            num /= base;
             i++;
         }
         return i;
