@@ -3,7 +3,7 @@ package org.giddap.dreamfactory.codeforces;
 /**
  *
  */
-public class P003cCommentator implements Runnable {
+public class P002cCommentator implements Runnable {
     @Override
     public void run() {
 

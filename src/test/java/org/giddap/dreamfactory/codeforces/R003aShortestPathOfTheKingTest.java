@@ -20,9 +20,9 @@ import static org.junit.Assert.assertEquals;
  * RD
  * RD
  */
-public class R004aShortestPathOfTheKingTest {
-    private R004aShortestPathOfTheKing solution =
-            new R004aShortestPathOfTheKing();
+public class R003aShortestPathOfTheKingTest {
+    private R003aShortestPathOfTheKing solution =
+            new R003aShortestPathOfTheKing();
 
     @Test
     public void small01() {
@@ -40,7 +40,7 @@ public class R004aShortestPathOfTheKingTest {
                 "RD"
         };
 
-        String[] actual = solution.calculateKingsMoves(start, end);
+        String[] actual = solution.solve(start, end);
 
         assertEquals(expected.length, actual.length);
         for (int i = 0; i < expected.length; i++) {
