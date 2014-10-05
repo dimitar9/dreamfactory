@@ -10,6 +10,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://leetcode.com/2011/05/longest-substring-without-repeating-characters.html
  */
-public interface Q003LongestSubstringWithoutRepeatingCharacters {
+public interface LongestSubstringWithoutRepeatingCharacters {
     int lengthOfLongestSubstring(String s);
 }

@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q003LongestSubstringWithoutRepeatingCharactersImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LongestSubstringWithoutRepeatingCharactersImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q003LongestSubstringWithoutRepeatingCharactersTest {
-    private Q003LongestSubstringWithoutRepeatingCharacters solution =
-            new Q003LongestSubstringWithoutRepeatingCharactersImpl();
+public class LongestSubstringWithoutRepeatingCharactersTest {
+    private LongestSubstringWithoutRepeatingCharacters solution =
+            new LongestSubstringWithoutRepeatingCharactersImpl();
 
     @Test
     public void small01() {
@@ -27,6 +27,11 @@ public class Q003LongestSubstringWithoutRepeatingCharactersTest {
     @Test
     public void small04() {
         assertEquals(2, solution.lengthOfLongestSubstring("abbabababa"));
+    }
+
+    @Test
+    public void small05() {
+        assertEquals(11, solution.lengthOfLongestSubstring("hchzvfrkmlnozjk"));
     }
 }
 
