@@ -13,6 +13,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * Links:
  * http://discuss.leetcode.com/questions/276/balanced-binary-tree
  */
-public interface Q110BalancedBinaryTree {
+public interface BalancedBinaryTree {
     boolean isBalanced(TreeNode root);
 }

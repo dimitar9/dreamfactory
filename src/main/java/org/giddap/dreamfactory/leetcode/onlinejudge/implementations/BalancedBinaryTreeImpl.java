@@ -1,13 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q110BalancedBinaryTree;
+import org.giddap.dreamfactory.leetcode.onlinejudge.BalancedBinaryTree;
 
-public class Q110BalancedBinaryTreeImpl implements Q110BalancedBinaryTree {
+public class BalancedBinaryTreeImpl implements BalancedBinaryTree {
     @Override
     public boolean isBalanced(TreeNode root) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         return calcHeight(root) != -1;
     }
 
