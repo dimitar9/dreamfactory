@@ -1,16 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q007ReverseIntegerImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ReverseIntegerImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Q007ReverseIntegerTest {
-    private Q007ReverseInteger reverseInteger;
+public class ReverseIntegerTest {
+    private ReverseInteger reverseInteger;
 
     @Before
     public void setup() {
-        reverseInteger = new Q007ReverseIntegerImpl();
+        reverseInteger = new ReverseIntegerImpl();
     }
 
     @Test

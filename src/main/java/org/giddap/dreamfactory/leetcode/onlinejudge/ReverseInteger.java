@@ -15,6 +15,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/191/reverse-integer">leetcode discussion</a>
  */
-public interface Q007ReverseInteger {
+public interface ReverseInteger {
     int reverse(int x);
 }
