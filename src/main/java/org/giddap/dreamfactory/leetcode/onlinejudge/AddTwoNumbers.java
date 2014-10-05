@@ -18,6 +18,6 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/189/add-two-numbers">Leetcode discussion</a>
  */
-public interface Q002AddTwoNumbers {
+public interface AddTwoNumbers {
     ListNode addTwoNumbers(ListNode l1, ListNode l2);
 }

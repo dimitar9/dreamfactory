@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q002AddTwoNumbersImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.AddTwoNumbersImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q002AddTwoNumbersTest {
-    private Q002AddTwoNumbers addTwoNumbers = new Q002AddTwoNumbersImpl();
+public class AddTwoNumbersTest {
+    private AddTwoNumbers addTwoNumbers = new AddTwoNumbersImpl();
 
     @Test
     public void small01() {

@@ -1,19 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q002AddTwoNumbers;
+import org.giddap.dreamfactory.leetcode.onlinejudge.AddTwoNumbers;
 
-public class Q002AddTwoNumbersImpl implements Q002AddTwoNumbers {
+public class AddTwoNumbersImpl implements AddTwoNumbers {
     @Override
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         ListNode newHead = new ListNode(0);
         ListNode prev = newHead;
 
         int carry = 0;
-        while (l1 != null || l2 != null) {
+        while (l1 != null || l2 != null || carry > 0) {
             int sum = carry;
             if (l1 != null) {
                 sum += l1.val;
@@ -28,11 +25,6 @@ public class Q002AddTwoNumbersImpl implements Q002AddTwoNumbers {
 
             prev.next = node;
             prev = node;
-        }
-
-        if (carry != 0) {
-            ListNode node = new ListNode(carry);
-            prev.next = node;
         }
 
         return newHead.next;
