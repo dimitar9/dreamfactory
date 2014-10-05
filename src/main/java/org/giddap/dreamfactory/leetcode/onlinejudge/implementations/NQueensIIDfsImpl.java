@@ -1,4 +1,6 @@
-package org.giddap.dreamfactory.leetcode.onlinejudge;
+package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
+
+import org.giddap.dreamfactory.leetcode.onlinejudge.NQueensII;
 
 /**
  * http://leetcode.com/onlinejudge#question_52
@@ -15,9 +17,10 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://poj.org/showmessage?message_id=73325
  * http://www.mitbbs.com/article_t/JobHunting/32283621.html
  */
-public class Q052NQueensII {
+public class NQueensIIDfsImpl implements NQueensII {
     private long sum;
 
+    @Override
     public int totalNQueens(int n) {
         // Start typing your Java solution below
         // DO NOT write main() function

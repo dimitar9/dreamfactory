@@ -1,8 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.NQueensBacktrackingImpl02;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.NQueensDfsImpl;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -12,7 +11,7 @@ import java.util.Set;
 import static org.junit.Assert.assertEquals;
 
 public class NQueensTest {
-    private NQueens solution = new NQueensBacktrackingImpl02();
+    private NQueens solution = new NQueensDfsImpl();
 
     /**
      * Submission Result: Wrong Answer

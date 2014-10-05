@@ -5,7 +5,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.NQueens;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NQueensBacktrackingImpl02 implements NQueens {
+public class NQueensDfsImpl implements NQueens {
     public List<String[]> solveNQueens(int n) {
         List<String[]> ret = new ArrayList<String[]>();
         boolean[][] s = new boolean[n][n];
