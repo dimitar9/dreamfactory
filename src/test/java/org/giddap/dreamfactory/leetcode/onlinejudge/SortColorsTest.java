@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q075SortColorsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SortColorsImpl;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -11,8 +11,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q075SortColorsTest {
-    private Q075SortColors solution = new Q075SortColorsImpl();
+public class SortColorsTest {
+    private SortColors solution = new SortColorsImpl();
 
     @Test
     public void small01() {

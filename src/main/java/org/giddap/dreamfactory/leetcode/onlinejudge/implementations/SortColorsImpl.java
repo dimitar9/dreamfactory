@@ -1,13 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q075SortColors;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SortColors;
 
-public class Q075SortColorsImpl implements Q075SortColors {
+public class SortColorsImpl implements SortColors {
 
     @Override
     public void sortColors(int[] A) {
-        // IMPORTANT: Please reset any member data you declared, as
-        // the same Solution instance will be reused for each test case.
         int i = 0;
         int redEnd = -1;
         int blueStart = A.length;

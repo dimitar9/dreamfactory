@@ -28,6 +28,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://en.wikipedia.org/wiki/Dutch_national_flag_problem">Dutch national flag problem on Wikipedia</a>
  * @see <a href="http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Sort/Flag/">lloyd's page</a>
  */
-public interface Q075SortColors {
+public interface SortColors {
     void sortColors(int[] A);
 }
