@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q005LongestPalindromicSubstringImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LongestPalindromicSubstringImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Q005LongestPalindromicSubstringTest {
-    private Q005LongestPalindromicSubstring solution = new Q005LongestPalindromicSubstringImpl();
+public class LongestPalindromicSubstringTest {
+    private LongestPalindromicSubstring solution = new LongestPalindromicSubstringImpl();
 
     @Test
     public void small01() {
@@ -21,6 +21,14 @@ public class Q005LongestPalindromicSubstringTest {
 
         String output = solution.longestPalindrome(input);
         Assert.assertEquals("a", output);
+    }
+
+    @Test
+    public void small03() {
+        String input = "bb";
+
+        String output = solution.longestPalindrome(input);
+        Assert.assertEquals("bb", output);
     }
 }
 

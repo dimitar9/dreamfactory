@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href=" http://leetcode.com/2011/11/longest-palindromic-substring-part-i.html">Leetcode blog i</a>
  * @see <a href=" http://leetcode.com/2011/11/longest-palindromic-substring-part-ii.html">Leetcode blog ii</a>
  */
-public interface Q005LongestPalindromicSubstring {
+public interface LongestPalindromicSubstring {
     String longestPalindrome(String s);
 }
