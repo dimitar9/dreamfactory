@@ -13,6 +13,6 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/202/merge-two-sorted-lists">Leetcode discussion</a>
  */
-public interface Q021MergeTwoSortedLists {
+public interface MergeTwoSortedLists {
     ListNode mergeTwoLists(ListNode l1, ListNode l2);
 }

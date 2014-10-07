@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q021MergeTwoSortedListsIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeTwoSortedListsIterativeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q021MergeTwoSortedListsTest {
-    private Q021MergeTwoSortedLists solution = new Q021MergeTwoSortedListsIterativeImpl();
+public class MergeTwoSortedListsTest {
+    private MergeTwoSortedLists solution = new MergeTwoSortedListsIterativeImpl();
 //    private Q021MergeTwoSortedLists solution = new Q021MergeTwoSortedListsRecursiveImpl();
 
     @Test

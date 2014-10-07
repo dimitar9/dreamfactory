@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q021MergeTwoSortedLists;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MergeTwoSortedLists;
 
 /**
  *
  */
-public class Q021MergeTwoSortedListsRecursiveImpl implements Q021MergeTwoSortedLists {
+public class MergeTwoSortedListsRecursiveImpl implements MergeTwoSortedLists {
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {

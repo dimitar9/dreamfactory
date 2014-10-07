@@ -1,34 +1,32 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q021MergeTwoSortedLists;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MergeTwoSortedLists;
 
-public class Q021MergeTwoSortedListsIterativeImpl implements Q021MergeTwoSortedLists {
+public class MergeTwoSortedListsIterativeImpl implements MergeTwoSortedLists {
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        // Return the other list immediately if one of the lists is null
-        ListNode head = new ListNode(0);
-        ListNode prev = head;
+        ListNode newhead = new ListNode(0);
+        ListNode prev = newhead;
 
         while (l1 != null && l2 != null) {
             if (l1.val < l2.val) {
                 prev.next = l1;
+                prev = l1;
                 l1 = l1.next;
             } else {
                 prev.next = l2;
+                prev = l2;
                 l2 = l2.next;
             }
-            prev = prev.next;
         }
 
         if (l1 != null) {
             prev.next = l1;
-        } else if (l2 != null) {
+        } else {
             prev.next = l2;
         }
 
-        return head.next;
+        return newhead.next;
     }
 }
