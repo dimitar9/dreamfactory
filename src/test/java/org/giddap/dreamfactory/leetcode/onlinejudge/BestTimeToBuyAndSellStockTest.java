@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q121BestTimeToBuyAndSellStockImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BestTimeToBuyAndSellStockImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q121BestTimeToBuyAndSellStockTest {
-    private Q121BestTimeToBuyAndSellStock solution = new Q121BestTimeToBuyAndSellStockImpl();
+public class BestTimeToBuyAndSellStockTest {
+    private BestTimeToBuyAndSellStock solution = new BestTimeToBuyAndSellStockImpl();
 
     @Test
     public void small01() {
