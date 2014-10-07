@@ -34,9 +34,8 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * </pre>
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/47/validate-binary-search-tree">Leetcode discussion</a>
- * @see <a href="http://leetcode.com/2010/09/determine-if-binary-tree-is-binary.html">Leetcode blog</a>
+ * http://n00tc0d3r.blogspot.com/search?q=validate+binary+search+tree
  */
-public interface Q098ValidateBinarySearchTree {
+public interface ValidateBinarySearchTree {
     boolean isValidBST(TreeNode root);
 }

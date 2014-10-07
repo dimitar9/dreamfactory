@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q098ValidateBinarySearchTreeRecursiveInorderImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidateBinarySearchTreeRecursiveInorderImpl;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertFalse;
 
-public class Q098ValidateBinarySearchTreeTest {
-    private Q098ValidateBinarySearchTree solution = new Q098ValidateBinarySearchTreeRecursiveInorderImpl();
+public class ValidateBinarySearchTreeTest {
+    private ValidateBinarySearchTree solution = new ValidateBinarySearchTreeRecursiveInorderImpl();
 
     @Test
     public void small01() {

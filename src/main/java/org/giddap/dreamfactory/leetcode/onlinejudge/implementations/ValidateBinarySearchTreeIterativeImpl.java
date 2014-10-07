@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q098ValidateBinarySearchTree;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ValidateBinarySearchTree;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
-public class Q098ValidateBinarySearchTreeIterativeImpl implements Q098ValidateBinarySearchTree {
+public class ValidateBinarySearchTreeIterativeImpl implements ValidateBinarySearchTree {
     @Override
     public boolean isValidBST(TreeNode root) {
         if (root == null) {

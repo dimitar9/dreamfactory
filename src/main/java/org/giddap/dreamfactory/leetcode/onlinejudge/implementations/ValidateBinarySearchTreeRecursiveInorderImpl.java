@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q098ValidateBinarySearchTree;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ValidateBinarySearchTree;
 
 /**
  *
  */
-public class Q098ValidateBinarySearchTreeRecursiveInorderImpl implements Q098ValidateBinarySearchTree {
+public class ValidateBinarySearchTreeRecursiveInorderImpl implements ValidateBinarySearchTree {
     /**
      * In-order traversal
      */
