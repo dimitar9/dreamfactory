@@ -12,7 +12,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  *
  * @see <a href="http://leetcode.com/2010/11/best-time-to-buy-and-sell-stock.html">Leetcode blog</a>
- * @see <a href="http://discuss.leetcode.com/questions/94/best-time-to-buy-and-sell-stock">Leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/01/best-time-to-buy-and-sell-stock.html?q=best+time+to+buy+and+sell
  */
 public interface BestTimeToBuyAndSellStock {
     int maxProfit(int[] prices);
