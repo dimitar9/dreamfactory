@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q008AtoIImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.AtoIImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Q008AtoITest {
-    private Q008AtoI atoi = new Q008AtoIImpl();
+public class AtoITest {
+    private AtoI atoi = new AtoIImpl();
 
     @Test
     public void small01() {

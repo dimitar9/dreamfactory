@@ -32,6 +32,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/192/string-to-integer-atoi">Leetcode discussion</a>
  */
-public interface Q008AtoI {
+public interface AtoI {
     int atoi(String str);
 }
