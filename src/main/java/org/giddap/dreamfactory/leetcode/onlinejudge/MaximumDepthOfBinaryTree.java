@@ -13,8 +13,8 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/25/maximum-depth-of-binary-tree">Leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/04/maximum-depth-of-binary-tree.html
  */
-public interface Q104MaximumDepthOfBinaryTree {
+public interface MaximumDepthOfBinaryTree {
     int maxDepth(TreeNode root);
 }

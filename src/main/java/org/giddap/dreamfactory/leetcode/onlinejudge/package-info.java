@@ -37,7 +37,7 @@
  * Level-by-level BST to find depth:
  * <ul>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.MinimumDepthOfBinaryTree}</li>
- * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.Q104MaximumDepthOfBinaryTree}</li>
+ * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.MaximumDepthOfBinaryTree}</li>
  * <li>{@link org.giddap.dreamfactory.leetcode.onlinejudge.WordLadder}</li>
  * </ul>
  * </li>
