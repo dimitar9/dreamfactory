@@ -1,13 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q011ContainerWithMostWater;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ContainerWithMostWater;
 
-public class Q011ContainerWithMostWaterImpl implements Q011ContainerWithMostWater {
+public class ContainerWithMostWaterImpl implements ContainerWithMostWater {
     @Override
     public int maxArea(int[] height) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         int maxArea = 0;
         int l = 0;
         int r = height.length - 1;
@@ -26,3 +23,4 @@ public class Q011ContainerWithMostWaterImpl implements Q011ContainerWithMostWate
         return maxArea;
     }
 }
+    

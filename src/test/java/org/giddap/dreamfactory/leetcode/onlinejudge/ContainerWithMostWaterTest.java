@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q011ContainerWithMostWaterImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ContainerWithMostWaterImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q011ContainerWithMostWaterTest {
-    private Q011ContainerWithMostWater solution = new Q011ContainerWithMostWaterImpl();
+public class ContainerWithMostWaterTest {
+    private ContainerWithMostWater solution = new ContainerWithMostWaterImpl();
 
     @Test
     public void small01() {

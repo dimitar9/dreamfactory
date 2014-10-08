@@ -8,8 +8,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * which together with x-axis forms a container, such that the container contains the most water.
  * <p/>
  * Links:
- * http://discuss.leetcode.com/questions/193/container-with-most-water
+ * http://n00tc0d3r.blogspot.com/2013/02/container-with-most-water.html?q=Container+with+most+water
  */
-public interface Q011ContainerWithMostWater {
+public interface ContainerWithMostWater {
     int maxArea(int[] height);
 }
