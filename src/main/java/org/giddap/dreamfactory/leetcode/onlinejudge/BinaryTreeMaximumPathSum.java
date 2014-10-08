@@ -22,10 +22,8 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * </pre>
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/288/binary-tree-maximum-path-sum">Leetcode discussion</a>
- * @see <a href="http://www.mitbbs.com/article_t1/JobHunting/32254243_0_1.html">Mitbbs discussion #1</a>
- * @see <a href="http://www.mitbbs.com/article3/JobHunting/32269009_3_tp.html">Mitbbs discussion #2</a>
+ * http://n00tc0d3r.blogspot.com/2013/01/tree-path-sum.html
  */
-public interface Q124BinaryTreeMaximumPathSum {
+public interface BinaryTreeMaximumPathSum {
     int maxPathSum(TreeNode root);
 }

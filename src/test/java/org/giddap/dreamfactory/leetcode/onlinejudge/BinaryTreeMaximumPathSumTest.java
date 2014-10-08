@@ -2,13 +2,13 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q124BinaryTreeMaximumPathSumImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeMaximumPathSumImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q124BinaryTreeMaximumPathSumTest {
-    private Q124BinaryTreeMaximumPathSum solution = new Q124BinaryTreeMaximumPathSumImpl();
+public class BinaryTreeMaximumPathSumTest {
+    private BinaryTreeMaximumPathSum solution = new BinaryTreeMaximumPathSumImpl();
 
     @Test
     public void small01() {
