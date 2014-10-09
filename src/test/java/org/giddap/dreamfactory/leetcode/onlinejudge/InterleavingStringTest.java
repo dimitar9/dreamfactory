@@ -1,14 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q097InterleavingStringDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InterleavingStringDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InterleavingStringRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Q097InterleavingStringTest {
-    private Q097InterleavingString solution = new Q097InterleavingStringDPImpl();
-//    private Q097InterleavingString solution = new Q097InterleavingStringRecursiveImpl();
+public class InterleavingStringTest {
+    private InterleavingString solution = new InterleavingStringDPImpl();
+    private InterleavingString solution1 = new InterleavingStringRecursiveImpl();
 
     @Test
     public void small01() {

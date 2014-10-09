@@ -1,14 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q097InterleavingString;
+import org.giddap.dreamfactory.leetcode.onlinejudge.InterleavingString;
 
-public class Q097InterleavingStringDPImpl implements Q097InterleavingString {
+public class InterleavingStringDPImpl implements InterleavingString {
     @Override
     public boolean isInterleave(String s1, String s2, String s3) {
         // Start typing your Java solution below
         // DO NOT write main() function
 
-        if (s3.length() != s1.length() + s2.length()) return false;
+        if (s3.length() != s1.length() + s2.length()) {
+            return false;
+        }
 
         boolean[][] match = new boolean[s1.length() + 1][s2.length() + 1];
         match[0][0] = true;

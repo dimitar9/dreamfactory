@@ -16,9 +16,10 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * When s3 = "aadbbbaccc", return false.
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/271/interleaving-string">Leetcode discussion</a>
- * @see <a href="http://www.mitbbs.com/article_t1/JobHunting/32202217_0_1.html">Mitbbs discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/03/interleaving-string-gene-matching.html
+ * http://stackoverflow.com/questions/22795589/dynamic-programming-problems-solution-to-interleaving-strings
+ * http://stackoverflow.com/questions/6804956/interleaving-of-two-strings
  */
-public interface Q097InterleavingString {
+public interface InterleavingString {
     boolean isInterleave(String s1, String s2, String s3);
 }
