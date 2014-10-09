@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * http://oj.leetcode.com/problems/restore-ip-addresses/
@@ -15,6 +16,6 @@ import java.util.ArrayList;
  * Links:
  * http://discuss.leetcode.com/questions/268/restore-ip-addresses
  */
-public interface Q093RestoreIpAddresses {
-    ArrayList<String> restoreIpAddresses(String s);
+public interface RestoreIpAddresses {
+    List<String> restoreIpAddresses(String s);
 }

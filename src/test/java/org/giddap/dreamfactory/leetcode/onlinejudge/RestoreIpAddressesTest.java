@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q093RestoreIpAddressesImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RestoreIpAddressesImpl;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -9,8 +9,8 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q093RestoreIpAddressesTest {
-    private Q093RestoreIpAddresses solution = new Q093RestoreIpAddressesImpl();
+public class RestoreIpAddressesTest {
+    private RestoreIpAddresses solution = new RestoreIpAddressesImpl();
 
     @Test
     public void small01() {
