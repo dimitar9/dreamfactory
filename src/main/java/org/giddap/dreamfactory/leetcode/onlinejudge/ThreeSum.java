@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/3sum/">3Sum</a>
@@ -22,6 +23,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://leetcode.com/2010/04/finding-all-unique-triplets-that-sums.html">Leetcode blog</a>
  */
-public interface Q015ThreeSum {
-    ArrayList<ArrayList<Integer>> threeSum(int[] num);
+public interface ThreeSum {
+    List<List<Integer>> threeSum(int[] num);
 }

@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q015ThreeSumImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ThreeSumImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q015ThreeSumTest {
-    private Q015ThreeSum solution = new Q015ThreeSumImpl();
+public class ThreeSumTest {
+    private ThreeSum solution = new ThreeSumImpl();
 
     @Test
     public void small01() {
