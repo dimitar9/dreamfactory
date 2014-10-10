@@ -25,8 +25,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Note: m and n will be at most 100.
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/239/unique-paths-ii">leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/07/unique-paths.html?q=unique+paths
  */
-public interface Q063UniquePathsII {
+public interface UniquePathsII {
     int uniquePathsWithObstacles(int[][] obstacleGrid);
 }

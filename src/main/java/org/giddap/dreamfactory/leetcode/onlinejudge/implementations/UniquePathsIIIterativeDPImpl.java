@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q063UniquePathsII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.UniquePathsII;
 
-public class Q063UniquePathsIIIterativeDPImpl implements Q063UniquePathsII {
+public class UniquePathsIIIterativeDPImpl implements UniquePathsII {
     @Override
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         // Start typing your Java solution below
