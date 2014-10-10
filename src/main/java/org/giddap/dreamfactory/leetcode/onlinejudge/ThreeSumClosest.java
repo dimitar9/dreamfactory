@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/197/3sum-closest">Leetcode discussion</a>
  */
-public interface Q016ThreeSumClosest {
+public interface ThreeSumClosest {
     int threeSumClosest(int[] num, int target);
 }

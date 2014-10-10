@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q016ThreeSumClosestImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ThreeSumClosestImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q016ThreeSumClosestTest {
-    private Q016ThreeSumClosest solution = new Q016ThreeSumClosestImpl();
+public class ThreeSumClosestTest {
+    private ThreeSumClosest solution = new ThreeSumClosestImpl();
 
     @Test
     public void small01() {
