@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/pascals-triangle-ii/">Pascal's Triangle II</a>
@@ -16,10 +17,10 @@ import java.util.ArrayList;
  * Could you optimize your algorithm to use only O(k) extra space?
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/284/pascals-triangle-ii">Leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/05/pascals-triangle.html?q=pascal
  */
-public interface Q119PascalsTriangleII {
-    ArrayList<Integer> getRow(int rowIndex);
+public interface PascalsTriangleII {
+    List<Integer> getRow(int rowIndex);
 }
 
 /*
