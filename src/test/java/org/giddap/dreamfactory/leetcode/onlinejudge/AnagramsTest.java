@@ -2,15 +2,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q049AnagramsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.AnagramsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q049AnagramsTest {
-    private Q049Anagrams solution = new Q049AnagramsImpl();
+public class AnagramsTest {
+    private Anagrams solution = new AnagramsImpl();
 
     @Test
     public void emptyInput() {

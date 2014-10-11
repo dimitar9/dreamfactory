@@ -14,6 +14,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/227/anagrams">leetcode discussion</a>
  */
-public interface Q049Anagrams {
+public interface Anagrams {
     ArrayList<String> anagrams(String[] strs);
 }
