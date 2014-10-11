@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q014LongestCommonPrefixImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LongestCommonPrefixImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class Q014LongestCommonPrefixTest {
-    private Q014LongestCommonPrefix solution = new Q014LongestCommonPrefixImpl();
+public class LongestCommonPrefixTest {
+    private LongestCommonPrefix solution = new LongestCommonPrefixImpl();
 
     @Test
     public void small01() {

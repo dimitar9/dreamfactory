@@ -9,6 +9,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/196/longest-common-prefix">Leetcode discussion</a>
  */
-public interface Q014LongestCommonPrefix {
+public interface LongestCommonPrefix {
     String longestCommonPrefix(String[] strs);
 }

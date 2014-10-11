@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q014LongestCommonPrefix;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LongestCommonPrefix;
 
-public class Q014LongestCommonPrefixImpl implements Q014LongestCommonPrefix {
+public class LongestCommonPrefixImpl implements LongestCommonPrefix {
     @Override
     public String longestCommonPrefix(String[] strs) {
         StringBuilder sb = new StringBuilder();
