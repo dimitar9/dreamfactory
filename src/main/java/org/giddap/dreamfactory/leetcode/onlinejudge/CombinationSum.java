@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/combination-sum/">Combination Sum</a>
@@ -28,6 +28,6 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/61/combination-sum">leetcode discussion</a>
  * @see <a href="http://leetcode.com/2010/09/print-all-combinations-of-number-as-sum.html">leetcode blog</a>
  */
-public interface Q039CombinationSum {
-    ArrayList<ArrayList<Integer>> combinationSum(int[] candidates, int target);
+public interface CombinationSum {
+    List<List<Integer>> combinationSum(int[] candidates, int target);
 }

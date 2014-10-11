@@ -2,15 +2,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q039CombinationSumRecuriveDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CombinationSumRecuriveDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q039CombinationSumTest {
-    private Q039CombinationSum solution = new Q039CombinationSumRecuriveDfsImpl();
+public class CombinationSumTest {
+    private CombinationSum solution = new CombinationSumRecuriveDfsImpl();
 
     @Test
     public void small01() {
