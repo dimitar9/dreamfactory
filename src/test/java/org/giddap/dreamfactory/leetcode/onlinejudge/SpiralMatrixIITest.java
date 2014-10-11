@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q059SpiralMatrixIIImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SpiralMatrixIIImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q059SpiralMatrixIITest {
-    private Q059SpiralMatrixII solution = new Q059SpiralMatrixIIImpl();
+public class SpiralMatrixIITest {
+    private SpiralMatrixII solution = new SpiralMatrixIIImpl();
 
 
     @Test

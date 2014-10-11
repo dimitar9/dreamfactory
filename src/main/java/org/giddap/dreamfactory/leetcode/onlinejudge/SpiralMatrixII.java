@@ -20,6 +20,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/236/spiral-matrix-ii
  */
-public interface Q059SpiralMatrixII {
+public interface SpiralMatrixII {
     int[][] generateMatrix(int n);
 }

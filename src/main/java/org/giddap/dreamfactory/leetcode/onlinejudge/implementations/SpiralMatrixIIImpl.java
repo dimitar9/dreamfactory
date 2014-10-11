@@ -1,13 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q059SpiralMatrixII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SpiralMatrixII;
 
-public class Q059SpiralMatrixIIImpl implements Q059SpiralMatrixII {
+public class SpiralMatrixIIImpl implements SpiralMatrixII {
 
     @Override
     public int[][] generateMatrix(int n) {
-        // IMPORTANT: Please reset any member data you declared, as
-        // the same Solution instance will be reused for each test case.
         int[][] ret = new int[n][n];
         build(ret, 0, 1);
         return ret;
