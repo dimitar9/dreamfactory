@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q131PalindromePartitioning;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PalindromePartitioning;
 
 import java.util.ArrayList;
 
-public class Q131PalindromePartitioningDfsImpl implements Q131PalindromePartitioning {
+public class PalindromePartitioningDfsImpl implements PalindromePartitioning {
     @Override
     public ArrayList<ArrayList<String>> partition(String s) {
         // Start typing your Java solution below

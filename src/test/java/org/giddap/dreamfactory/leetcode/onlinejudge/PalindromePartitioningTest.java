@@ -1,16 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q131PalindromePartitioningDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q131PalindromePartitioningTest {
+public class PalindromePartitioningTest {
     //    private Q131PalindromePartitioning solution = new Q131PalindromePartitioningRecursiveDP();
-    private Q131PalindromePartitioning solution = new Q131PalindromePartitioningDfsImpl();
+    private PalindromePartitioning solution = new PalindromePartitioningDfsImpl();
 
     @Test
     public void small01() {

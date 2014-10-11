@@ -22,9 +22,9 @@ import java.util.ArrayList;
  * </pre>
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/1265/palindrome-partitioning">leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/05/palindrome-partitioning.html
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101jbtl.html">peking2's blog</a>
  */
-public interface Q131PalindromePartitioning {
+public interface PalindromePartitioning {
     ArrayList<ArrayList<String>> partition(String s);
 }
