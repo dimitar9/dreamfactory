@@ -11,9 +11,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the
  * same time (ie, you must sell the stock before you buy again).
  * <p/>
- *
- * @see <a href="http://discuss.leetcode.com/questions/286/best-time-to-buy-and-sell-stock-ii">Leetcode discussion</a>
+ * http://n00tc0d3r.blogspot.com/2013/01/best-time-to-buy-and-sell-stock.html
  */
-public interface Q122BestTimeToBuyAndSellStockII {
+public interface BestTimeToBuyAndSellStockII {
     int maxProfit(int[] prices);
 }
