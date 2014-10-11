@@ -17,6 +17,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * Links:
  * http://discuss.leetcode.com/questions/186/construct-binary-tree-from-inorder-and-postorder-traversal
  */
-public interface Q106ConstructBinaryTreeFromInorderAndPostorderTraversal {
+public interface ConstructBinaryTreeFromInorderAndPostorderTraversal {
     TreeNode buildTree(int[] inorder, int[] postorder);
 }

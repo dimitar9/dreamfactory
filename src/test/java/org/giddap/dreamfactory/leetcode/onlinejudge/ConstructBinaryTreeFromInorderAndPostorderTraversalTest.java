@@ -2,14 +2,14 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q106ConstructBinaryTreeFromInorderAndPostorderTraversalImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ConstructBinaryTreeFromInorderAndPostorderTraversalImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q106ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
-    private Q106ConstructBinaryTreeFromInorderAndPostorderTraversal solution =
-            new Q106ConstructBinaryTreeFromInorderAndPostorderTraversalImpl();
+public class ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
+    private ConstructBinaryTreeFromInorderAndPostorderTraversal solution =
+            new ConstructBinaryTreeFromInorderAndPostorderTraversalImpl();
 
     @Test
     public void small01() {
