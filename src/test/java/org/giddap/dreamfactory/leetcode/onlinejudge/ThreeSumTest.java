@@ -4,6 +4,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ThreeSumImpl
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +15,7 @@ public class ThreeSumTest {
     public void small01() {
         int[] input = {-1, 0, 1, 2, -1, -4};
 
-        ArrayList<ArrayList<Integer>> result = solution.threeSum(input);
+        List<List<Integer>> result = solution.threeSum(input);
         assertEquals(2, result.size());
     }
 
@@ -22,7 +23,7 @@ public class ThreeSumTest {
     public void small02() {
         int[] input = {0, 0, 0};
 
-        ArrayList<ArrayList<Integer>> result = solution.threeSum(input);
+        List<List<Integer>> result = solution.threeSum(input);
         assertEquals(1, result.size());
     }
 }

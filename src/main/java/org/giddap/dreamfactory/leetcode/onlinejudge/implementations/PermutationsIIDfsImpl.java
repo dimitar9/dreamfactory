@@ -1,24 +1,26 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q047PermutationsII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PermutationsII;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class Q047PermutationsIIDfsImpl implements Q047PermutationsII {
-    public ArrayList<ArrayList<Integer>> permuteUnique(int[] num) {
+public class PermutationsIIDfsImpl implements PermutationsII {
+
+    public List<List<Integer>> permuteUnique(int[] num) {
         Arrays.sort(num);
         ArrayList<Integer> input = new ArrayList<Integer>();
         for (int n : num) {
             input.add(n);
         }
 
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> ret = new ArrayList<List<Integer>>();
         permuteUniqueRecursively(ret, new ArrayList<Integer>(), input);
         return ret;
     }
 
-    private void permuteUniqueRecursively(ArrayList<ArrayList<Integer>> ret, ArrayList<Integer> prefix, ArrayList<Integer> suffix) {
+    private void permuteUniqueRecursively(List<List<Integer>> ret, ArrayList<Integer> prefix, ArrayList<Integer> suffix) {
         if (suffix.size() == 0) {
             ret.add(new ArrayList<Integer>(prefix));
             return;

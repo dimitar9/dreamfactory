@@ -6,6 +6,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CombinationS
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +23,7 @@ public class CombinationSumTest {
         expected.add(tmp);
         expected.add(Lists.newArrayList(7));
 
-        ArrayList<ArrayList<Integer>> actual = solution.combinationSum(input, target);
+        List<List<Integer>> actual = solution.combinationSum(input, target);
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
     }
