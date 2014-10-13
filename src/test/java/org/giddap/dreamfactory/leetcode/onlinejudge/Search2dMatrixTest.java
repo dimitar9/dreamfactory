@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q074Search2dMatrixImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Search2dMatrixImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 
-public class Q074Search2dMatrixTest {
-    private Q074Search2dMatrix solution = new Q074Search2dMatrixImpl();
+public class Search2dMatrixTest {
+    private Search2dMatrix solution = new Search2dMatrixImpl();
 
     @Test
     public void small01() {

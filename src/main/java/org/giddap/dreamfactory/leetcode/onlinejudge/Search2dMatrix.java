@@ -32,6 +32,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/250/search-a-2d-matrix">leetcode discussion</a>
  */
-public interface Q074Search2dMatrix {
+public interface Search2dMatrix {
     boolean searchMatrix(int[][] matrix, int target);
 }

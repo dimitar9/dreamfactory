@@ -1,12 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q074Search2dMatrix;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Search2dMatrix;
 
-public class Q074Search2dMatrixImpl implements Q074Search2dMatrix {
+public class Search2dMatrixImpl implements Search2dMatrix {
     @Override
     public boolean searchMatrix(int[][] matrix, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         final int rows = matrix.length;
         if (rows == 0) {
             return false;
@@ -21,9 +19,8 @@ public class Q074Search2dMatrixImpl implements Q074Search2dMatrix {
 
         while (high - low > 1) {
             int mid = low + (high - low) / 2;
-            int row = mid / cols;
-            int col = mid % cols;
-            if (matrix[row][col] > target) {
+            int midVal = matrix[mid / cols][mid % cols];
+            if (midVal > target) {
                 high = mid;
             } else {
                 low = mid;
