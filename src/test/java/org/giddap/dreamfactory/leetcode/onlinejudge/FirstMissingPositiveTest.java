@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q041FirstMissingPositiveImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FirstMissingPositiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q041FirstMissingPositiveTest {
-    private Q041FirstMissingPositive solution = new Q041FirstMissingPositiveImpl();
+public class FirstMissingPositiveTest {
+    private FirstMissingPositive solution = new FirstMissingPositiveImpl();
 
     @Test
     public void small01() {

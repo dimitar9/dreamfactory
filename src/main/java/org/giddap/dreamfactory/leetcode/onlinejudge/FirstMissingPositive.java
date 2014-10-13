@@ -14,10 +14,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Your algorithm should run in O(n) time and uses constant space.
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/219/first-missing-positive">leetcode discussion</a>
- * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32136153.html">mitbbs discussion a</a>
- * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32103841.html">mitbbs discussion b</a>
+ * http://n00tc0d3r.blogspot.com/2013/03/find-first-missing-positive.html
  */
-public interface Q041FirstMissingPositive {
+public interface FirstMissingPositive {
     int firstMissingPositive(int[] A);
 }
