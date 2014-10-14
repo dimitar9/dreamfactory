@@ -15,6 +15,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * http://leetcode.com/2010/09/serializationdeserialization-of-binary.html
  * http://leetcode.com/2010/09/saving-binary-search-tree-to-file.html
  */
-public interface Q105ConstructBinaryTreeFromPreorderAndInorderTraversal {
+public interface ConstructBinaryTreeFromPreorderAndInorderTraversal {
     TreeNode buildTree(int[] preorder, int[] inorder);
 }

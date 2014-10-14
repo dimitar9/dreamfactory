@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q105ConstructBinaryTreeFromPreorderAndInorderTraversalImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ConstructBinaryTreeFromPreorderAndInorderTraversalImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q105ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
-    private Q105ConstructBinaryTreeFromPreorderAndInorderTraversal solution =
-            new Q105ConstructBinaryTreeFromPreorderAndInorderTraversalImpl();
+public class ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
+    private ConstructBinaryTreeFromPreorderAndInorderTraversal solution =
+            new ConstructBinaryTreeFromPreorderAndInorderTraversalImpl();
 
     @Test
     public void small01() {
