@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q034SearchForARangeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SearchForARangeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q034SearchForARangeTest {
-    private Q034SearchForARange solution = new Q034SearchForARangeImpl();
+public class SearchForARangeTest {
+    private SearchForARange solution = new SearchForARangeImpl();
 
     @Test
     public void small01() {

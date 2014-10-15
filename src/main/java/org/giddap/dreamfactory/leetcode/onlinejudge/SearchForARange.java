@@ -18,6 +18,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://discuss.leetcode.com/questions/213/search-for-a-range
  * http://www.tbray.org/ongoing/When/200x/2003/03/22/Binary
  */
-public interface Q034SearchForARange {
+public interface SearchForARange {
     int[] searchRange(int[] A, int target);
 }
