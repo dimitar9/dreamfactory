@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q054SpiralMatrix;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SpiralMatrix;
 
 import java.util.ArrayList;
 
-public class Q054SpiralMatrixImpl implements Q054SpiralMatrix {
+public class SpiralMatrixImpl implements SpiralMatrix {
     @Override
     public ArrayList<Integer> spiralOrder(int[][] matrix) {
         // IMPORTANT: Please reset any member data you declared, as
