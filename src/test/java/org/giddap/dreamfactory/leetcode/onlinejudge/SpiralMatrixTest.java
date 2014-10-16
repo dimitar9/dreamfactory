@@ -1,15 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q054SpiralMatrixImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SpiralMatrixImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q054SpiralMatrixTest {
-    private Q054SpiralMatrix solution = new Q054SpiralMatrixImpl();
+public class SpiralMatrixTest {
+    private SpiralMatrix solution = new SpiralMatrixImpl();
 
     @Test
     public void small01() {

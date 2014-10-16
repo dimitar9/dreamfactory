@@ -22,6 +22,6 @@ import java.util.ArrayList;
  * http://blog.unieagle.net/2012/10/23/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Aspiral-matrix/
  * http://yucoding.blogspot.com/2013/04/leetcode-question-100-spiral-matrix-i.html
  */
-public interface Q054SpiralMatrix {
+public interface SpiralMatrix {
     ArrayList<Integer> spiralOrder(int[][] matrix);
 }
