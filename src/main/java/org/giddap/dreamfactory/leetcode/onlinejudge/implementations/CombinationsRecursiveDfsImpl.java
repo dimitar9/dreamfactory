@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q077Combinations;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Combinations;
 
 import java.util.ArrayList;
 
-public class Q077CombinationsRecursiveDfsImpl implements Q077Combinations {
+public class CombinationsRecursiveDfsImpl implements Combinations {
 
     public ArrayList<ArrayList<Integer>> combine(int n, int k) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();

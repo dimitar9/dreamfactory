@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q077Combinations;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Combinations;
 
 import java.util.ArrayList;
 
 
-public class Q077CombinationsIterativeImpl implements Q077Combinations {
+public class CombinationsIterativeImpl implements Combinations {
 
     @Override
     public ArrayList<ArrayList<Integer>> combine(int n, int k) {

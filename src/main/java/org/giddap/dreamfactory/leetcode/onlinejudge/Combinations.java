@@ -28,6 +28,6 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/252/combinations">leetcode discussion</a>
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32147785.html">mitbbs discussion</a>
  */
-public interface Q077Combinations {
+public interface Combinations {
     ArrayList<ArrayList<Integer>> combine(int n, int k);
 }
