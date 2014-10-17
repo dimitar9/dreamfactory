@@ -5,35 +5,30 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Q091DecodeWays;
 public class Q091DecodeWaysBottomUpDPImpl implements Q091DecodeWays {
     @Override
     public int numDecodings(String s) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
-        final int len = s.length();
+        char[] cs = s.toCharArray();
+        final int len = cs.length;
         if (len == 0) {
             return 0;
         }
-        int prevCount = 1;
-        int prevPrevCount = 1;
-        for (int i = 0; i < len; i++) {
-            int count = 0;
-            char ch = s.charAt(i);
-            if (ch != '0') {
-                count = prevCount;
-            }
 
-            if (i > 0) {
-                char prevChar = s.charAt(i - 1);
-                int pair = (prevChar - '0') * 10 + (ch - '0');
-                if (10 <= pair && pair <= 26) {
-                    count += prevPrevCount;
+        int[] dw = new int[len + 1];
+        dw[0] = 1;
+        dw[1] = cs[0] == '0' ? 0 : 1;
+        int prev = cs[0] - '0';
+        for (int i = 1; i < len && dw[i - 1] != 0; ++i) {
+            int curr = cs[i] - '0';
+            if (curr == 0) {
+                if (prev == 1 || prev == 2) {
+                    dw[i + 1] = dw[i - 1];
                 }
-
+            } else {
+                dw[i + 1] = dw[i];
+                if (prev != 0 && prev * 10 + curr <= 26) {
+                    dw[i + 1] += dw[i - 1];
+                }
             }
-
-            prevPrevCount = prevCount;
-            prevCount = count;
+            prev = curr;
         }
-
-        return prevCount;
+        return dw[len];
     }
 }
