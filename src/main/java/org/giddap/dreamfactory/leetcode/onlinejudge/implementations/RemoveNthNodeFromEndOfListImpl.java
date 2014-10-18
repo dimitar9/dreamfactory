@@ -1,32 +1,31 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q019RemoveNthNodeFromEndOfList;
+import org.giddap.dreamfactory.leetcode.onlinejudge.RemoveNthNodeFromEndOfList;
 
-public class Q019RemoveNthNodeFromEndOfListImpl implements Q019RemoveNthNodeFromEndOfList {
+public class RemoveNthNodeFromEndOfListImpl implements RemoveNthNodeFromEndOfList {
     @Override
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         ListNode newhead = new ListNode(0);
         newhead.next = head;
 
         ListNode fast = head;
         int i = 1;
-        while (i < n) {
-            fast = fast.next == null ? head : fast.next;
+        while (i < n && fast != null) {
+            fast = fast.next;
             i++;
         }
 
+        ListNode slow = head;
         ListNode prev = newhead;
         while (fast != null && fast.next != null) {
+            prev = slow;
+            slow = slow.next;
             fast = fast.next;
-            prev = prev.next;
         }
 
-        prev.next = prev.next.next;
-
+        prev.next = slow.next;
+        slow.next = null;
         return newhead.next;
     }
 }
