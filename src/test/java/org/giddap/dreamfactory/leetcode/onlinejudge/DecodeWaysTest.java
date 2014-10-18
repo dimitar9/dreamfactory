@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q091DecodeWaysBottomUpDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DecodeWaysBottomUpDPImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q091DecodeWaysTest {
+public class DecodeWaysTest {
     //    private Q091DecodeWays solution = new Q091DecodeWaysRecursiveDPImpl();
-    private Q091DecodeWays solution = new Q091DecodeWaysBottomUpDPImpl();
+    private DecodeWays solution = new DecodeWaysBottomUpDPImpl();
 
     @Test
     public void small01() {

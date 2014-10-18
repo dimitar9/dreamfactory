@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q091DecodeWays;
+import org.giddap.dreamfactory.leetcode.onlinejudge.DecodeWays;
 
-public class Q091DecodeWaysRecursiveDPImpl implements Q091DecodeWays {
+public class DecodeWaysRecursiveDPImpl implements DecodeWays {
     @Override
     public int numDecodings(String s) {
         // Start typing your Java solution below
