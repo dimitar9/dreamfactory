@@ -2,7 +2,7 @@ description = 'A factory where dreams are being made!'
 apply plugin: 'java'
 defaultTasks 'jar'
 
-sourceCompatibility = 1.6
+sourceCompatibility = 1.7
 version = '1.0'
 
 buildscript {

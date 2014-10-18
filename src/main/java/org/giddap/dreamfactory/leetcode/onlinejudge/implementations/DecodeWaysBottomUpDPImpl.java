@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q091DecodeWays;
+import org.giddap.dreamfactory.leetcode.onlinejudge.DecodeWays;
 
-public class Q091DecodeWaysBottomUpDPImpl implements Q091DecodeWays {
+public class DecodeWaysBottomUpDPImpl implements DecodeWays {
     @Override
     public int numDecodings(String s) {
         char[] cs = s.toCharArray();

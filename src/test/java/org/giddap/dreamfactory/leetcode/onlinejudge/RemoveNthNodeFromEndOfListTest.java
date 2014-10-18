@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q019RemoveNthNodeFromEndOfListImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RemoveNthNodeFromEndOfListImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-public class Q019RemoveNthNodeFromEndOfListTest {
-    private Q019RemoveNthNodeFromEndOfList solution = new Q019RemoveNthNodeFromEndOfListImpl();
+public class RemoveNthNodeFromEndOfListTest {
+    private RemoveNthNodeFromEndOfList solution = new RemoveNthNodeFromEndOfListImpl();
 
     @Test
     public void small01() {

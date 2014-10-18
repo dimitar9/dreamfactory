@@ -18,9 +18,9 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * Given n will always be valid.
  * Try to do this in one pass.
  * <p/>
- *
- * @see <a href="http://discuss.leetcode.com/questions/200/remove-nth-node-from-end-of-list">leetcode discussion</a>
+ * <p/>
+ * http://n00tc0d3r.blogspot.com/2013/05/remove-n-th-to-end-element-from-list.html
  */
-public interface Q019RemoveNthNodeFromEndOfList {
+public interface RemoveNthNodeFromEndOfList {
     ListNode removeNthFromEnd(ListNode head, int n);
 }

@@ -25,6 +25,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101h8l1.html">peking2's blog</a>
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32302219.html">mitbbs post</a>
  */
-public interface Q091DecodeWays {
+public interface DecodeWays {
     int numDecodings(String s);
 }
