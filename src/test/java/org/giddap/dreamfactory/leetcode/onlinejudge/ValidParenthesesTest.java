@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q020ValidParenthesesImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidParenthesesImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Q020ValidParenthesesTest {
-    private Q020ValidParentheses solution = new Q020ValidParenthesesImpl();
+public class ValidParenthesesTest {
+    private ValidParentheses solution = new ValidParenthesesImpl();
 
     @Test
     public void validCaseOne() {
