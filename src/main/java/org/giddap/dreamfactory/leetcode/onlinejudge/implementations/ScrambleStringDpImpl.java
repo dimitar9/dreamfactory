@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q087ScrambleString;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ScrambleString;
 
-public class Q087ScrambleStringDpImpl implements Q087ScrambleString {
+public class ScrambleStringDpImpl implements ScrambleString {
     @Override
     public boolean isScramble(String s1, String s2) {
         int n = s1.length();
