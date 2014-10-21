@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q087ScrambleString;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ScrambleString;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  *
  */
-public class Q087ScrambleStringDfsImpl implements Q087ScrambleString {
+public class ScrambleStringDfsImpl implements ScrambleString {
     public boolean isScramble(String s1, String s2) {
         // Note: The Solution object is instantiated only once and is reused by each test case.
         final int s1Len = s1.length();

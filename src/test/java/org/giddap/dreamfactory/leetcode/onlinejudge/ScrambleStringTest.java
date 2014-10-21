@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q087ScrambleStringDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ScrambleStringDfsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Q087ScrambleStringTest {
-    private Q087ScrambleString solution = new Q087ScrambleStringDfsImpl();
+public class ScrambleStringTest {
+    private ScrambleString solution = new ScrambleStringDfsImpl();
 //    private Q087ScrambleString solution = new Q087ScrambleStringDpImpl();
 
     @Test

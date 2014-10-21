@@ -13,6 +13,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/201/valid-parentheses">Leetcode discussion</a>
  */
-public interface Q020ValidParentheses {
+public interface ValidParentheses {
     boolean isValid(String s);
 }

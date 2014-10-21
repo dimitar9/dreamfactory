@@ -52,6 +52,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://discuss.leetcode.com/questions/262/scramble-string">Leetcode discussion</a>
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101gy6n.html">A blog from Peking2</a>
  */
-public interface Q087ScrambleString {
+public interface ScrambleString {
     boolean isScramble(String s1, String s2);
 }
