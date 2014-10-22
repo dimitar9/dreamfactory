@@ -11,6 +11,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/240/minimum-path-sum
  */
-public interface Q064MinimumPathSum {
+public interface MinimumPathSum {
     int minPathSum(int[][] grid);
 }
