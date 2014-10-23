@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q064MinimumPathSumDpImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MinimumPathSumDpImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -9,8 +9,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q064MinimumPathSumTest {
-    private Q064MinimumPathSum solution = new Q064MinimumPathSumDpImpl();
+public class MinimumPathSumTest {
+    private MinimumPathSum solution = new MinimumPathSumDpImpl();
     //private Q064MinimumPathSumDfsBacktrackingImpl solution = new Q064MinimumPathSumDfsBacktrackingImpl();
 
     @Test
