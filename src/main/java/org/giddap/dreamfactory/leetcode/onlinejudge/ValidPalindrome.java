@@ -20,6 +20,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://discuss.leetcode.com/questions/582/valid-palindrome">Leetcode discussion</a>
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101hbe5.html">A blog from peking2</a>
  */
-public interface Q125ValidPalindrome {
+public interface ValidPalindrome {
     boolean isPalindrome(String s);
 }

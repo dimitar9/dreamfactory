@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q125ValidPalindrome;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ValidPalindrome;
 
-public class Q125ValidPalindromeIterativeImpl implements Q125ValidPalindrome {
+public class ValidPalindromeIterativeImpl implements ValidPalindrome {
     @Override
     public boolean isPalindrome(String s) {
 
