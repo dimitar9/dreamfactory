@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/gray-code/">Gray Code</a>
@@ -30,6 +30,6 @@ import java.util.ArrayList;
  * @see <a href="http://en.wikipedia.org/wiki/Gray_code">Gray Code at Wikipedia</a>
  * @see <a href="http://aggregate.org/MAGIC/#Gray%20Code%20Conversion">Faster Gray Code Calculation</a>
  */
-public interface Q089GrayCode {
-    ArrayList<Integer> grayCode(int n);
+public interface GrayCode {
+    List<Integer> grayCode(int n);
 }
