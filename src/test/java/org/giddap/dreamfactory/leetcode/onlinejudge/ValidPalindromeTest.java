@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q125ValidPalindromeIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidPalindromeIterativeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -8,8 +8,8 @@ import static org.junit.Assert.assertTrue;
 /**
  *
  */
-public class Q125ValidPalindromeTest {
-    private Q125ValidPalindrome solution = new Q125ValidPalindromeIterativeImpl();
+public class ValidPalindromeTest {
+    private ValidPalindrome solution = new ValidPalindromeIterativeImpl();
 
     @Test
     public void small01() {
