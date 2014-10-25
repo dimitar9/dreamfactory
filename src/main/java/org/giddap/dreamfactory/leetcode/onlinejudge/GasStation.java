@@ -13,6 +13,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Note:
  * The solution is guaranteed to be unique.
  */
-public interface Q134GasStation {
+public interface GasStation {
     int canCompleteCircuit(int[] gas, int[] cost);
 }
