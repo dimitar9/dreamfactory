@@ -36,6 +36,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * Links:
  * http://discuss.leetcode.com/questions/280/flatten-binary-tree-to-linked-list
  */
-public interface Q114FlattenBinaryTreeToLinkedList {
+public interface FlattenBinaryTreeToLinkedList {
     void flatten(TreeNode root);
 }

@@ -2,9 +2,9 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q114FlattenBinaryTreeToLinkedList;
+import org.giddap.dreamfactory.leetcode.onlinejudge.FlattenBinaryTreeToLinkedList;
 
-public class Q114FlattenBinaryTreeToLinkedListImpl implements Q114FlattenBinaryTreeToLinkedList {
+public class FlattenBinaryTreeToLinkedListImpl implements FlattenBinaryTreeToLinkedList {
     @Override
     public void flatten(TreeNode root) {
         if (root == null) {
