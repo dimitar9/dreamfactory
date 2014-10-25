@@ -1,18 +1,20 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.RandomListNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.CopyListWithRandomPointer;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
  */
-public class CopyListWithRandomPointerImpl {
+public class CopyListWithRandomPointerIterativeImpl implements CopyListWithRandomPointer {
     public RandomListNode copyRandomList(RandomListNode head) {
         // IMPORTANT: Please reset any member data you declared, as
         // the same Solution instance will be reused for each test case.
         if (head == null) return null;
-        HashMap<RandomListNode, RandomListNode> hm = new HashMap<RandomListNode, RandomListNode>();
+        Map<RandomListNode, RandomListNode> hm = new HashMap<RandomListNode, RandomListNode>();
         RandomListNode p = head;
         while (p != null) {
             RandomListNode n = new RandomListNode(p.label);

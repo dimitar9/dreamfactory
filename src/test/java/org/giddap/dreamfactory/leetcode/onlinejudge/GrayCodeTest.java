@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q089GrayCodeMathImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.GrayCodeMathImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q089GrayCodeTest {
-    private Q089GrayCode solution = new Q089GrayCodeMathImpl();
+public class GrayCodeTest {
+    private GrayCode solution = new GrayCodeMathImpl();
 
     @Test
     public void small01() {
