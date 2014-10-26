@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q114FlattenBinaryTreeToLinkedListImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FlattenBinaryTreeToLinkedListImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q114FlattenBinaryTreeToLinkedListTest {
-    private Q114FlattenBinaryTreeToLinkedList solution = new Q114FlattenBinaryTreeToLinkedListImpl();
+public class FlattenBinaryTreeToLinkedListTest {
+    private FlattenBinaryTreeToLinkedList solution = new FlattenBinaryTreeToLinkedListImpl();
 
     @Test
     public void small01() {
