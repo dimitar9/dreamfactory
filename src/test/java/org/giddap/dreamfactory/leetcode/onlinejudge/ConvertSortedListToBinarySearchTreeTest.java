@@ -2,13 +2,13 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q109ConvertSortedListToBinarySearchTreeRecursiveImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ConvertSortedListToBinarySearchTreeRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q109ConvertSortedListToBinarySearchTreeTest {
-    private Q109ConvertSortedListToBinarySearchTree solution = new Q109ConvertSortedListToBinarySearchTreeRecursiveImpl();
+public class ConvertSortedListToBinarySearchTreeTest {
+    private ConvertSortedListToBinarySearchTree solution = new ConvertSortedListToBinarySearchTreeRecursiveImpl();
 
     @Test
     public void small01() {

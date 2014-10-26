@@ -2,10 +2,10 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q109ConvertSortedListToBinarySearchTree;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ConvertSortedListToBinarySearchTree;
 
 
-public class Q109ConvertSortedListToBinarySearchTreeRecursiveImpl implements Q109ConvertSortedListToBinarySearchTree {
+public class ConvertSortedListToBinarySearchTreeRecursiveImpl implements ConvertSortedListToBinarySearchTree {
     @Override
     public TreeNode sortedListToBST(ListNode head) {
         // Note: The Solution object is instantiated only once and is reused by each test case.

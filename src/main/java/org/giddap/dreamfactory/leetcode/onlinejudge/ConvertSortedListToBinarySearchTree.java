@@ -12,6 +12,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  * http://leetcode.com/2010/11/convert-sorted-list-to-balanced-binary.html
  * http://discuss.leetcode.com/questions/112/convert-sorted-list-to-binary-search-tree
  */
-public interface Q109ConvertSortedListToBinarySearchTree {
+public interface ConvertSortedListToBinarySearchTree {
     TreeNode sortedListToBST(ListNode head);
 }
