@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q102BinaryTreeLevelOrderTraversal;
+import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeLevelOrderTraversal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Q102BinaryTreeLevelOrderTraversalIterativeBfsImpl implements Q102BinaryTreeLevelOrderTraversal {
+public class BinaryTreeLevelOrderTraversalIterativeBfsWithOneQueueImpl implements BinaryTreeLevelOrderTraversal {
     @Override
     public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
         // Start typing your Java solution below

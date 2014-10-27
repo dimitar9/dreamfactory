@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q102BinaryTreeLevelOrderTraversalRecursiveDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeLevelOrderTraversalRecursiveDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -12,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q102BinaryTreeLevelOrderTraversalTest {
-    private Q102BinaryTreeLevelOrderTraversal solution = new Q102BinaryTreeLevelOrderTraversalRecursiveDfsImpl();
+public class BinaryTreeLevelOrderTraversalTest {
+    private BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversalRecursiveDfsImpl();
 //    private Q102BinaryTreeLevelOrderTraversal solution = new Q102BinaryTreeLevelOrderTraversalIterativeBfsImpl();
 
     @Test
