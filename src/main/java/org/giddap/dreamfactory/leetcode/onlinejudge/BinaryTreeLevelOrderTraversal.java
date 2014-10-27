@@ -34,6 +34,6 @@ import java.util.ArrayList;
  * @see <a href="http://leetcode.com/2010/09/printing-binary-tree-in-level-order.html">leetcode blog</a>
  * @see <a href="http://discuss.leetcode.com/questions/49/binary-tree-level-order-traversal">leetcode discussion</a>
  */
-public interface Q102BinaryTreeLevelOrderTraversal {
+public interface BinaryTreeLevelOrderTraversal {
     ArrayList<ArrayList<Integer>> levelOrder(TreeNode root);
 }

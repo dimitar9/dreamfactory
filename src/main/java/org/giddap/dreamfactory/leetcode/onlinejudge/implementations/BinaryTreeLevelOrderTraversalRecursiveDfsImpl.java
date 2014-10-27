@@ -1,14 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q102BinaryTreeLevelOrderTraversal;
+import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeLevelOrderTraversal;
 
 import java.util.ArrayList;
 
 /**
  *
  */
-public class Q102BinaryTreeLevelOrderTraversalRecursiveDfsImpl implements Q102BinaryTreeLevelOrderTraversal {
+public class BinaryTreeLevelOrderTraversalRecursiveDfsImpl implements BinaryTreeLevelOrderTraversal {
     public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
         doLevelTraversalRecursivelyWithDfs(ret, 0, root);
