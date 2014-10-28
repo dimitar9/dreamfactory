@@ -32,6 +32,6 @@ import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
  *
  * @see <a href="http://discuss.leetcode.com/questions/1266/palindrome-partitioning-ii">leetcode discussion</a>
  */
-public interface Q133CloneGraph {
+public interface CloneGraph {
     UndirectedGraphNode cloneGraph(UndirectedGraphNode node);
 }

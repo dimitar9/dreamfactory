@@ -15,6 +15,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  * http://discuss.leetcode.com/questions/17/search-in-rotated-sorted-array
  */
-public interface Q033SearchInRotatedSortedArray {
+public interface SearchInRotatedSortedArray {
     int search(int[] A, int target);
 }
