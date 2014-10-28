@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q033SearchInRotatedSortedArray;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SearchInRotatedSortedArray;
 
-public class Q033SearchInRotatedSortedArrayImpl implements Q033SearchInRotatedSortedArray {
+public class SearchInRotatedSortedArrayImpl implements SearchInRotatedSortedArray {
 
     @Override
     public int search(int[] A, int target) {
