@@ -1,13 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q035SearchInsertPosition;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SearchInsertPosition;
 
-public class Q035SearchInsertPositionImpl implements Q035SearchInsertPosition {
+public class SearchInsertPositionImpl implements SearchInsertPosition {
     @Override
     public int searchInsert(int[] A, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         int low = -1;
         int high = A.length;
 

@@ -18,6 +18,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * More details about the question: http://www.careercup.com/question?id=4425679
  * http://discuss.leetcode.com/questions/217/count-and-say
  */
-public interface Q038CountAndSay {
+public interface CountAndSay {
     String countAndSay(int n);
 }

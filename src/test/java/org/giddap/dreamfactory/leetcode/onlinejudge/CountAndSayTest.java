@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q038CountAndSayImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CountAndSayImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -8,8 +8,8 @@ import static org.junit.Assert.assertEquals;
 /**
  * 1, 11, 21, 1211, 111221, ...
  */
-public class Q038CountAndSayTest {
-    private Q038CountAndSay solution = new Q038CountAndSayImpl();
+public class CountAndSayTest {
+    private CountAndSay solution = new CountAndSayImpl();
 
     @Test
     public void small01() {

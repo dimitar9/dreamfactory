@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q035SearchInsertPositionImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SearchInsertPositionImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q035SearchInsertPositionTest {
-    private Q035SearchInsertPosition solution = new Q035SearchInsertPositionImpl();
+public class SearchInsertPositionTest {
+    private SearchInsertPosition solution = new SearchInsertPositionImpl();
     private static final int[] INPUT = new int[]{1, 3, 5, 6};
 
     @Test

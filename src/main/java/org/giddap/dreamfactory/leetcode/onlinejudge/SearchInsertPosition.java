@@ -19,6 +19,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/214/search-insert-position
  */
-public interface Q035SearchInsertPosition {
+public interface SearchInsertPosition {
     int searchInsert(int[] A, int target);
 }
