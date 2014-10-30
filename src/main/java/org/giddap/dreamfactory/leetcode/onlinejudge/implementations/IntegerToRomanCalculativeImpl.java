@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q012IntegerToRoman;
+import org.giddap.dreamfactory.leetcode.onlinejudge.IntegerToRoman;
 
 /**
  *
  */
-public class Q012IntegerToRomanCalculativeImpl implements Q012IntegerToRoman {
+public class IntegerToRomanCalculativeImpl implements IntegerToRoman {
     @Override
     public String intToRoman(int num) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
