@@ -1,13 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q027RemoveElement;
+import org.giddap.dreamfactory.leetcode.onlinejudge.RemoveElement;
 
-public class Q027RemoveElementImpl implements Q027RemoveElement {
+public class RemoveElementImpl implements RemoveElement {
     @Override
     public int removeElement(int[] A, int elem) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         final int len = A.length;
         int j = 0;
         for (int i = 0; i < len; i++) {
