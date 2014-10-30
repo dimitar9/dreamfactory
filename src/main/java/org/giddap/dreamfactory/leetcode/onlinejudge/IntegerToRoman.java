@@ -13,6 +13,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://discuss.leetcode.com/questions/194/integer-to-roman">leetcode discussion</a>
  * @see <a href="http://codesam.blogspot.com/2011/06/convert-integers-to-roman-numbers.html">codesam blog</a>
  */
-public interface Q012IntegerToRoman {
+public interface IntegerToRoman {
     String intToRoman(int num);
 }
