@@ -19,6 +19,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/235/length-of-last-word">Leetcode discussion</a>
  */
-public interface Q058LengthOfLastWord {
+public interface LengthOfLastWord {
     int lengthOfLastWord(String s);
 }
