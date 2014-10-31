@@ -1,20 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q028ImplementStrStr;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ImplementStrStr;
 
-public class Q028ImplementStrStrImpl implements Q028ImplementStrStr {
+public class ImplementStrStrImpl implements ImplementStrStr {
 
     @Override
     public String strStr(String haystack, String needle) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         final int hLen = haystack.length();
         final int nLen = needle.length();
-        if (nLen == 0) {
-            return haystack;
-        }
-
-        for (int i = 0; i <= (hLen - nLen); i++) {
+        for (int i = 0; i <= hLen - nLen; i++) {
             int j = 0;
             while (j < nLen && haystack.charAt(i + j) == needle.charAt(j)) {
                 j++;

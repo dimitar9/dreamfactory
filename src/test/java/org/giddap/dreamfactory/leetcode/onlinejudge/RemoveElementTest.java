@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q027RemoveElementImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RemoveElementImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q027RemoveElementTest {
-    private Q027RemoveElement solution = new Q027RemoveElementImpl();
+public class RemoveElementTest {
+    private RemoveElement solution = new RemoveElementImpl();
 
     @Test
     public void small01() {

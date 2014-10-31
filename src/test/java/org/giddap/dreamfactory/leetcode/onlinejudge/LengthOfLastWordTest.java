@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q058LengthOfLastWordImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LengthOfLastWordImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -8,8 +8,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q058LengthOfLastWordTest {
-    private Q058LengthOfLastWord solution = new Q058LengthOfLastWordImpl();
+public class LengthOfLastWordTest {
+    private LengthOfLastWord solution = new LengthOfLastWordImpl();
 
     @Test
     public void small01() {

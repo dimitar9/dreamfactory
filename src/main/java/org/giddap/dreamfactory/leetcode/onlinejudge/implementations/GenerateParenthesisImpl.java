@@ -1,18 +1,19 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q022GenerateParentheses;
+import org.giddap.dreamfactory.leetcode.onlinejudge.GenerateParenthesis;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Q022GenerateParenthesesImpl implements Q022GenerateParentheses {
+public class GenerateParenthesisImpl implements GenerateParenthesis {
     @Override
-    public ArrayList<String> generateParentheses(int n) {
-        ArrayList<String> ret = new ArrayList<String>();
+    public List<String> generateParenthesis(int n) {
+        List<String> ret = new ArrayList<String>();
         build(ret, "", n, n);
         return ret;
     }
 
-    private void build(ArrayList<String> ret, String curr, int remainOpen, int remainClose) {
+    private void build(List<String> ret, String curr, int remainOpen, int remainClose) {
         if (remainOpen == 0 && remainClose == 0) {
             ret.add(curr);
             return;

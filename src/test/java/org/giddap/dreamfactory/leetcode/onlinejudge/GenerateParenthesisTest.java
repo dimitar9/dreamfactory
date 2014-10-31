@@ -1,28 +1,28 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q022GenerateParenthesesImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.GenerateParenthesisImpl;
 import org.junit.Test;
 
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q022GenerateParenthesesTest {
+public class GenerateParenthesisTest {
 
-    private Q022GenerateParentheses solution = new Q022GenerateParenthesesImpl();
+    private GenerateParenthesis solution = new GenerateParenthesisImpl();
 
     @Test
     public void small01() {
         List<String> expected = Lists.newArrayList(new String[]{"()"});
-        List<String> actual = solution.generateParentheses(1);
+        List<String> actual = solution.generateParenthesis(1);
         assertEquals(expected, actual);
     }
 
     @Test
     public void small02() {
         List<String> expected = Lists.newArrayList(new String[]{"((()))", "(()())", "(())()", "()(())", "()()()"});
-        List<String> actual = solution.generateParentheses(3);
+        List<String> actual = solution.generateParenthesis(3);
         assertEquals(expected, actual);
     }
 

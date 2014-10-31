@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q028ImplementStrStrImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ImplementStrStrImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -9,8 +9,8 @@ import static org.junit.Assert.assertNull;
 /**
  *
  */
-public class Q028ImplementStrStrTest {
-    private Q028ImplementStrStr solution = new Q028ImplementStrStrImpl();
+public class ImplementStrStrTest {
+    private ImplementStrStr solution = new ImplementStrStrImpl();
 
     @Test
     public void small01() {

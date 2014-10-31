@@ -12,6 +12,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/208/remove-element">Leetcode discussion</a>
  */
-public interface Q027RemoveElement {
+public interface RemoveElement {
     int removeElement(int[] A, int elem);
 }

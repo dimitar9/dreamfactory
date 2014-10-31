@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/generate-parentheses/">Generate Parentheses</a>
@@ -18,6 +18,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/203/generate-parentheses">Leetcode discussion</a>
  */
-public interface Q022GenerateParentheses {
-    ArrayList<String> generateParentheses(int n);
+public interface GenerateParenthesis {
+    List<String> generateParenthesis(int n);
 }
