@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://leetcode.com/onlinejudge#question_103">Q103 Binary Tree Zigzag Level Order Traversal</a>
@@ -35,6 +36,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/52/binary-tree-zigzag-level-order-traversal">Leetcode discussion</a>
  */
-public interface Q103BinaryTreeZigzagLevelOrderTraversal {
-    ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root);
+public interface BinaryTreeZigzagLevelOrderTraversal {
+    List<List<Integer>> zigzagLevelOrder(TreeNode root);
 }

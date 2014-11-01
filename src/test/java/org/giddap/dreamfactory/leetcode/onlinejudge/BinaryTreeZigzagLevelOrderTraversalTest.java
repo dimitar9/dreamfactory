@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q103BinaryTreeZigzagLevelOrderTraversalImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeZigzagLevelOrderTraversalImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -33,8 +33,8 @@ import static org.junit.Assert.assertEquals;
  * <p/>
  * {0,2,4,1,#,3,-1,5,1,#,6,#,8}    [[0],[4,2],[3,-1,1],[6,8,1,5]]  [[0],[4,2],[1,3,-1],[8,6,1,5]]
  */
-public class Q103BinaryTreeZigzagLevelOrderTraversalTest {
-    private Q103BinaryTreeZigzagLevelOrderTraversal solution = new Q103BinaryTreeZigzagLevelOrderTraversalImpl();
+public class BinaryTreeZigzagLevelOrderTraversalTest {
+    private BinaryTreeZigzagLevelOrderTraversal solution = new BinaryTreeZigzagLevelOrderTraversalImpl();
 
     @Test
     public void small01() {

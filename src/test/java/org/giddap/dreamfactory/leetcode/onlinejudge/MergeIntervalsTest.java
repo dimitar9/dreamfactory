@@ -6,6 +6,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeInterva
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
@@ -15,7 +16,7 @@ public class MergeIntervalsTest {
 
     @Test
     public void small01() {
-        ArrayList<Interval> actual = solution.merge(new ArrayList<Interval>());
+        List<Interval> actual = solution.merge(new ArrayList<Interval>());
         assertTrue(actual.isEmpty());
     }
 
@@ -32,7 +33,7 @@ public class MergeIntervalsTest {
                 new Interval(8, 10),
                 new Interval(15, 18)
         );
-        ArrayList<Interval> actual = solution.merge(input);
+        List<Interval> actual = solution.merge(input);
         assertEquals(expected.size(), actual.size());
 
         for (int i = 0; i < actual.size(); i++) {
@@ -51,7 +52,7 @@ public class MergeIntervalsTest {
         ArrayList<Interval> expected = Lists.newArrayList(
                 new Interval(1, 3)
         );
-        ArrayList<Interval> actual = solution.merge(input);
+        List<Interval> actual = solution.merge(input);
         assertEquals(expected.size(), actual.size());
 
         for (int i = 0; i < actual.size(); i++) {
