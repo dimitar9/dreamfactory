@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.Interval;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/merge-intervals/">Merge Intervals</a>
@@ -20,6 +21,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/233/merge-intervals">Leetcode discussion</a>
  */
-public interface Q056MergeIntervals {
-    ArrayList<Interval> merge(ArrayList<Interval> intervals);
+public interface MergeIntervals {
+    List<Interval> merge(List<Interval> intervals);
 }

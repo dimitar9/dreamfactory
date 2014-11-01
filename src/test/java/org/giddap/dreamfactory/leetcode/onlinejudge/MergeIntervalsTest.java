@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.Interval;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q056MergeIntervalsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeIntervalsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
-public class Q056MergeIntervalsTest {
-    private Q056MergeIntervals solution = new Q056MergeIntervalsImpl();
+public class MergeIntervalsTest {
+    private MergeIntervals solution = new MergeIntervalsImpl();
 
     @Test
     public void small01() {
