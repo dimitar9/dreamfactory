@@ -22,7 +22,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * isMatch("ab", ".*") ? true
  * isMatch("aab", "c*a*b") ? true
  * <p/>
- * Links:
  * http://leetcode.com/2011/09/regular-expression-matching.html
  */
 public interface RegularExpressionMatching {
