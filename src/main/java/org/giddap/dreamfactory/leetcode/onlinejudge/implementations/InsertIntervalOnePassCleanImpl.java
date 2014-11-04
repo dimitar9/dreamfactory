@@ -4,15 +4,13 @@ import org.giddap.dreamfactory.leetcode.commons.Interval;
 import org.giddap.dreamfactory.leetcode.onlinejudge.InsertInterval;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class InsertIntervalOnePassCleanImpl implements InsertInterval {
     @Override
-    public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
         Interval temp = newInterval;
-        ArrayList<Interval> lst = new ArrayList<Interval>();
+        List<Interval> lst = new ArrayList<Interval>();
 
         for (Interval i : intervals) {
             if (i.end < temp.start) {

@@ -4,11 +4,12 @@ import org.giddap.dreamfactory.leetcode.commons.Interval;
 import org.giddap.dreamfactory.leetcode.onlinejudge.InsertInterval;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class InsertIntervalTwoPassImpl implements InsertInterval {
     @Override
-    public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
         ArrayList<Interval> ret = new ArrayList<Interval>();
 
         int i = 0;

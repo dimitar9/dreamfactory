@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.Interval;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/insert-interval/">Insert Interval</a>
@@ -27,5 +28,5 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/234/insert-interval">Leetcode discussion</a>
  */
 public interface InsertInterval {
-    ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval);
+    List<Interval> insert(List<Interval> intervals, Interval newInterval);
 }
