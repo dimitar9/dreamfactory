@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.Interval;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q057InsertIntervalTwoPassImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InsertIntervalTwoPassImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class Q057InsertIntervalTest {
-    private Q057InsertInterval solution = new Q057InsertIntervalTwoPassImpl();
+public class InsertIntervalTest {
+    private InsertInterval solution = new InsertIntervalTwoPassImpl();
 
     @Test
     public void small01() {

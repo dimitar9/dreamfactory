@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.Interval;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q057InsertInterval;
+import org.giddap.dreamfactory.leetcode.onlinejudge.InsertInterval;
 
 import java.util.ArrayList;
 
 
-public class Q057InsertIntervalTwoPassImpl implements Q057InsertInterval {
+public class InsertIntervalTwoPassImpl implements InsertInterval {
     @Override
     public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
         ArrayList<Interval> ret = new ArrayList<Interval>();

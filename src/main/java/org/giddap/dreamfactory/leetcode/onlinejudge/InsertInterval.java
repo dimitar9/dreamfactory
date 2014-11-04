@@ -26,6 +26,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/234/insert-interval">Leetcode discussion</a>
  */
-public interface Q057InsertInterval {
+public interface InsertInterval {
     ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval);
 }
