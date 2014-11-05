@@ -1,21 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q036ValidSudoku;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ValidSudoku;
 
-public class Q036ValidSudokuImpl implements Q036ValidSudoku {
+public class ValidSudokuImpl implements ValidSudoku {
     @Override
     public boolean isValidSudoku(char[][] board) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         final int numRows = board.length;
-        if (numRows == 0) {
-            return false;
-        }
         final int numColumns = board[0].length;
-        if (numColumns == 0) {
-            return false;
-        }
 
         int[] row = new int[numRows];
         int[] column = new int[numColumns];

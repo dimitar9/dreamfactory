@@ -13,6 +13,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://discuss.leetcode.com/questions/215/valid-sudoku
  * https://github.com/azheanda/leetcode/blob/master/validsoduku.java
  */
-public interface Q036ValidSudoku {
+public interface ValidSudoku {
     boolean isValidSudoku(char[][] board);
 }

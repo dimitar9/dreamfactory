@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q036ValidSudokuImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidSudokuImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class Q036ValidSudokuTest {
-    private Q036ValidSudoku solution = new Q036ValidSudokuImpl();
+public class ValidSudokuTest {
+    private ValidSudoku solution = new ValidSudokuImpl();
 
     @Test
     public void small01() {
