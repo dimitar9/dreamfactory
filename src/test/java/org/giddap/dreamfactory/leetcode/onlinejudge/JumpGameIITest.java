@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q045JumpGameIIOnImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.JumpGameIIOnImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q045JumpGameIITest {
+public class JumpGameIITest {
     //    private Q045JumpGameII solution = new Q045JumpGameIIOn2Impl();
-    private Q045JumpGameII solution = new Q045JumpGameIIOnImpl();
+    private JumpGameII solution = new JumpGameIIOnImpl();
 
     @Test
     public void small01() {

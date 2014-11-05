@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q045JumpGameII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.JumpGameII;
 
 /**
  *
  */
-public class Q045JumpGameIIOn2Impl implements Q045JumpGameII {
+public class JumpGameIIOn2Impl implements JumpGameII {
     /**
      * O(n) solution!
      * <p/>
@@ -15,7 +15,7 @@ public class Q045JumpGameIIOn2Impl implements Q045JumpGameII {
      * curr = max(i+A[i]) where 0 <= i <= last.
      */
     @Override
-    public int jump2(int[] A) {
+    public int jump(int[] A) {
         int start = 0;
         int end = A[0];
         int maxEnd = A[0];

@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q045JumpGameII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.JumpGameII;
 
 /**
  * http://leetcode.com/onlinejudge#question_45
@@ -21,7 +21,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Q045JumpGameII;
  * http://discuss.leetcode.com/questions/223/jump-game-ii
  * http://www.mitbbs.com/article_t/JobHunting/32123995.html
  */
-public class Q045JumpGameIIOnImpl implements Q045JumpGameII {
+public class JumpGameIIOnImpl implements JumpGameII {
     /**
      * O(n) solution!
      * <p/>
@@ -31,21 +31,23 @@ public class Q045JumpGameIIOnImpl implements Q045JumpGameII {
      * curr = max(i+A[i]) where 0 <= i <= last.
      */
     @Override
-    public int jump2(int[] A) {
-        int ret = 0;
-        int last = 0;
-        int curr = 0;
-        for (int i = 0; i < A.length; i++) {
-            if (i > last) {
-                if (curr < i) {
-                    return -1; // unreachable
-                }
-                last = curr;
-                ++ret;
-            }
-            curr = Math.max(curr, i + A[i]);
+    public int jump(int[] A) {
+        if (A.length <= 1) {
+            return 0;
         }
-
-        return ret;
+        int curr = 0;
+        int next = 0;
+        int steps = 0;
+        for (int i = 0; i <= curr; i++) {
+            next = Math.max(i + A[i], next);
+            if (next >= A.length - 1) {
+                return steps + 1;
+            }
+            if (i == curr) {
+                curr = next;
+                steps++;
+            }
+        }
+        return -1;
     }
 }
