@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * http://leetcode.com/onlinejudge#question_95
@@ -24,6 +25,6 @@ import java.util.ArrayList;
  * http://blog.unieagle.net/2012/11/04/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Aunique-binary-search-trees-ii/
  * http://discuss.leetcode.com/questions/269/unique-binary-search-trees-ii
  */
-public interface Q095UniqueBinarySearchTreesII {
-    ArrayList<TreeNode> generateTrees(int n);
+public interface UniqueBinarySearchTreesII {
+    List<TreeNode> generateTrees(int n);
 }

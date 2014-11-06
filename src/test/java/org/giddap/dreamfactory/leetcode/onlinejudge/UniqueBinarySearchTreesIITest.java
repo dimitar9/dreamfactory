@@ -1,15 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q095UniqueBinarySearchTreesIIDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.UniqueBinarySearchTreesIIDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q095UniqueBinarySearchTreesIITest {
-    private Q095UniqueBinarySearchTreesII solution = new Q095UniqueBinarySearchTreesIIDfsImpl();
+public class UniqueBinarySearchTreesIITest {
+    private UniqueBinarySearchTreesII solution = new UniqueBinarySearchTreesIIDfsImpl();
 
     @Test
     public void small01() {
