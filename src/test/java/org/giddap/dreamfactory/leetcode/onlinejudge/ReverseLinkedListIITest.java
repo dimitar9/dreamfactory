@@ -8,8 +8,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q092ReverseLinkedListIITest {
-    private Q092ReverseLinkedListII solution = new Q092ReverseLinkedListIIIterativeImpl();
+public class ReverseLinkedListIITest {
+    private ReverseLinkedListII solution = new ReverseLinkedListIIIterativeImpl();
 
     @Test
     public void small01() {

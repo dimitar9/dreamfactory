@@ -21,39 +21,30 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * http://gongxuns.blogspot.com/2012/12/leetcode-reverse-linked-list-ii.html
  * http://blog.unieagle.net/2012/10/18/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Areverse-linked-list-ii/
  */
-public class Q092ReverseLinkedListIIIterativeImpl implements Q092ReverseLinkedListII {
+public class ReverseLinkedListIIIterativeImpl implements ReverseLinkedListII {
     @Override
     public ListNode reverseBetween(ListNode head, int m, int n) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
-        if (head == null || head.next == null) {
-            return head;
-        }
-
-        ListNode newHead = new ListNode(0);
-        newHead.next = head;
-
-        ListNode beforeM = newHead;
+        ListNode nhead = new ListNode(0);
+        nhead.next = head;
+        ListNode prev = nhead;
+        ListNode curr = head;
         int i = 1;
-        while (i < m) {
-            beforeM = beforeM.next;
-            i++;
-        }
-
-        ListNode prev = beforeM;
-        ListNode curr = beforeM.next;
-        while (i <= n && curr != null) {
+        ListNode tail = null;
+        while (curr != null) {
             ListNode next = curr.next;
-            curr.next = prev;
-            prev = curr;
+            if (m == i) {
+                tail = curr;
+            } else if (m < i && i <= n) {
+                ListNode tmp = prev.next;
+                prev.next = curr;
+                curr.next = tmp;
+                tail.next = next;
+            } else {
+                prev = curr;
+            }
             curr = next;
             i++;
         }
-
-        ListNode nodeM = beforeM.next;
-        beforeM.next = prev;
-        nodeM.next = curr;
-        return newHead.next;
+        return nhead.next;
     }
 }

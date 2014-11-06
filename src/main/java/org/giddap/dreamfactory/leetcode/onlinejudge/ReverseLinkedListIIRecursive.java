@@ -5,7 +5,7 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
 /**
  *
  */
-public class Q092ReverseLinkedListIIRecursive {
+public class ReverseLinkedListIIRecursive implements ReverseLinkedListII{
     public ListNode reverseBetween(ListNode head, int m, int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
