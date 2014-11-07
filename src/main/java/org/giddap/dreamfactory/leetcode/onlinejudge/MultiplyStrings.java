@@ -10,6 +10,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Links:
  * http://discuss.leetcode.com/questions/221/multiply-strings
  */
-public interface Q043MultiplyStrings {
+public interface MultiplyStrings {
     String multiply(String num1, String num2);
 }

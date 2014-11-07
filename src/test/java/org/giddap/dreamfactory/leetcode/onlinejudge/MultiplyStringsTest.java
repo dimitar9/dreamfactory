@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q043MultiplyStringsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MultiplyStringsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -29,8 +29,8 @@ import static org.junit.Assert.assertEquals;
  * <p/>
  * "123456789", "987654321"	"121932631112635269"	"121932631112635269"
  */
-public class Q043MultiplyStringsTest {
-    private Q043MultiplyStrings solution = new Q043MultiplyStringsImpl();
+public class MultiplyStringsTest {
+    private MultiplyStrings solution = new MultiplyStringsImpl();
 
     @Test
     public void small01() {

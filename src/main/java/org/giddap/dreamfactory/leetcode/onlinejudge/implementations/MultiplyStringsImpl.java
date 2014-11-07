@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q043MultiplyStrings;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MultiplyStrings;
 
-public class Q043MultiplyStringsImpl implements Q043MultiplyStrings {
+public class MultiplyStringsImpl implements MultiplyStrings {
 
     @Override
     public String multiply(String num1, String num2) {
