@@ -1,7 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 /**
- * <a href="http://leetcode.com/onlinejudge#question_32">Q032 Longest Valid Parentheses</a>
+ * <a href="https://oj.leetcode.com/problems/longest-valid-parentheses/">
+ *     Longest Valid Parentheses</a>
  * <p/>
  * Copyright 2013 LeetCode
  * <p/>
