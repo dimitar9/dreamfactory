@@ -10,8 +10,6 @@ import java.util.Stack;
  */
 public class LongestValidParenthesesOnePassImpl implements LongestValidParentheses {
     public int longestValidParentheses(String s) {
-        // IMPORTANT: Please reset any member data you declared, as
-        // the same Solution instance will be reused for each test case.
         int lvp = 0;
         int last = -1;
         Stack<Integer> lefts = new Stack<Integer>();

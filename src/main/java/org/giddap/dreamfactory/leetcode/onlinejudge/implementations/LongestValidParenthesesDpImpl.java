@@ -5,8 +5,6 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.LongestValidParentheses;
 public class LongestValidParenthesesDpImpl implements LongestValidParentheses {
     @Override
     public int longestValidParentheses(String s) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         if (s.length() == 0) {
             return 0;
         }
