@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q030SubstringWithConcatenationOfAllWordsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SubstringWithConcatenationOfAllWordsImpl;
 import org.junit.Test;
 
 import java.util.List;
@@ -12,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q030SubstringWithConcatenationOfAllWordsTest {
-    Q030SubstringWithConcatenationOfAllWords solution = new Q030SubstringWithConcatenationOfAllWordsImpl();
+public class SubstringWithConcatenationOfAllWordsTest {
+    SubstringWithConcatenationOfAllWords solution = new SubstringWithConcatenationOfAllWordsImpl();
 
     @Test
     public void small01() {

@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
- * <a href="http://leetcode.com/onlinejudge#question_30">Q030 Substring With Concatenation Of All Words</a>
+ * <a href="https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/">Substring With Concatenation Of All Words</a>
  * <p/>
  * Copyright 2013 LeetCode
  * <p/>
@@ -27,6 +27,6 @@ import java.util.ArrayList;
  * @see <a href="http://blog.unieagle.net/2012/10/28/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Asubstring-with-concatenation-of-all-words/">A blog from UniEagle</a>
  * @see <a href="http://gongxuns.blogspot.com/2012/12/leetcode-substring-with-concatenation.html">A blog from gongxun</a>
  */
-public interface Q030SubstringWithConcatenationOfAllWords {
-    ArrayList<Integer> findSubstring(String S, String[] L);
+public interface SubstringWithConcatenationOfAllWords {
+    List<Integer> findSubstring(String S, String[] L);
 }
