@@ -21,6 +21,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  * 这个逻辑很清晰。
  */
-public interface Q048RotateImage {
+public interface RotateImage {
     void rotate(int[][] matrix);
 }

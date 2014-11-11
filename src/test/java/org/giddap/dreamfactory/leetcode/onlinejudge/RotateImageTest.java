@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q048RotateImageImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RotateImageImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q048RotateImageTest {
-    private Q048RotateImage solution = new Q048RotateImageImpl();
+public class RotateImageTest {
+    private RotateImage solution = new RotateImageImpl();
 
     @Test
     public void small01() {
