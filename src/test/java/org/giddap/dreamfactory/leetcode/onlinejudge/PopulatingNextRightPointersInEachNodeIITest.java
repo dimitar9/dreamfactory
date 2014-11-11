@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q117PopulatingNextRightPointersInEachNodeIIIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PopulatingNextRightPointersInEachNodeIIIterativeImpl;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertNull;
@@ -10,8 +10,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q117PopulatingNextRightPointersInEachNodeIITest {
-    private Q117PopulatingNextRightPointersInEachNodeII solution = new Q117PopulatingNextRightPointersInEachNodeIIIterativeImpl();
+public class PopulatingNextRightPointersInEachNodeIITest {
+    private PopulatingNextRightPointersInEachNodeII solution = new PopulatingNextRightPointersInEachNodeIIIterativeImpl();
 //    private Q117PopulatingNextRightPointersInEachNodeII solution = new Q117PopulatingNextRightPointersInEachNodeIIRecursiveImpl();
 
     @Test

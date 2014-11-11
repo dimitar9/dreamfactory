@@ -26,6 +26,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
  *   4-> 5 -> 7 -> NULL
  * </pre>
  */
-public interface Q117PopulatingNextRightPointersInEachNodeII {
+public interface PopulatingNextRightPointersInEachNodeII {
     void connect(TreeLinkNode root);
 }

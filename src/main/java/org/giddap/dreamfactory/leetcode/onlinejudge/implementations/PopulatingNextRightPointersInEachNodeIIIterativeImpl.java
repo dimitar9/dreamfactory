@@ -2,15 +2,11 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
 import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q117PopulatingNextRightPointersInEachNodeII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.PopulatingNextRightPointersInEachNodeII;
 
-public class Q117PopulatingNextRightPointersInEachNodeIIIterativeImpl implements Q117PopulatingNextRightPointersInEachNodeII {
+public class PopulatingNextRightPointersInEachNodeIIIterativeImpl implements PopulatingNextRightPointersInEachNodeII {
     @Override
     public void connect(TreeLinkNode root) {
-        if (root == null) {
-            return;
-        }
-
         TreeLinkNode levelStart = root;
         while (levelStart != null) {
             TreeLinkNode prev = null;
