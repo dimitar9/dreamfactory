@@ -28,6 +28,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://stackoverflow.com/questions/7918806/finding-n-th-permutation-without-computing-others
  * http://stackoverflow.com/questions/1506078/fast-permutation-number-permutation-mapping-algorithms
  */
-public interface Q060PermutationSequence {
+public interface PermutationSequence {
     String getPermutation(int n, int k);
 }

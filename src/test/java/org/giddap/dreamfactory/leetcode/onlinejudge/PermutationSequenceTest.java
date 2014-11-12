@@ -4,8 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q060PermutationSequenceTest {
-    private Q060PermutationSequence solution = new Q060PermutationSequenceIterativeImpl();
+public class PermutationSequenceTest {
+    private PermutationSequence solution = new PermutationSequenceIterativeImpl();
 
     @Test
     public void small01() {

@@ -3,7 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q060PermutationSequenceIterativeImpl implements Q060PermutationSequence {
+public class PermutationSequenceIterativeImpl implements PermutationSequence {
     @Override
     public String getPermutation(int n, int k) {
         // Start typing your Java solution below
