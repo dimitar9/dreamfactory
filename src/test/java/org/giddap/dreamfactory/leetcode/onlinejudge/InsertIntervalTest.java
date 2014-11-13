@@ -5,6 +5,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InsertInterv
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -29,7 +30,7 @@ public class InsertIntervalTest {
 
         Interval i6 = new Interval(4, 7);
 
-        ArrayList<Interval> actual = solution.insert(list, i6);
+        List<Interval> actual = solution.insert(list, i6);
 
         assertTrue(actual.size() == 4);
         Interval tmp = actual.get(0);

@@ -11,32 +11,32 @@ public class JumpGameIITest {
 
     @Test
     public void small01() {
-        assertEquals(2, solution.jump2(new int[]{2, 3, 1, 1, 4}));
+        assertEquals(2, solution.jump(new int[]{2, 3, 1, 1, 4}));
     }
 
     @Test
     public void small02() {
-        assertEquals(0, solution.jump2(new int[]{1}));
+        assertEquals(0, solution.jump(new int[]{1}));
     }
 
     @Test
     public void small03() {
-        assertEquals(-1, solution.jump2(new int[]{0, 1}));
+        assertEquals(-1, solution.jump(new int[]{0, 1}));
     }
 
     @Test
     public void small04() {
-        assertEquals(1, solution.jump2(new int[]{2, 0, 1}));
+        assertEquals(1, solution.jump(new int[]{2, 0, 1}));
     }
 
     @Test
     public void small05() {
-        assertEquals(2, solution.jump2(new int[]{1, 2, 3}));
+        assertEquals(2, solution.jump(new int[]{1, 2, 3}));
     }
 
     @Test
     public void small06() {
-        assertEquals(1, solution.jump2(new int[]{1, 2}));
+        assertEquals(1, solution.jump(new int[]{1, 2}));
     }
 }
 

@@ -1,11 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PermutationSequenceImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PermutationSequenceTest {
-    private PermutationSequence solution = new PermutationSequenceIterativeImpl();
+    private PermutationSequence solution2 = new PermutationSequenceIterativeImpl();
+    private PermutationSequence solution = new PermutationSequenceImpl();
 
     @Test
     public void small01() {

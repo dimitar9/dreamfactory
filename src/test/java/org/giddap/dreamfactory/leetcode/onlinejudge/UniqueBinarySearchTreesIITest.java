@@ -5,6 +5,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.UniqueBinary
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +15,7 @@ public class UniqueBinarySearchTreesIITest {
     @Test
     public void small01() {
         TreeNode expected = new TreeNode(1);
-        ArrayList<TreeNode> actual = solution.generateTrees(1);
+        List<TreeNode> actual = solution.generateTrees(1);
         assertEquals(1, actual.size());
         assertEquals(expected.val, actual.get(0).val);
     }
