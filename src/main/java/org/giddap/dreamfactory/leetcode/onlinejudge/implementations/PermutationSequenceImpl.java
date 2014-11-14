@@ -39,7 +39,7 @@ public class PermutationSequenceImpl implements PermutationSequence {
         }
 
         int j = len - 1;
-        while (j >= i && num[i - 1] <= num[j]) {
+        while (j >= i && num[i - 1] >= num[j]) {
             j--;
         }
 
