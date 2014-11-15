@@ -1,13 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.EditDistanceBottomUpDpImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.EditDistanceRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class EditDistanceTest {
     private EditDistance solution = new EditDistanceBottomUpDpImpl();
-//    private EditDistance solution = new EditDistanceRecursiveImpl();
+    private EditDistance solution1 = new EditDistanceRecursiveImpl();
 
     @Test
     public void small01() {
