@@ -1,12 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q115DistinctSubsequencesBacktrackingImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesBacktrackingImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesDpImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q115DistinctSubsequencesTest {
-    private Q115DistinctSubsequences solution = new Q115DistinctSubsequencesBacktrackingImpl();
+public class DistinctSubsequencesTest {
+    private DistinctSubsequences solution2 = new DistinctSubsequencesBacktrackingImpl();
+    private DistinctSubsequences solution = new DistinctSubsequencesDpImpl();
 
     @Test
     public void small01() {
@@ -33,7 +35,6 @@ public class Q115DistinctSubsequencesTest {
         assertEquals(1293119,
                 solution.numDistinct("eacabdeadcbbddccdaccadddbaaebadcbaaedeeebdabbaeccdbcbaceaceddcdbddadecebaacdcdaeeccaebaeebceaaaaaceaedd", "baaacbceabba"));
     }
-
 
     @Test
     public void large02() {

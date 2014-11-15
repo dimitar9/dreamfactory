@@ -18,9 +18,9 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * Return 3.
  * <p/>
  *
- * @see <a href="http://discuss.leetcode.com/questions/281/distinct-subsequences">Leetcode discussion</a>
  * @see <a href="http://tech-lightnight.blogspot.com/2012/11/distinct-subsequences.html">A recursive solution</a>
+ * http://n00tc0d3r.blogspot.com/2013/02/find-number-of-distinct-subsequences.html
  */
-public interface Q115DistinctSubsequences {
+public interface DistinctSubsequences {
     int numDistinct(String S, String T);
 }

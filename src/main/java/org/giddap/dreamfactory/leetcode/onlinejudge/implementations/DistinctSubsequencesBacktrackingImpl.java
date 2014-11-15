@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q115DistinctSubsequences;
+import org.giddap.dreamfactory.leetcode.onlinejudge.DistinctSubsequences;
 
 /**
  *
  */
-public class Q115DistinctSubsequencesBacktrackingImpl implements Q115DistinctSubsequences {
+public class DistinctSubsequencesBacktrackingImpl implements DistinctSubsequences {
     @Override
     public int numDistinct(String S, String T) {
         if (T.length() == 0) {
