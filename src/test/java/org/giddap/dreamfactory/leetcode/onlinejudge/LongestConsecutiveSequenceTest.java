@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q128LongestConsecutiveSequenceImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LongestConsecutiveSequenceImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q128LongestConsecutiveSequenceTest {
-    private Q128LongestConsecutiveSequence solution = new Q128LongestConsecutiveSequenceImpl();
+public class LongestConsecutiveSequenceTest {
+    private LongestConsecutiveSequence solution = new LongestConsecutiveSequenceImpl();
 
     @Test
     public void small01() {

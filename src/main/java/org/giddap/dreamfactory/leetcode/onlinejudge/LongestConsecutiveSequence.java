@@ -20,6 +20,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://chuansong.me/n/93910
  * http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/
  */
-public interface Q128LongestConsecutiveSequence {
+public interface LongestConsecutiveSequence {
     int longestConsecutive(int[] num);
 }

@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q128LongestConsecutiveSequence;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LongestConsecutiveSequence;
 
 import java.util.HashMap;
 
-public class Q128LongestConsecutiveSequenceImpl implements Q128LongestConsecutiveSequence {
+public class LongestConsecutiveSequenceImpl implements LongestConsecutiveSequence {
 
     @Override
     public int longestConsecutive(int[] num) {
