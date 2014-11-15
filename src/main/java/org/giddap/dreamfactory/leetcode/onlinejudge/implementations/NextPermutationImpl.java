@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q031NextPermutation;
+import org.giddap.dreamfactory.leetcode.onlinejudge.NextPermutation;
 
-public class Q031NextPermutationImpl implements Q031NextPermutation {
+public class NextPermutationImpl implements NextPermutation {
 
     @Override
     public void nextPermutation(int[] num) {

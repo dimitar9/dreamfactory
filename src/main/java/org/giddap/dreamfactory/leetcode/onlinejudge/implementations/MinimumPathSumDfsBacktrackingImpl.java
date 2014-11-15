@@ -1,9 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
+import org.giddap.dreamfactory.leetcode.onlinejudge.MinimumPathSum;
+
 /**
  * TEL on OJ large.
  */
-public class Q064MinimumPathSumDfsBacktrackingImpl {
+public class MinimumPathSumDfsBacktrackingImpl implements MinimumPathSum {
     public int minPathSum(int[][] grid) {
         // Start typing your Java solution below
         // DO NOT write main() function

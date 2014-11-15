@@ -27,6 +27,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *      Lexicographic permutations using Algorithm L (STL next_permutation in Python)</a>
  * @see <a href="http://codeforces.com/blog/entry/3980">A Java implementation</a>
  */
-public interface Q031NextPermutation {
+public interface NextPermutation {
     void nextPermutation(int[] num);
 }

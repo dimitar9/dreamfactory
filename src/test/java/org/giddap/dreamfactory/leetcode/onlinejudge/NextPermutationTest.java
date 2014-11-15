@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q031NextPermutationImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.NextPermutationImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q031NextPermutationTest {
-    private Q031NextPermutation solution = new Q031NextPermutationImpl();
+public class NextPermutationTest {
+    private NextPermutation solution = new NextPermutationImpl();
 
     @Test
     public void small01() {
