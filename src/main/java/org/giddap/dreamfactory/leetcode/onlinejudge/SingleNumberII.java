@@ -7,7 +7,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  * Note:
  * Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
- * 
+ *
+ *
  */
 public interface SingleNumberII {
     int singleNumber(int[] A);
