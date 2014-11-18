@@ -26,6 +26,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://discuss.leetcode.com/questions/1223/surrounded-regions
  * http://blog.sina.com.cn/s/blog_b9285de20101j1dt.html
  */
-public interface Q130SurroundedRegions {
+public interface SurroundedRegions {
     void solve(char[][] board);
 }

@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q130SurroundedRegions;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SurroundedRegions;
 
-public class Q130SurroundedRegionsDfsImpl implements Q130SurroundedRegions {
+public class SurroundedRegionsDfsImpl implements SurroundedRegions {
     private static final int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     public void solve(char[][] board) {

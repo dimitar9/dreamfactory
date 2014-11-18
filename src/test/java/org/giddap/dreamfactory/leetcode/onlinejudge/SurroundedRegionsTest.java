@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q130SurroundedRegionsDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SurroundedRegionsDfsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q130SurroundedRegionsTest {
-    private Q130SurroundedRegions solution = new Q130SurroundedRegionsDfsImpl();
+public class SurroundedRegionsTest {
+    private SurroundedRegions solution = new SurroundedRegionsDfsImpl();
 
     @Test
     public void small01() {
