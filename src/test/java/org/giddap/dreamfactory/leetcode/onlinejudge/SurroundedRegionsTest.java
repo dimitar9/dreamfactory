@@ -94,4 +94,9 @@ public class SurroundedRegionsTest {
             }
         }
     }
+
+    @Test
+    public void small04() {
+        solution.solve(new char[][]{{'X'}});
+    }
 }

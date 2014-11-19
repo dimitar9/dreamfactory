@@ -4,80 +4,62 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.SurroundedRegions;
 
 public class SurroundedRegionsDfsImpl implements SurroundedRegions {
-    private static final int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    private static final int[][] MOVES = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
 
     public void solve(char[][] board) {
-        // Note: The Solution object is instantiated only once and is reused by each test case.
-        final int numRows = board.length;
-        if (numRows == 0) {
+        final int nRows = board.length;
+        if (nRows == 0) {
             return;
         }
-        final int numColumns = board[0].length;
-        if (numColumns == 0) {
+        final int nCols = board[0].length;
+        if (nCols == 0) {
             return;
         }
 
-        boolean[][] visited = new boolean[numRows][numColumns];
-        // top row
-        for (int i = 0; i < numColumns; i++) {
-            if (board[0][i] == 'O') {
-                visited[0][i] = true;
-                calcDfs(board, visited, 0, i);
-                visited[0][i] = false;
+        for (int c = 0; c < board[0].length; c++) {
+            if (board[0][c] == 'O') {
+                fill(board, 0, c);
+            }
+            if (board[nRows - 1][c] == 'O') {
+                fill(board, nRows - 1, c);
             }
         }
 
-        // left-most column
-        for (int i = 0; i < numRows; i++) {
-            if (board[i][0] == 'O') {
-                visited[i][0] = true;
-                calcDfs(board, visited, i, 0);
-                visited[i][0] = false;
+
+        for (int r = 0; r < board.length; r++) {
+            if (board[r][0] == 'O') {
+                fill(board, r, 0);
+            }
+            if (board[r][nCols - 1] == 'O') {
+                fill(board, r, nCols - 1);
             }
         }
 
-        // bottom row
-        for (int i = 0; i < numColumns; i++) {
-            if (board[numRows - 1][i] == 'O') {
-                visited[numRows - 1][i] = true;
-                calcDfs(board, visited, numRows - 1, i);
-                visited[numRows - 1][i] = false;
-            }
-        }
 
-        // right-most column
-        for (int i = 0; i < numRows; i++) {
-            if (board[i][numColumns - 1] == 'O') {
-                visited[i][numColumns - 1] = true;
-                calcDfs(board, visited, i, numColumns - 1);
-                visited[i][numColumns - 1] = false;
-            }
-        }
-
-        for (int i = 0; i < numRows; i++) {
-            for (int j = 0; j < numColumns; j++) {
-                if (board[i][j] == 'L') {
-                    board[i][j] = 'O';
+        for (int r = 0; r < board.length; r++) {
+            for (int c = 0; c < board[0].length; c++) {
+                if (board[r][c] == 'A') {
+                    board[r][c] = 'O';
                 } else {
-                    board[i][j] = 'X';
+                    board[r][c] = 'X';
                 }
             }
         }
     }
 
-    private void calcDfs(char[][] board, boolean[][] visited, int row, int column) {
-        board[row][column] = 'L';
+    public void fill(char[][] board, int r, int c) {
+        final int nRows = board.length;
+        final int nCols = board[0].length;
 
-        for (int[] dir : DIRS) {
-            int nextRow = row + dir[0];
-            int nextColumn = column + dir[1];
-            if (0 <= nextRow && nextRow < board.length
-                    && 0 <= nextColumn && nextColumn < board[0].length
-                    && !visited[nextRow][nextColumn]
-                    && board[nextRow][nextColumn] == 'O') {
-                visited[nextRow][nextColumn] = true;
-                calcDfs(board, visited, nextRow, nextColumn);
-                visited[nextRow][nextColumn] = false;
+        board[r][c] = 'A';
+        for (int[] m : MOVES) {
+            int nr = r + m[0];
+            int nc = c + m[1];
+            if (0 <= nr && nr < nRows
+                    && 0 <= nc && nc < nCols) {
+                if (board[nr][nc] == 'O') {
+                    fill(board, nr, nc);
+                }
             }
         }
     }
