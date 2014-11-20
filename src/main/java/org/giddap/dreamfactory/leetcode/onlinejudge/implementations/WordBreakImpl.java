@@ -9,8 +9,6 @@ import java.util.Set;
  */
 public class WordBreakImpl implements WordBreak {
     public boolean wordBreak(String s, Set<String> dict) {
-        // IMPORTANT: Please reset any member data you declared, as
-        // the same Solution instance will be reused for each test case.
         final int len = s.length();
         if (len == 0) {
             return true;

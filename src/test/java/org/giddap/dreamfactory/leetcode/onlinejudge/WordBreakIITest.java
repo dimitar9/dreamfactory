@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WordBreakIIDfsImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WordBreakIIImpl;
 import org.junit.Test;
 
@@ -14,7 +15,8 @@ import static org.junit.Assert.assertEquals;
  *
  */
 public class WordBreakIITest {
-    private WordBreakII solution = new WordBreakIIImpl();
+    private WordBreakII solution2 = new WordBreakIIImpl();
+    private WordBreakII solution = new WordBreakIIDfsImpl();
 
     @Test
     public void small01() {

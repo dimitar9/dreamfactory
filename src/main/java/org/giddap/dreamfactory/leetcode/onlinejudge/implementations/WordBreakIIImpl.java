@@ -15,7 +15,7 @@ import java.util.Set;
  */
 public class WordBreakIIImpl implements WordBreakII {
     @Override
-    public ArrayList<String> wordBreak(String s, Set<String> dict) {
+    public List<String> wordBreak(String s, Set<String> dict) {
         boolean[] memo = new boolean[s.length() + 1];
         Map<Integer, List<Integer>> idxMap = new HashMap<Integer, List<Integer>>();
         memo[0] = true;
