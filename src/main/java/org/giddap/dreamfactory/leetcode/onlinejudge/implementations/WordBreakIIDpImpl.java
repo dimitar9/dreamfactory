@@ -40,6 +40,16 @@ public class WordBreakIIDpImpl implements WordBreakII {
 
         // construct word breaks
         Deque<Integer> stack = new ArrayDeque<>();
+        for (int c = 1; c <= len; c++) {
+            if (memo[1][c]) {
+                stack.offerFirst(c);
+            }
+        }
+
+        while (!stack.isEmpty()) {
+            int w = stack.pollFirst();
+
+        }
         return ret;
     }
 }

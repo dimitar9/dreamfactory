@@ -17,13 +17,20 @@ import static org.junit.Assert.assertEquals;
  */
 public class WordBreakIITest {
     private WordBreakII solution2 = new WordBreakIIImpl();
-    private WordBreakII solution3 = new WordBreakIIDfsImpl();
-    private WordBreakII solution = new WordBreakIIDpImpl();
+    private WordBreakII solution = new WordBreakIIDfsImpl();
+    private WordBreakII solution3 = new WordBreakIIDpImpl();
 
     @Test
     public void small01() {
         List<String> actual = solution.wordBreak("abc", Sets.newHashSet("a", "bc"));
         List<String> expected = Lists.newArrayList("a bc");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void small02() {
+        List<String> actual = solution.wordBreak("a", Sets.newHashSet("a"));
+        List<String> expected = Lists.newArrayList("a");
         assertEquals(expected, actual);
     }
 
