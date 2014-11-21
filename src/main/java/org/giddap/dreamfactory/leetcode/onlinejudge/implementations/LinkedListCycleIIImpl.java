@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LinkedListCycleII;
 
 /**
  * 这是另一道题的扩展，利用快慢指针判断出是否有环后，还需要找出环的起点，分析如下：
@@ -15,10 +16,8 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * 到环起点长度，于是我们从链表头、与相遇点分别设一个指针，每次各走一步，两个指针必定相遇，且相遇点为环起点</li>
  * </ol>
  */
-public class LinkedListCycleIIImpl {
+public class LinkedListCycleIIImpl implements LinkedListCycleII {
     public ListNode detectCycle(ListNode head) {
-        // IMPORTANT: Please reset any member data you declared, as
-        // the same Solution instance will be reused for each test case.
         if (head == null || head.next == null) {
             return null;
         }
