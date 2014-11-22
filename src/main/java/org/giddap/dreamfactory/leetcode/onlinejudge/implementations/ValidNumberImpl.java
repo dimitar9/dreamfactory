@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q065ValidNumber;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ValidNumber;
 
-public class Q065ValidNumberImpl implements Q065ValidNumber {
+public class ValidNumberImpl implements ValidNumber {
     @Override
     public boolean isNumber(String s) {
         // Start typing your Java solution below

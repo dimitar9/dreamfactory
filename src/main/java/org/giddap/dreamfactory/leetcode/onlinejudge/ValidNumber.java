@@ -24,6 +24,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32300249.html">Mitbbs discussion</a>
  * @see <a href="http://dl.dropboxusercontent.com/u/19732851/LeetCode/ValidNumber.html">A clean solution</a>
  */
-public interface Q065ValidNumber {
+public interface ValidNumber {
     boolean isNumber(String s);
 }

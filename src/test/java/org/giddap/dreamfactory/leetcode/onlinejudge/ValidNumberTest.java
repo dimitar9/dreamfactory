@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q065ValidNumberImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidNumberImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Q065ValidNumberTest {
-    private Q065ValidNumber solution = new Q065ValidNumberImpl();
+public class ValidNumberTest {
+    private ValidNumber solution = new ValidNumberImpl();
 
     @Test
     public void small01() {
@@ -22,6 +22,11 @@ public class Q065ValidNumberTest {
     @Test
     public void small03() {
         assertFalse(solution.isNumber("abc"));
+    }
+
+    @Test
+    public void small04() {
+        assertFalse(solution.isNumber("0e"));
     }
 }
 
