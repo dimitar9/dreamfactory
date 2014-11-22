@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ReverseNodesInKGroupImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -66,8 +67,8 @@ import static org.junit.Assert.assertNotNull;
  * <p/>
  * {1,2,3,4,5,6}, 7	{1,2,3,4,5,6}    {1,2,3,4,5,6}
  */
-public class Q025ReverseNodesInKGroupTest {
-    private Q025ReverseNodesInKGroup solution = new Q025ReverseNodesInKGroup();
+public class ReverseNodesInKGroupTest {
+    private ReverseNodesInKGroup solution = new ReverseNodesInKGroupImpl();
 
     @Test
     public void reverseWholeList() {
