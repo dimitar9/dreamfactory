@@ -2,6 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ReverseNodesInKGroupImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ReverseNodesInKGroupIterativeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -68,10 +69,11 @@ import static org.junit.Assert.assertNotNull;
  * {1,2,3,4,5,6}, 7	{1,2,3,4,5,6}    {1,2,3,4,5,6}
  */
 public class ReverseNodesInKGroupTest {
-    private ReverseNodesInKGroup solution = new ReverseNodesInKGroupImpl();
+    private ReverseNodesInKGroup solution2 = new ReverseNodesInKGroupImpl();
+    private ReverseNodesInKGroup solution = new ReverseNodesInKGroupIterativeImpl();
 
     @Test
-    public void reverseWholeList() {
+    public void small01() {
         ListNode one = new ListNode(1);
         ListNode two = new ListNode(2);
         ListNode three = new ListNode(3);
@@ -89,5 +91,26 @@ public class ReverseNodesInKGroupTest {
         assertEquals(three.val, actual.next.val);
         assertEquals(two.val, actual.next.next.val);
         assertEquals(one.val, actual.next.next.next.val);
+    }
+
+    @Test
+    public void small02() {
+        ListNode one = new ListNode(1);
+        ListNode two = new ListNode(2);
+        ListNode three = new ListNode(3);
+        ListNode four = new ListNode(4);
+
+        one.next = two;
+        two.next = three;
+        three.next = four;
+
+        ListNode actual = solution.reverseKGroup(one, 2);
+
+        assertNotNull(actual);
+
+        assertEquals(two.val, actual.val);
+        assertEquals(one.val, actual.next.val);
+        assertEquals(four.val, actual.next.next.val);
+        assertEquals(three.val, actual.next.next.next.val);
     }
 }

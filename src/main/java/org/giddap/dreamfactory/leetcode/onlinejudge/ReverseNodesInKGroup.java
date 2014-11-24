@@ -23,7 +23,7 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * Good article:
  * http://crackinterviewtoday.wordpress.com/2010/03/28/k-reverse-linked-list/
  * http://mattcb.blogspot.com/2012/11/reverse-nodes-in-k-group.html
- * 
+ *
  */
 public interface ReverseNodesInKGroup {
     ListNode reverseKGroup(ListNode head, int k);
