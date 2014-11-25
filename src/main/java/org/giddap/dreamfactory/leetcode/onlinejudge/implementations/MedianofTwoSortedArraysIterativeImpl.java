@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q004MedianofTwoSortedArrays;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MedianofTwoSortedArrays;
 
-public class Q004MedianofTwoSortedArraysIterativeImpl implements Q004MedianofTwoSortedArrays {
+public class MedianofTwoSortedArraysIterativeImpl implements MedianofTwoSortedArrays {
 
     @Override
     public double findMedianSortedArrays(int[] A, int[] B) {

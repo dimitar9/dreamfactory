@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q004MedianofTwoSortedArrays;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MedianofTwoSortedArrays;
 
 import java.util.Arrays;
 
-public class Q004MedianofTwoSortedArraysRecursiveImpl implements Q004MedianofTwoSortedArrays {
+public class MedianofTwoSortedArraysRecursiveImpl implements MedianofTwoSortedArrays {
     @Override
     public double findMedianSortedArrays(int A[], int B[]) {
         // Start typing your Java solution below

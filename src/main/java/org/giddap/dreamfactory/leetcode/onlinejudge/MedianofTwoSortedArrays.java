@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32532851.html">mitbbs post</a>
  * @see <a href="http://n00tc0d3r.blogspot.com/2013/04/median-of-two-sorted-arrays.html?q=median">n00tc0d3r blog</a>
  */
-public interface Q004MedianofTwoSortedArrays {
+public interface MedianofTwoSortedArrays {
     double findMedianSortedArrays(int A[], int B[]);
 }
