@@ -62,4 +62,22 @@ public class MedianofTwoSortedArraysTest {
         double median = solution.findMedianSortedArrays(a, b);
         Assert.assertTrue(new Double(3.0).compareTo(median) == 0);
     }
+
+    @Test
+    public void small07() {
+        int[] a = {3};
+        int[] b = {1 , 2};
+
+        double median = solution.findMedianSortedArrays(a, b);
+        Assert.assertTrue(new Double(2.0).compareTo(median) == 0);
+    }
+
+    @Test
+    public void small08() {
+        int[] a = {};
+        int[] b = {1 , 2, 3, 4};
+
+        double median = solution.findMedianSortedArrays(a, b);
+        Assert.assertTrue(new Double(2.5).compareTo(median) == 0);
+    }
 }
