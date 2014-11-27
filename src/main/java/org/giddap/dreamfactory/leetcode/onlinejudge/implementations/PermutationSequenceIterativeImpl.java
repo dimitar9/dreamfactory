@@ -1,4 +1,6 @@
-package org.giddap.dreamfactory.leetcode.onlinejudge;
+package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
+
+import org.giddap.dreamfactory.leetcode.onlinejudge.PermutationSequence;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,12 @@
-package org.giddap.dreamfactory.leetcode.onlinejudge;
+package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.ReverseLinkedListII;
 
 /**
  *
  */
-public class ReverseLinkedListIIRecursive implements ReverseLinkedListII{
+public class ReverseLinkedListIIRecursive implements ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         // Start typing your Java solution below
         // DO NOT write main() function

@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PermutationSequenceImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PermutationSequenceIterativeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
