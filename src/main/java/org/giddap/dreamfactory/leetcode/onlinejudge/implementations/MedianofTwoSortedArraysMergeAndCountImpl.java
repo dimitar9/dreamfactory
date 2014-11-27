@@ -3,7 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.MedianofTwoSortedArrays;
 
 /**
- * Merge the two sorted arrays and count to the median.
+ * Merge the two sorted arrays to find the median.
  */
 public class MedianofTwoSortedArraysMergeAndCountImpl implements MedianofTwoSortedArrays {
     @Override
