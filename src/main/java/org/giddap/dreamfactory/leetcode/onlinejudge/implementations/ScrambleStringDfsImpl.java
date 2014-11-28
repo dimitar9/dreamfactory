@@ -9,61 +9,67 @@ import java.util.Map;
  *
  */
 public class ScrambleStringDfsImpl implements ScrambleString {
-    public boolean isScramble(String s1, String s2) {
-        // Note: The Solution object is instantiated only once and is reused by each test case.
-        final int s1Len = s1.length();
-        final int s2Len = s2.length();
 
-        if (s1Len != s2Len) {
+    public boolean isScramble(String s1, String s2) {
+        final int len = s1.length();
+        if (len != s2.length()) {
             return false;
-        } else if (s1Len == 1) {
-            return s1.charAt(0) == s2.charAt(0);
+        }
+
+        if (s1.equals(s2)) {
+            return true;
         }
 
         boolean ret = false;
-        for (int j = 1; j < s1Len; j++) {
-            String word11 = s1.substring(0, j);
-            String word12 = s1.substring(j, s1Len);
-            for (int k = 1; k < s2Len; k++) {
-                String word21 = s2.substring(0, k);
-                String word22 = s2.substring(k, s2Len);
-                if (haveSameCharacters(word11, word21)) {
-                    ret |= (isScramble(word11, word21) && isScramble(word12, word22));
-                } else if (haveSameCharacters(word11, word22)) {
-                    ret |= (isScramble(word11, word22) && isScramble(word12, word21));
-                }
+        for (int i = 1; i < len; i++) {
+            String s1Front = s1.substring(0, i);
+            String s1Back = s1.substring(i, len);
+
+            if (hasSameCharacters(s1Front, s2.substring(0, i))
+                    && hasSameCharacters(s1Back, s2.substring(i, len))) {
+                ret = isScramble(s1Front, s2.substring(0, i)) &&
+                        isScramble(s1Back, s2.substring(i, len));
+            }
+
+            if (ret) {
+                return true;
+            }
+
+            if (hasSameCharacters(s1Front, s2.substring(len - i, len))
+                    && hasSameCharacters(s1Back, s2.substring(0, len - i))) {
+                ret = isScramble(s1Front, s2.substring(len - i, len)) &&
+                        isScramble(s1Back, s2.substring(0, len - i));
+            }
+
+            if (ret) {
+                return true;
             }
         }
         return ret;
     }
 
-    private boolean haveSameCharacters(String s1, String s2) {
-        if (s1.length() != s2.length()) {
-            return false;
-        }
-        Map<Character, Integer> charsAndCounts = new HashMap<Character, Integer>();
-        for (int i = 0; i < s1.length(); i++) {
-            if (charsAndCounts.containsKey(s1.charAt(i))) {
-                charsAndCounts.put(s1.charAt(i), charsAndCounts.get(s1.charAt(i)) + 1);
+    private boolean hasSameCharacters(String w1, String w2) {
+        Map<Character, Integer> chars1 = new HashMap<>();
+        for (char c : w1.toCharArray()) {
+            if (chars1.containsKey(c)) {
+                chars1.put(c, chars1.get(c) + 1);
             } else {
-                charsAndCounts.put(s1.charAt(i), 1);
+                chars1.put(c, 1);
             }
         }
 
-        for (int i = 0; i < s2.length(); i++) {
-            char c2 = s2.charAt(i);
-            if (charsAndCounts.containsKey(c2)) {
-                int count = charsAndCounts.get(c2);
-                count--;
-                if (count <= 0) {
-                    charsAndCounts.remove(c2);
+        for (char c : w2.toCharArray()) {
+            if (chars1.containsKey(c)) {
+                int count = chars1.get(c);
+                if (count == 1) {
+                    chars1.remove(c);
                 } else {
-                    charsAndCounts.put(c2, count);
+                    chars1.put(c, chars1.get(c) - 1);
                 }
             } else {
                 return false;
             }
         }
-        return true;
+        return chars1.isEmpty();
     }
 }
