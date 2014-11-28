@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.MedianofTwoSortedArrays;
 
-public class MedianofTwoSortedArraysOnePointerImpl implements MedianofTwoSortedArrays {
+public class MedianofTwoSortedArraysBinarySearchOnMedianImpl implements MedianofTwoSortedArrays {
     @Override
     public double findMedianSortedArrays(int A[], int B[]) {
         int m = A.length, n = B.length, mid = (m + n) / 2;

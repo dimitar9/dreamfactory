@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MedianofTwoSortedArraysMergeAndCountImpl;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MedianofTwoSortedArraysOnePointerImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MedianofTwoSortedArraysBinarySearchOnMedianImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MedianofTwoSortedArraysWithFindKthElementImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class MedianofTwoSortedArraysTest {
-    private MedianofTwoSortedArrays solution = new MedianofTwoSortedArraysOnePointerImpl();
+    private MedianofTwoSortedArrays solution = new MedianofTwoSortedArraysBinarySearchOnMedianImpl();
     private MedianofTwoSortedArrays solution2 = new MedianofTwoSortedArraysMergeAndCountImpl();
     private MedianofTwoSortedArrays solution3 = new MedianofTwoSortedArraysWithFindKthElementImpl();
 
