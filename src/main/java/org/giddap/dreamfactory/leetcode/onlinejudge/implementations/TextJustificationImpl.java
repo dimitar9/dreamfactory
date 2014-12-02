@@ -1,14 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q068TextJustification;
+import org.giddap.dreamfactory.leetcode.onlinejudge.TextJustification;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Q068TextJustificationImpl implements Q068TextJustification {
+public class TextJustificationImpl implements TextJustification {
 
     @Override
-    public ArrayList<String> fullJustify(String[] words, int L) {
-        ArrayList<String> ret = new ArrayList<String>();
+    public List<String> fullJustify(String[] words, int L) {
+        List<String> ret = new ArrayList<String>();
         if (words.length == 0) {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < L; i++) {
