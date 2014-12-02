@@ -3,9 +3,12 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.DistinctSubsequences;
 
 /**
- *
+ * Created by peng on 12/2/14.
  */
-public class DistinctSubsequencesBacktrackingImpl implements DistinctSubsequences {
+public class DistinctSubsequencesRecursiveWithMemorizationImpl implements DistinctSubsequences {
+
+    int[][] memo;
+
     @Override
     public int numDistinct(String S, String T) {
         if (T.length() == 0) {
