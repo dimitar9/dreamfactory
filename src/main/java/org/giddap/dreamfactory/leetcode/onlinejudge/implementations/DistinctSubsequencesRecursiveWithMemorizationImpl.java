@@ -11,20 +11,26 @@ public class DistinctSubsequencesRecursiveWithMemorizationImpl implements Distin
 
     @Override
     public int numDistinct(String S, String T) {
-        if (T.length() == 0) {
-            return 1;
-        }
-        if (S.length() < T.length()) {
-            return 0;
-        } else if (S.length() == T.length()) {
-            return S.equals(T) ? 1 : 0;
-        } else {
-            int ret = 0;
-            if (S.charAt(0) == T.charAt(0)) {
-                ret += numDistinct(S.substring(1), T.substring(1));
+        int si = S.length(), ti = T.length();
+        if (si<=0 || ti<=0 || si<ti) return 0;
+
+        int[][] dptable = new int[si][ti];
+        if (S.charAt(0) == T.charAt(0))
+            dptable[0][0] = 1;
+        else
+            dptable[0][0] = 0;
+        for (int j=0; j<ti; ++j) {
+            for (int i=1; i<si; ++i) {
+                dptable[i][j] = dptable[i-1][j];
+                if (S.charAt(i) == T.charAt(j)) {
+                    if (j==0)
+                        dptable[i][j] += 1;
+                    else
+                        dptable[i][j] += dptable[i-1][j-1];
+                }
             }
-            ret += numDistinct(S.substring(1), T);
-            return ret;
         }
+
+        return dptable[si-1][ti-1];
     }
 }

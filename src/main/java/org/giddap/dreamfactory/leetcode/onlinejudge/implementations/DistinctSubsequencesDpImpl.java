@@ -10,24 +10,15 @@ public class DistinctSubsequencesDpImpl implements DistinctSubsequences {
         int si = S.length(), ti = T.length();
         if (si<=0 || ti<=0 || si<ti) return 0;
 
-        int[][] dptable = new int[si][ti];
-        if (S.charAt(0) == T.charAt(0))
-            dptable[0][0] = 1;
-        else
-            dptable[0][0] = 0;
-        for (int j=0; j<ti; ++j) {
-            for (int i=1; i<si; ++i) {
-                dptable[i][j] = dptable[i-1][j];
-                if (S.charAt(i) == T.charAt(j)) {
-                    if (j==0)
-                        dptable[i][j] += 1;
-                    else
-                        dptable[i][j] += dptable[i-1][j-1];
+        int[] recurs = new int[ti];
+        for (int i=0; i<si; ++i) {
+            for (int j=Math.min(i, ti-1); j>=0; --j) {
+                if (S.charAt(i)==T.charAt(j)) {
+                    recurs[j] += (j==0) ? 1 : recurs[j-1];
                 }
             }
         }
-
-        return dptable[si-1][ti-1];
+        return recurs[ti-1];
     }
 
 }
