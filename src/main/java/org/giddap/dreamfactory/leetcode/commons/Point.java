@@ -4,8 +4,8 @@ package org.giddap.dreamfactory.leetcode.commons;
  *
  */
 public class Point {
-    private final int x;
-    private final int y;
+    public final int x;
+    public final int y;
 
     public Point(int x, int y) {
         this.x = x;
