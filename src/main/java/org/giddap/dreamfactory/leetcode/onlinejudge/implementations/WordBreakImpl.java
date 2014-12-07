@@ -5,7 +5,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.WordBreak;
 import java.util.Set;
 
 /**
- *
+ * one-dimension DP
  */
 public class WordBreakImpl implements WordBreak {
     public boolean wordBreak(String s, Set<String> dict) {
