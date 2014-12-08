@@ -1,12 +1,14 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q132PalindromePartitioningIIDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningIIDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningIIDfsImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q132PalindromePartitioningIITest {
-    private Q132PalindromePartitioningII solution = new Q132PalindromePartitioningIIDPImpl();
+public class PalindromePartitioningIITest {
+    private PalindromePartitioningII solution2 = new PalindromePartitioningIIDPImpl();
+    private PalindromePartitioningII solution = new PalindromePartitioningIIDfsImpl();
 
     @Test
     public void small01() {

@@ -19,6 +19,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101iwqt.html">peking2's blog</a>
  * @see <a href="http://blog.163.com/guixl_001/blog/static/417641042013319113320284/">guixl's blog</a>
  */
-public interface Q132PalindromePartitioningII {
+public interface PalindromePartitioningII {
     int minCut(String s);
 }
