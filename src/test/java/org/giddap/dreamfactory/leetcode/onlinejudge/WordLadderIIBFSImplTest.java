@@ -2,6 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WordLadderIIBFSImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -9,8 +10,8 @@ import java.util.HashSet;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q126WordLadderIITest {
-    private Q126WordLadderII solution = new Q126WordLadderII();
+public class WordLadderIIBFSImplTest {
+    private WordLadderII solution = new WordLadderIIBFSImpl();
 
     @Test
     public void small01() {
