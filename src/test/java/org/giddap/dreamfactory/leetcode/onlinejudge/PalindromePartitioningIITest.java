@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningIIDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningIIDPSeparatedImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningIIDfsImpl;
 import org.junit.Test;
 
@@ -8,7 +9,8 @@ import static org.junit.Assert.assertEquals;
 
 public class PalindromePartitioningIITest {
     private PalindromePartitioningII solution2 = new PalindromePartitioningIIDPImpl();
-    private PalindromePartitioningII solution = new PalindromePartitioningIIDfsImpl();
+    private PalindromePartitioningII solution3 = new PalindromePartitioningIIDfsImpl();
+    private PalindromePartitioningII solution = new PalindromePartitioningIIDPSeparatedImpl();
 
     @Test
     public void small01() {
