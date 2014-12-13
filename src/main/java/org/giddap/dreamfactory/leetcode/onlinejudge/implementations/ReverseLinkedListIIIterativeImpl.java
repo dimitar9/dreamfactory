@@ -25,27 +25,31 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.ReverseLinkedListII;
 public class ReverseLinkedListIIIterativeImpl implements ReverseLinkedListII {
     @Override
     public ListNode reverseBetween(ListNode head, int m, int n) {
-        ListNode nhead = new ListNode(0);
-        nhead.next = head;
-        ListNode prev = nhead;
+        ListNode newhead = new ListNode(0);
+        newhead.next = head;
+
+        ListNode prev = newhead;
         ListNode curr = head;
+
         int i = 1;
-        ListNode tail = null;
-        while (curr != null) {
+
+        while (curr != null && curr.next != null) {
             ListNode next = curr.next;
-            if (m == i) {
-                tail = curr;
-            } else if (m < i && i <= n) {
-                ListNode tmp = prev.next;
-                prev.next = curr;
-                curr.next = tmp;
-                tail.next = next;
+
+            // Note the range should be 'm <= i < n'
+            if (m < i && i < n) {
+                ListNode nextNext = next.next;
+                ListNode afterPrev = prev.next;
+                next.next = afterPrev;
+                prev.next = next;
+                curr.next = nextNext;
             } else {
                 prev = curr;
+                curr = next;
             }
-            curr = next;
             i++;
         }
-        return nhead.next;
+
+        return newhead.next;
     }
 }

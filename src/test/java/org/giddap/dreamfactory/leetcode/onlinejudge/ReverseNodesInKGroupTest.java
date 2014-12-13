@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 /**
  * input	output	expected
@@ -69,8 +70,8 @@ import static org.junit.Assert.assertNotNull;
  * {1,2,3,4,5,6}, 7	{1,2,3,4,5,6}    {1,2,3,4,5,6}
  */
 public class ReverseNodesInKGroupTest {
-    private ReverseNodesInKGroup solution2 = new ReverseNodesInKGroupImpl();
-    private ReverseNodesInKGroup solution = new ReverseNodesInKGroupIterativeImpl();
+    private ReverseNodesInKGroup solution = new ReverseNodesInKGroupImpl();
+    private ReverseNodesInKGroup solution2 = new ReverseNodesInKGroupIterativeImpl();
 
     @Test
     public void small01() {
@@ -99,10 +100,12 @@ public class ReverseNodesInKGroupTest {
         ListNode two = new ListNode(2);
         ListNode three = new ListNode(3);
         ListNode four = new ListNode(4);
+        ListNode five = new ListNode(5);
 
         one.next = two;
         two.next = three;
         three.next = four;
+        four.next = five;
 
         ListNode actual = solution.reverseKGroup(one, 2);
 
@@ -112,5 +115,11 @@ public class ReverseNodesInKGroupTest {
         assertEquals(one.val, actual.next.val);
         assertEquals(four.val, actual.next.next.val);
         assertEquals(three.val, actual.next.next.next.val);
+        assertEquals(five.val, actual.next.next.next.next.val);
+    }
+
+    @Test
+    public void small03() {
+        assertNull(solution.reverseKGroup(null, 1));
     }
 }
