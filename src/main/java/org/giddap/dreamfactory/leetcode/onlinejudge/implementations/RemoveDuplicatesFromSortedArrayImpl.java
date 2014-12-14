@@ -26,18 +26,16 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.RemoveDuplicatesFromSortedAr
 public class RemoveDuplicatesFromSortedArrayImpl implements RemoveDuplicatesFromSortedArray {
     @Override
     public int removeDuplicates(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         if (A.length == 0) {
             return 0;
         }
-        int i = 0;
-        for (int j = 1; j < A.length; j++) {
-            if (A[j] != A[i]) {
-                A[++i] = A[j];
+        int j = 1;
+        for (int i = 1; i < A.length; i++) {
+            if (A[i] != A[i - 1]) {
+                A[j] = A[i];
+                j++;
             }
         }
-        return i + 1;
+        return j;
     }
 }
