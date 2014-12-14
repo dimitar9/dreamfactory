@@ -1,6 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
+import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.Interval;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InsertIntervalBinarySearchWithoutExtraSpaceImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InsertIntervalTwoPassImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.InsertIntervalWithoutExtraSpaceImpl;
 import org.junit.Test;
@@ -13,7 +15,10 @@ import static org.junit.Assert.assertTrue;
 
 public class InsertIntervalTest {
     private InsertInterval solution2 = new InsertIntervalTwoPassImpl();
-    private InsertInterval solution = new InsertIntervalWithoutExtraSpaceImpl();
+    private InsertInterval solution3 = new
+            InsertIntervalWithoutExtraSpaceImpl();
+    private InsertInterval solution = new
+            InsertIntervalBinarySearchWithoutExtraSpaceImpl();
 
     @Test
     public void small01() {
@@ -50,5 +55,20 @@ public class InsertIntervalTest {
         tmp = actual.get(3);
         assertEquals(13, tmp.start);
         assertEquals(15, tmp.end);
+    }
+
+    @Test
+    public void small02() {
+        Interval i1 = new Interval(1, 5);
+        List<Interval> list = Lists.newArrayList(i1);
+
+        Interval ni = new Interval(5, 7);
+
+        List<Interval> actual = solution.insert(list, ni);
+
+        assertTrue(actual.size() == 1);
+        Interval tmp = actual.get(0);
+        assertEquals(1, tmp.start);
+        assertEquals(7, tmp.end);
     }
 }
