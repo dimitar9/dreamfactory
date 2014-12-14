@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/263/merge-sorted-array">Leetcode discussion</a>
  */
-public interface Q088MergeSortedArray {
+public interface MergeSortedArray {
     void merge(int A[], int m, int B[], int n);
 }

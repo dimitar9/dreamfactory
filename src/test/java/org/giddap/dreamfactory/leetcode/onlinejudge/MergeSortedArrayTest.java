@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q088MergeSortedArrayImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MergeSortedArrayImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q088MergeSortedArrayTest {
-    private Q088MergeSortedArray solution = new Q088MergeSortedArrayImpl();
+public class MergeSortedArrayTest {
+    private MergeSortedArray solution = new MergeSortedArrayImpl();
 
     @Test
     public void small01() {
