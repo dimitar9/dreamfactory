@@ -31,17 +31,17 @@ public class RemoveDuplicatesFromSortedArrayIIImpl implements RemoveDuplicatesFr
 
     @Override
     public int removeDuplicates(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        if (A.length == 0) {
-            return 0;
+        final int len = A.length;
+        if (len <= 2) {
+            return len;
         }
-        int i = 0;
-        for (int j = 1; j < A.length; j++) {
-            if ((A[j] != A[i]) || (i == 0) || (A[i] != A[i - 1])) {
-                A[++i] = A[j];
+        int i = 2;
+        for (int j = 2; j < len; j++) {
+            if (A[j] != A[i - 1] || A[j] != A[i - 2]) {
+                A[i] = A[j];
+                i++;
             }
         }
-        return i + 1;
+        return i;
     }
 }
