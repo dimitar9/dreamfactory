@@ -12,6 +12,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
  *
  * @see <a href="http://leetcode.com/2010/11/convert-sorted-array-into-balanced.html">leetcode discussion</a>
  */
-public interface Q108ConvertSortedArrayToBinarySearchTree {
+public interface ConvertSortedArrayToBinarySearchTree {
     TreeNode sortedArrayToBST(int[] num);
 }

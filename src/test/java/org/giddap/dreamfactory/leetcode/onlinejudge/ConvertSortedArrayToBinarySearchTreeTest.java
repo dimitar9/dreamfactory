@@ -2,14 +2,14 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q108ConvertSortedArrayToBinarySearchTreeRecursiveImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ConvertSortedArrayToBinarySearchTreeRecursiveImpl;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertEquals;
 
-public class Q108ConvertSortedArrayToBinarySearchTreeTest {
-    private Q108ConvertSortedArrayToBinarySearchTree solution = new Q108ConvertSortedArrayToBinarySearchTreeRecursiveImpl();
+public class ConvertSortedArrayToBinarySearchTreeTest {
+    private ConvertSortedArrayToBinarySearchTree solution = new ConvertSortedArrayToBinarySearchTreeRecursiveImpl();
 
     @Test
     public void small01() {
