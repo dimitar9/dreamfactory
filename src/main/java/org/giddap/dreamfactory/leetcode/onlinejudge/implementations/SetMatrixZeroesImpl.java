@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q073SetMatrixZeroes;
+import org.giddap.dreamfactory.leetcode.onlinejudge.SetMatrixZeroes;
 
-public class Q073SetMatrixZeroesImpl implements Q073SetMatrixZeroes {
+public class SetMatrixZeroesImpl implements SetMatrixZeroes {
     @Override
     public void setZeroes(int[][] matrix) {
         // Start typing your Java solution below

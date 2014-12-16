@@ -17,6 +17,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/249/set-matrix-zeroes">Leetcode discussion</a>
  */
-public interface Q073SetMatrixZeroes {
+public interface SetMatrixZeroes {
     void setZeroes(int[][] matrix);
 }

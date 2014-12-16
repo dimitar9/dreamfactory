@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q073SetMatrixZeroesImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SetMatrixZeroesImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q073SetMatrixZeroesTest {
-    private Q073SetMatrixZeroes solution = new Q073SetMatrixZeroesImpl();
+public class SetMatrixZeroesTest {
+    private SetMatrixZeroes solution = new SetMatrixZeroesImpl();
 
     @Test
     public void small01() {
