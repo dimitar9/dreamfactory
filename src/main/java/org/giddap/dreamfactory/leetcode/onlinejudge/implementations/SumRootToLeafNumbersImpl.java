@@ -16,9 +16,6 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.SumRootToLeafNumbers;
 public class SumRootToLeafNumbersImpl implements SumRootToLeafNumbers {
     @Override
     public int sumNumbers(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
         return addUp(root, 0);
     }
 
