@@ -1,15 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q120TriangleImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.TriangleImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q120TriangleTest {
-    private Q120Triangle solution = new Q120TriangleImpl();
+public class TriangleTest {
+    private Triangle solution = new TriangleImpl();
 
     @Test
     public void small01() {

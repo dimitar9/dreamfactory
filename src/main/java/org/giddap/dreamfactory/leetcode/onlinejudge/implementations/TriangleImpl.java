@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q120Triangle;
+import org.giddap.dreamfactory.leetcode.onlinejudge.Triangle;
 
 import java.util.ArrayList;
 
-public class Q120TriangleImpl implements Q120Triangle {
+public class TriangleImpl implements Triangle {
     @Override
     public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
         // Start typing your Java solution below

@@ -29,6 +29,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/285/triangle">Leetcode discussion</a>
  */
-public interface Q120Triangle {
+public interface Triangle {
     int minimumTotal(ArrayList<ArrayList<Integer>> triangle);
 }
