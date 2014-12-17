@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q013RomanToIntegerImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RomanToIntegerImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class Q013RomanToIntegerTest {
-    private Q013RomanToInteger solution = new Q013RomanToIntegerImpl();
+public class RomanToIntegerTest {
+    private RomanToInteger solution = new RomanToIntegerImpl();
 
     @Test
     public void small01() {

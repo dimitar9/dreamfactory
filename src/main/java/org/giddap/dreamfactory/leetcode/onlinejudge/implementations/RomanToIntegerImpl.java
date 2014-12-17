@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q013RomanToInteger;
+import org.giddap.dreamfactory.leetcode.onlinejudge.RomanToInteger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +22,7 @@ import java.util.Map;
  * Tricks:
  * Use a variable to remember the prev value to avoid having to compute the value repeatedly.
  */
-public class Q013RomanToIntegerImpl implements Q013RomanToInteger {
+public class RomanToIntegerImpl implements RomanToInteger {
 
     Map<Character, Integer> romanToIntMap = null;
 

@@ -12,6 +12,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/195/roman-to-integer">Leetcode discussion</a>
  */
-public interface Q013RomanToInteger {
+public interface RomanToInteger {
     int romanToInt(String s);
 }
