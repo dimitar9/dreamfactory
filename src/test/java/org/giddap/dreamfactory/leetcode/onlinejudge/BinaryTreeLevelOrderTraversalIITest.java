@@ -2,15 +2,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q107BinaryTreeLevelOrderTraversalIIIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeLevelOrderTraversalIIIterativeImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q107BinaryTreeLevelOrderTraversalIITest {
-    private Q107BinaryTreeLevelOrderTraversalII solution = new Q107BinaryTreeLevelOrderTraversalIIIterativeImpl();
+public class BinaryTreeLevelOrderTraversalIITest {
+    private BinaryTreeLevelOrderTraversalII solution = new BinaryTreeLevelOrderTraversalIIIterativeImpl();
 
     @Test
     public void small01() {

@@ -1,22 +1,23 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q107BinaryTreeLevelOrderTraversalII;
+import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeLevelOrderTraversalII;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
-public class Q107BinaryTreeLevelOrderTraversalIIRecursiveImpl implements Q107BinaryTreeLevelOrderTraversalII {
+public class BinaryTreeLevelOrderTraversalIIRecursiveImpl implements BinaryTreeLevelOrderTraversalII {
     @Override
-    public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         // Note: The Solution object is instantiated only once and is reused by each test case.
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> ret = new ArrayList<>();
         calculate(root, ret, 1);
         Collections.reverse(ret);
         return ret;
     }
 
-    private void calculate(TreeNode root, ArrayList<ArrayList<Integer>> ret, int level) {
+    private void calculate(TreeNode root, List<List<Integer>> ret, int level) {
         if (root == null) {
             return;
         }
@@ -25,7 +26,7 @@ public class Q107BinaryTreeLevelOrderTraversalIIRecursiveImpl implements Q107Bin
             ret.add(new ArrayList<Integer>());
         }
 
-        ArrayList<Integer> curr = ret.get(level - 1);
+        List<Integer> curr = ret.get(level - 1);
 
         curr.add(root.val);
 
