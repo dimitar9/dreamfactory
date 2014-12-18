@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/combination-sum-ii/">Combination Sum II</a>
@@ -28,6 +28,6 @@ import java.util.ArrayList;
  * http://www.cnblogs.com/remlostime/archive/2012/10/29/2745125.html
  * http://blog.csdn.net/u010204902/article/details/8804241
  */
-public interface Q040CombinationSumII {
-    ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target);
+public interface CombinationSumII {
+    List<List<Integer>> combinationSum2(int[] num, int target);
 }

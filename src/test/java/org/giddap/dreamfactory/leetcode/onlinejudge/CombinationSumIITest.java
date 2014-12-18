@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q040CombinationSumIIDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CombinationSumIIDfsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q040CombinationSumIITest {
-    private Q040CombinationSumII solution = new Q040CombinationSumIIDfsImpl();
+public class CombinationSumIITest {
+    private CombinationSumII solution = new CombinationSumIIDfsImpl();
 
     @Test
     public void small01() {
