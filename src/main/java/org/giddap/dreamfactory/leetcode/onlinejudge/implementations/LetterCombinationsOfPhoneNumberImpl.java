@@ -1,19 +1,17 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q017LetterCombinationsOfPhoneNumber;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LetterCombinationsOfPhoneNumber;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q017LetterCombinationsOfPhoneNumberImpl implements Q017LetterCombinationsOfPhoneNumber {
+public class LetterCombinationsOfPhoneNumberImpl implements LetterCombinationsOfPhoneNumber {
 
     private Map<Character, Character[]> digitToLetterMap;
 
     @Override
     public ArrayList<String> letterCombinations(String digits) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         init();
 
         ArrayList<String> ret = new ArrayList<String>();

@@ -2,15 +2,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q017LetterCombinationsOfPhoneNumberImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LetterCombinationsOfPhoneNumberImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q017LetterCombinationsOfPhoneNumberTest {
-    private Q017LetterCombinationsOfPhoneNumber solution = new Q017LetterCombinationsOfPhoneNumberImpl();
+public class LetterCombinationsOfPhoneNumberTest {
+    private LetterCombinationsOfPhoneNumber solution = new LetterCombinationsOfPhoneNumberImpl();
 
     @Test
     public void small01() {

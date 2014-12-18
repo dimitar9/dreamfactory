@@ -8,6 +8,6 @@ import java.util.ArrayList;
  * Links:
  * http://discuss.leetcode.com/questions/198/letter-combinations-of-a-phone-number
  */
-public interface Q017LetterCombinationsOfPhoneNumber {
+public interface LetterCombinationsOfPhoneNumber {
     ArrayList<String> letterCombinations(String digits);
 }
