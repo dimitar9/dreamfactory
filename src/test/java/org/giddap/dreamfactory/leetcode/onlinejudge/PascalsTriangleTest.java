@@ -1,15 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q118PascalsTriangleImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PascalsTriangleImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q118PascalsTriangleTest {
-    private Q118PascalsTriangle solution = new Q118PascalsTriangleImpl();
+public class PascalsTriangleTest {
+    private PascalsTriangle solution = new PascalsTriangleImpl();
 
     @Test
     public void small01() {
