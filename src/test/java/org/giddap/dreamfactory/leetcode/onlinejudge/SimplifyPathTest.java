@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q071SimplifyPathImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SimplifyPathImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -8,8 +8,8 @@ import static org.junit.Assert.assertEquals;
 /**
  *
  */
-public class Q071SimplifyPathTest {
-    private Q071SimplifyPath solution = new Q071SimplifyPathImpl();
+public class SimplifyPathTest {
+    private SimplifyPath solution = new SimplifyPathImpl();
 
     @Test
     public void small01() {

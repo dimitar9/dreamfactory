@@ -21,6 +21,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/247/simplify-path">leetcode discussion</a>
  */
-public interface Q071SimplifyPath {
+public interface SimplifyPath {
     String simplifyPath(String path);
 }
