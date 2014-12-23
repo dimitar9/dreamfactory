@@ -3,13 +3,11 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Triangle;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TriangleImpl implements Triangle {
     @Override
     public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         final int numOfRows = triangle.size();
         if (numOfRows == 0) {
             return 0;
