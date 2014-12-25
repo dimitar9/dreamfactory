@@ -24,6 +24,6 @@ import java.util.ArrayList;
  *
  * @see <a href="http://discuss.leetcode.com/questions/199/4sum">Leetcode discussion</a>
  */
-public interface Q018FourSum {
+public interface FourSum {
     ArrayList<ArrayList<Integer>> fourSum(int[] num, int target);
 }

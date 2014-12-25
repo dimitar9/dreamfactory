@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q018FourSumImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FourSumImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q018FourSumTest {
-    private Q018FourSum solution = new Q018FourSumImpl();
+public class FourSumTest {
+    private FourSum solution = new FourSumImpl();
 
     @Test
     public void small01() {

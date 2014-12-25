@@ -1,11 +1,11 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q018FourSum;
+import org.giddap.dreamfactory.leetcode.onlinejudge.FourSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Q018FourSumImpl implements Q018FourSum {
+public class FourSumImpl implements FourSum {
     @Override
     public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
         // Start typing your Java solution below
