@@ -6,6 +6,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CombinationS
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -24,7 +25,7 @@ public class CombinationSumIITest {
         expected.add(Lists.newArrayList(2, 6));
         expected.add(Lists.newArrayList(1, 1, 6));
 
-        Set<ArrayList<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
+        Set<List<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
 
         assertEquals(expected, actual);
     }
@@ -37,7 +38,7 @@ public class CombinationSumIITest {
         Set<ArrayList<Integer>> expected = Sets.newHashSet();
         expected.add(Lists.newArrayList(1));
 
-        Set<ArrayList<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
+        Set<List<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
 
         assertEquals(expected, actual);
     }
@@ -50,7 +51,7 @@ public class CombinationSumIITest {
         Set<ArrayList<Integer>> expected = Sets.newHashSet();
         expected.add(Lists.newArrayList(1, 1));
 
-        Set<ArrayList<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
+        Set<List<Integer>> actual = Sets.newHashSet(solution.combinationSum2(input, target));
 
         assertEquals(expected, actual);
     }

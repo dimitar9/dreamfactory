@@ -4,53 +4,50 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.FourSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class FourSumImpl implements FourSum {
     @Override
-    public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> fourSum(int[] num, int target) {
+        List<List<Integer>> ret = new ArrayList<>();
         final int len = num.length;
-        if (len == 0) {
+        if (len <= 3) {
             return ret;
         }
-
         Arrays.sort(num);
-
         for (int i = 0; i < len - 3; i++) {
             if (i > 0 && num[i] == num[i - 1]) {
                 continue;
             }
-            for (int j = len - 1; j > i + 2; j--) {
-                if (j < len - 1 && num[j] == num[j + 1]) {
+            for (int n = len - 1; n > i + 2; n--) {
+                if (n < len - 1 && num[n] == num[n + 1]) {
                     continue;
                 }
-                int m = i + 1;
-                int n = j - 1;
-                while (m < n) {
-                    if (m > i + 1 && num[m] == num[m - 1]) {
-                        m++;
+                int j = i + 1;
+                int m = n - 1;
+                while (j < m) {
+                    if (j > i + 1 && num[j] == num[j - 1]) {
+                        j++;
                         continue;
                     }
-                    if (n < j - 1 && num[n] == num[n + 1]) {
-                        n--;
+                    if (m < n - 1 && num[m] == num[m + 1]) {
+                        m--;
                         continue;
                     }
                     int delta = target - num[i] - num[j] - num[m] - num[n];
                     if (delta == 0) {
-                        ArrayList<Integer> one = new ArrayList<Integer>();
+                        List<Integer> one = new ArrayList<>();
                         one.add(num[i]);
+                        one.add(num[j]);
                         one.add(num[m]);
                         one.add(num[n]);
-                        one.add(num[j]);
                         ret.add(one);
-                        m++;
-                        n--;
-                    } else if (delta > 0) {
-                        m++;
-                    } else {
-                        n--;
+                        j++;
+                        m--;
+                    } else if (delta > 0) { // sum is less than 'target'
+                        j++;
+                    } else { // sum is larger than 'target'
+                        m--;
                     }
                 }
             }

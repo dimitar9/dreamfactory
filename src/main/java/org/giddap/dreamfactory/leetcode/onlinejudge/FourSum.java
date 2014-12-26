@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/4sum/">4Sum</a>
@@ -25,5 +25,5 @@ import java.util.ArrayList;
  * @see <a href="http://discuss.leetcode.com/questions/199/4sum">Leetcode discussion</a>
  */
 public interface FourSum {
-    ArrayList<ArrayList<Integer>> fourSum(int[] num, int target);
+    List<List<Integer>> fourSum(int[] num, int target);
 }

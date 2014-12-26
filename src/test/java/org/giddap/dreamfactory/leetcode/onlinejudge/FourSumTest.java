@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -23,11 +24,11 @@ public class FourSumTest {
         expected.add(Lists.newArrayList(-2, -1, 1, 2));
         expected.add(Lists.newArrayList(-2, 0, 0, 2));
 
-        ArrayList<ArrayList<Integer>> actual = solution.fourSum(input, target);
+        List<List<Integer>> actual = solution.fourSum(input, target);
 
         assertEquals(3, actual.size());
 
-        assertEquals(expected, new HashSet<ArrayList<Integer>>(actual));
+        assertEquals(expected, new HashSet<List<Integer>>(actual));
     }
 
     @Test
@@ -45,11 +46,11 @@ public class FourSumTest {
         expected.add(Lists.newArrayList(-2, 0, 0, 2));
         expected.add(Lists.newArrayList(-1, 0, 0, 1));
 
-        ArrayList<ArrayList<Integer>> actual = solution.fourSum(input, target);
+        List<List<Integer>> actual = solution.fourSum(input, target);
 
         assertEquals(8, actual.size());
 
-        assertEquals(expected, new HashSet<ArrayList<Integer>>(actual));
+        assertEquals(expected, new HashSet<List<Integer>>(actual));
     }
 
     @Test
@@ -61,10 +62,10 @@ public class FourSumTest {
         expected.add(Lists.newArrayList(-5, 0, 4, 5));
         expected.add(Lists.newArrayList(-3, -2, 4, 5));
 
-        ArrayList<ArrayList<Integer>> actual = solution.fourSum(input, target);
+        List<List<Integer>> actual = solution.fourSum(input, target);
 
         assertEquals(2, actual.size());
-        assertEquals(expected, new HashSet<ArrayList<Integer>>(actual));
+        assertEquals(expected, new HashSet<List<Integer>>(actual));
     }
 
     @Test
@@ -75,11 +76,11 @@ public class FourSumTest {
         Set<ArrayList<Integer>> expected = new HashSet<ArrayList<Integer>>();
         expected.add(Lists.newArrayList(0, 0, 0, 0));
 
-        ArrayList<ArrayList<Integer>> actual = solution.fourSum(input, target);
+        List<List<Integer>> actual = solution.fourSum(input, target);
 
         assertEquals(1, actual.size());
 
-        assertEquals(expected, new HashSet<ArrayList<Integer>>(actual));
+        assertEquals(expected, new HashSet<List<Integer>>(actual));
     }
 
     @Test
@@ -94,10 +95,10 @@ public class FourSumTest {
 
         Set<ArrayList<Integer>> expected = new HashSet<ArrayList<Integer>>();
 
-        ArrayList<ArrayList<Integer>> actual = solution.fourSum(input, target);
+        List<List<Integer>> actual = solution.fourSum(input, target);
 
         assertEquals(0, actual.size());
-        assertEquals(expected, new HashSet<ArrayList<Integer>>(actual));
+        assertEquals(expected, new HashSet<List<Integer>>(actual));
     }
 }
 
