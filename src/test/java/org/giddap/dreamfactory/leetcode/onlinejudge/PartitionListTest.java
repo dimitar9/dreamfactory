@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q086PartitionListImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PartitionListImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q086PartitionListTest {
-    private Q086PartitionListImpl solution = new Q086PartitionListImpl();
+public class PartitionListTest {
+    private PartitionListImpl solution = new PartitionListImpl();
 
     @Test
     public void small01() {

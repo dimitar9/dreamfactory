@@ -19,6 +19,6 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * http://blog.unieagle.net/2012/10/16/leetcode%E9%A2%98%E7%9B%AE%EF%BC%9Apartition-list/
  * http://gongxuns.blogspot.com/2012/12/leetcode-partition-list.html
  */
-public interface Q086PartitionList {
+public interface PartitionList {
     ListNode partition(ListNode head, int x);
 }
