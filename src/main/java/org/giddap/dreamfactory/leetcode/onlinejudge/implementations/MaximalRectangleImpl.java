@@ -1,8 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q085MaximalRectangle;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MaximalRectangle;
 
-public class Q085MaximalRectangleImpl implements Q085MaximalRectangle {
+public class MaximalRectangleImpl implements MaximalRectangle {
     @Override
     public int maximalRectangle(char[][] matrix) {
         // Start typing your Java solution below

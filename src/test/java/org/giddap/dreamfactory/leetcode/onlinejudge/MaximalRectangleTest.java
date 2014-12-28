@@ -1,14 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q085MaximalRectangleDirectionalWithMemoImpl;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q085MaximalRectangleDirectionalWithoutMemoImpl;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q085MaximalRectangleOptimalImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MaximalRectangleOptimalImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q085MaximalRectangleTest {
-    private Q085MaximalRectangle solution = new Q085MaximalRectangleOptimalImpl();
+public class MaximalRectangleTest {
+    private MaximalRectangle solution = new MaximalRectangleOptimalImpl();
 
     @Test
     public void small01() {

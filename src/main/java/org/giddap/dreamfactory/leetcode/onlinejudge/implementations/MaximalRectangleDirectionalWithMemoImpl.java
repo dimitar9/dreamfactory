@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.Point;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q085MaximalRectangle;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MaximalRectangle;
 
 /**
  *
  */
-public class Q085MaximalRectangleDirectionalWithMemoImpl implements Q085MaximalRectangle {
+public class MaximalRectangleDirectionalWithMemoImpl implements MaximalRectangle {
     @Override
     public int maximalRectangle(char[][] matrix) {
         final int numOfRows = matrix.length;

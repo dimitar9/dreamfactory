@@ -14,6 +14,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://hi.baidu.com/mzry1992/item/030f9740e0475ef7dc0f6cba">浅谈用极大化思想解决最大子矩形问题</a>
  * @see <a href="http://www.drdobbs.com/article/print?articleId=184410529&siteSectionName=database">From Dr.Dobbs</a>
  */
-public interface Q085MaximalRectangle {
+public interface MaximalRectangle {
     int maximalRectangle(char[][] matrix);
 }
