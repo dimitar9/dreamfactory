@@ -5,35 +5,31 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.LongestPalindromicSubstring;
 public class LongestPalindromicSubstringImpl implements LongestPalindromicSubstring {
     @Override
     public String longestPalindrome(String s) {
-        if (s == null) {
-            throw new IllegalArgumentException("s must not be null.");
-        }
-        final int len = s.length();
-        if (len <= 1) {
-            return s;
-        }
-
-        String lps = s.substring(0, 1);
-        for (int i = 0; i < len; i++) {
-            String expandBothSides = expandPalidrom(s, i, i);
-            String expandToRight = expandPalidrom(s, i, i + 1);
-            String lpsi = expandBothSides;
-            if (expandBothSides.length() < expandToRight.length()) {
-                lpsi = expandToRight;
-            }
-            if (lps.length() < lpsi.length()) {
-                lps = lpsi;
+        String lps = "";
+        for (int i = 0; i < s.length(); i++) {
+            String one = constructPalindrome(s, i, i);
+            String two = constructPalindrome(s, i, i + 1);
+            if (one.length() >= two.length()) {
+                if (one.length() > lps.length()) {
+                    lps = one;
+                }
+            } else {
+                if (two.length() > lps.length()) {
+                    lps = two;
+                }
             }
         }
-
         return lps;
     }
 
-    private String expandPalidrom(String s, int i, int j) {
-        while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)) {
-            i--;
-            j++;
+    private String constructPalindrome(String s, int l, int r) {
+        while (l >= 0 && r < s.length()) {
+            if (s.charAt(l) != s.charAt(r)) {
+                break;
+            }
+            l--;
+            r++;
         }
-        return s.substring(i + 1, j);
+        return s.substring(l + 1, r);
     }
 }
