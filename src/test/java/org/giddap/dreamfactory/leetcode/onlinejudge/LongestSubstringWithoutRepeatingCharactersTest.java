@@ -33,6 +33,11 @@ public class LongestSubstringWithoutRepeatingCharactersTest {
     public void small05() {
         assertEquals(11, solution.lengthOfLongestSubstring("hchzvfrkmlnozjk"));
     }
+
+    @Test
+    public void small06() {
+        assertEquals(7, solution.lengthOfLongestSubstring("ruowzgiooobpple"));
+    }
 }
 
 /*
