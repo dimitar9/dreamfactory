@@ -11,46 +11,49 @@ public class MedianofTwoSortedArraysMergeAndCountImpl implements MedianofTwoSort
 
         final int aLen = A.length;
         final int bLen = B.length;
-
         // determine if the total number is odd or even
         final boolean oddNumber = ((aLen + bLen) & 0x1) == 1;
         // determine the left median index
-        final int medianLeftIdx =
-                oddNumber ? (aLen + bLen) / 2 : (aLen + bLen) / 2 - 1;
-
-        int medianLeftValue = -1;
-        int medianRightValue = -1;
+        final int leftMedianIdx = oddNumber ? (aLen + bLen) / 2 : (aLen + bLen) / 2 - 1;
 
         // keep updating left and right medians as we proceed step by step
         int i = 0;
         int j = 0;
-        while (i < aLen || j < bLen) {
+        while ((i < aLen || j < bLen) && (i + j < leftMedianIdx)) {
             if (i == aLen) {
-                medianLeftValue = B[j];
-                medianRightValue = oddNumber ? medianLeftValue : B[j + 1];
                 j++;
             } else if (j == bLen) {
-                medianLeftValue = A[i];
-                medianRightValue = oddNumber ? medianLeftValue : A[i + 1];
                 i++;
             } else {
                 if (A[i] <= B[j]) {
-                    medianLeftValue = A[i];
-                    medianRightValue = oddNumber ?  medianLeftValue :
-                            Math.min(i + 1 < aLen ? A[i + 1] : Integer.MAX_VALUE, B[j]);
                     i++;
                 } else {
-                    medianLeftValue = B[j];
-                    medianRightValue = oddNumber ?  medianLeftValue :
-                            Math.min(A[i], j + 1 < bLen ? B[j + 1] : Integer.MAX_VALUE);
                     j++;
                 }
             }
-            if (i + j - 1 == medianLeftIdx) {
-                break;
-            }
         }
 
-        return (medianLeftValue + medianRightValue) / 2.0;
+        // Calculate the median
+        int leftMedianValue = -1;
+        int rightMedianValue = -1;
+        if (i == aLen) {
+            leftMedianValue = B[j];
+            rightMedianValue = oddNumber ? leftMedianValue : B[j + 1];
+        } else if (j == bLen) {
+            leftMedianValue = A[i];
+            rightMedianValue = oddNumber ? leftMedianValue : A[i + 1];
+        } else {
+            if (A[i] <= B[j]) {
+                leftMedianValue = A[i];
+                i++;
+            } else {
+                leftMedianValue = B[j];
+                j++;
+            }
+            rightMedianValue = oddNumber ? leftMedianValue :
+                    Math.min(i < aLen ? A[i] : Integer.MAX_VALUE,
+                            j < bLen ? B[j] : Integer.MAX_VALUE);
+        }
+        return (leftMedianValue + rightMedianValue) / 2.0;
     }
 }
