@@ -13,6 +13,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://www.geeksforgeeks.org/median-of-two-sorted-arrays/">geeksforgeeks blog</a>
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32532851.html">mitbbs post</a>
  * @see <a href="http://n00tc0d3r.blogspot.com/2013/04/median-of-two-sorted-arrays.html?q=median">n00tc0d3r blog</a>
+ * http://www.drdobbs.com/parallel/finding-the-median-of-two-sorted-arrays/240169222
+ * http://www.acmerblog.com/leetcode-median-of-two-sorted-arrays-5330.html
  */
 public interface MedianofTwoSortedArrays {
     double findMedianSortedArrays(int A[], int B[]);

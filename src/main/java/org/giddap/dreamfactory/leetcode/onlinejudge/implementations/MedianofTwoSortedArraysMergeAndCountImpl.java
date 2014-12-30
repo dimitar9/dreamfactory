@@ -7,53 +7,49 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.MedianofTwoSortedArrays;
  */
 public class MedianofTwoSortedArraysMergeAndCountImpl implements MedianofTwoSortedArrays {
     @Override
-    public double findMedianSortedArrays(int[] A, int[] B) {
+    public double findMedianSortedArrays(int A[], int B[])
+    {
+        final int m = A.length;
+        final int n = B.length;
 
-        final int aLen = A.length;
-        final int bLen = B.length;
-        // determine if the total number is odd or even
-        final boolean oddNumber = ((aLen + bLen) & 0x1) == 1;
-        // determine the left median index
-        final int leftMedianIdx = oddNumber ? (aLen + bLen) / 2 : (aLen + bLen) / 2 - 1;
+        int i=0, j=0, median = m+n;
+        double prev=0, last=0;
 
-        // keep updating left and right medians as we proceed step by step
-        int i = 0;
-        int j = 0;
-        while ((i < aLen || j < bLen) && (i + j < leftMedianIdx)) {
-            if (i == aLen) {
+        if(median<2)
+        {
+            if (m == 0 && n == 0) return 0;
+            if (m==1) return A[0];
+            else return B[0];
+        }
+
+        while ( (i+j) <= (median/2) )
+        {
+            prev = last;
+            if (i >= m) //如果A中的元素已经用完，直接取B数组
+            {
+                last=B[j];
                 j++;
-            } else if (j == bLen) {
+            }
+            else if (j>=n) //同上
+            {
+                last = A[i];
                 i++;
-            } else {
-                if (A[i] <= B[j]) {
-                    i++;
-                } else {
-                    j++;
-                }
+            }
+            else if (A[i]<B[j]) //取A[i] 和 B[j] 中较小的
+            {
+                last = A[i];
+                i++;
+            }
+            else
+            {
+                last=B[j];
+                j++;
             }
         }
 
-        // Calculate the median
-        int leftMedianValue = -1;
-        int rightMedianValue = -1;
-        if (i == aLen) {
-            leftMedianValue = B[j];
-            rightMedianValue = oddNumber ? leftMedianValue : B[j + 1];
-        } else if (j == bLen) {
-            leftMedianValue = A[i];
-            rightMedianValue = oddNumber ? leftMedianValue : A[i + 1];
-        } else {
-            if (A[i] <= B[j]) {
-                leftMedianValue = A[i];
-                i++;
-            } else {
-                leftMedianValue = B[j];
-                j++;
-            }
-            rightMedianValue = oddNumber ? leftMedianValue :
-                    Math.min(i < aLen ? A[i] : Integer.MAX_VALUE,
-                            j < bLen ? B[j] : Integer.MAX_VALUE);
-        }
-        return (leftMedianValue + rightMedianValue) / 2.0;
+        if ((median & 1) == 0) //偶数个
+            return (prev + last) / 2.0;
+        else //奇数个
+            return last;
     }
 }
