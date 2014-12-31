@@ -48,4 +48,13 @@ public class PalindromeNumberTest {
         assertEquals(false, palindromeNumber.isPalindrome(500));
     }
 
+    @Test
+    public void small09() {
+        assertEquals(false, palindromeNumber.isPalindrome(1000021));
+    }
+
+    @Test
+    public void small10() {
+        assertEquals(true, palindromeNumber.isPalindrome(1001001));
+    }
 }

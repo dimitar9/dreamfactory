@@ -10,26 +10,24 @@ public class PalindromeNumberImpl implements PalindromeNumber {
 
     @Override
     public boolean isPalindrome(int x) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         if (x < 0) {
             return false;
         }
         int n = 1;
         int a = x;
-        while ((a /= 10) > 0) {
-            n++;
+        while (a > 9) {
+            n *= 10;
+            a /= 10;
         }
         a = x;
-        while (a >= 10) {
-            int tail = a % 10;
-            int head = a / (int) Math.pow(10, (n - 1));
-            if (tail != head) {
+        while (a > 0) {
+            int t = a % 10;
+            int h = a / n;
+            if (t != h) {
                 return false;
             }
-            a %= Math.pow(10, (n - 1));
-            a /= 10;
-            n -= 2;
+            a %= (a % n) / 10;
+            n /= 100;
         }
         return true;
     }
