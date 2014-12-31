@@ -34,20 +34,16 @@ public class AtoIImpl implements AtoI {
                 hasDigit = true;
             }
             n = n * 10 + (s[i] - '0');
+            if (n > Integer.MAX_VALUE) {
+                if (isNeg) {
+                    return Integer.MIN_VALUE;
+                } else {
+                    return Integer.MAX_VALUE;
+                }
+            }
             i++;
         }
 
-        if (hasDigit) {
-            if (isNeg) {
-                n = 0 - n;
-                if (n < Integer.MIN_VALUE) {
-                    return Integer.MIN_VALUE;
-                }
-            } else if (n > Integer.MAX_VALUE) {
-                return Integer.MAX_VALUE;
-            }
-            return (int) n;
-        }
-        return 0;
+        return isNeg ? 0 - (int) n : (int) n;
     }
 }
