@@ -18,31 +18,31 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.RegularExpressionMatching;
 public class RegularExpressionMatchingBacktrackingImpl implements RegularExpressionMatching {
     @Override
     public boolean isMatch(String s, String p) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        if (p.length() == 0) {
-            return s.length() == 0;
-        }
-
-        if (p.length() == 1 || p.charAt(1) != '*') { // case 1: Next char in p is not '*'
-            if (s.length() == 0 || (p.charAt(0) != '.' && s.charAt(0) != p.charAt(0))) {
-                // pruning
-                return false;
-            }
-            return isMatch(s.substring(1), p.substring(1));
+        final int m = s.length();
+        final int n = p.length();
+        if (n == 0) {
+            return m == 0;
         } else {
-            if (isMatch(s, p.substring(2))) {
-                return true;
-            } else {
-                int i = 0;
-                while (i < s.length() && (p.charAt(0) == '.' || p.charAt(0) == s.charAt(i))) {
-                    if (isMatch(s.substring(i + 1), p.substring(2))) {
-                        return true;
-                    }
-                    i++;
+            char pc = p.charAt(0);
+            char pc2 = n > 1 ? p.charAt(1) : '\0';
+            if (pc2 != '*') { // need to match individual char
+                if (m > 0 && (s.charAt(0) == pc || pc == '.')) {
+                    return isMatch(s.substring(1), p.substring(1));
                 }
-                return false;
+            } else {
+                if (isMatch(s, p.substring(2))) {
+                    return true;
+                } else {
+                    int i = 0;
+                    while (i < m && (s.charAt(i) == pc || pc == '.')) {
+                        if (isMatch(s.substring(i + 1), p.substring(2))) {
+                            return true;
+                        }
+                        i++;
+                    }
+                }
             }
+            return false;
         }
     }
 }
