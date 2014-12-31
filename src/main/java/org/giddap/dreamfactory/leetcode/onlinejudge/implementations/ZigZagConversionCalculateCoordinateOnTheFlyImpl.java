@@ -9,21 +9,21 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.ZigZagConversion;
 public class ZigZagConversionCalculateCoordinateOnTheFlyImpl implements ZigZagConversion {
     @Override
     public String convert(String s, int nRows) {
-        if (nRows == 1) {
+        if (nRows < 2) {
             return s;
         }
-        StringBuilder ret = new StringBuilder();
-        final int unit = nRows + nRows - 2;
+        final int n = s.length();
+        final int blockSize = 2 * (nRows - 1);
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < nRows; i++) {
-            int curr = i;
-            while (curr < s.length()) {
-                ret.append(s.charAt(curr));
-                curr += unit;
-                if (i > 0 && i < nRows - 1 && (curr - i - i) < s.length()) {
-                    ret.append(s.charAt(curr - i - i));
-                }
+            int delta = (blockSize - 2 * i == 0 ? blockSize : blockSize - 2 * i);
+            int j = i;
+            while (j < n) {
+                sb.append(s.charAt(j));
+                j += delta;
+                delta = (blockSize == delta ? blockSize : blockSize - delta);
             }
         }
-        return ret.toString();
+        return sb.toString();
     }
 }
