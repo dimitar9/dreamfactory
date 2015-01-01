@@ -10,12 +10,12 @@ public class ValidParenthesesImpl implements ValidParentheses {
         pairs.put(')', '(');
         pairs.put('}', '{');
         pairs.put(']', '[');
-        Deque<Character> stack = new ArrayDeque<Character>();
+        Deque<Character> stack = new ArrayDeque<>();
         char[] chars = s.toCharArray();
         for (char c : chars) {
             if (pairs.containsKey(c)) {
                 if (!stack.isEmpty()) {
-                    if (pairs.get(c) != stack.removeFirst()) {
+                    if (pairs.get(c) != stack.pollFirst()) {
                         return false;
                     }
                 } else {
