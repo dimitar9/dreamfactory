@@ -2,30 +2,26 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.IntegerToRoman;
 
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class IntegerToRomanImpl implements IntegerToRoman {
 
     @Override
     public String intToRoman(int num) {
-        TreeMap<Integer, String> intToRoman = createIntToRoman();
-
-        StringBuilder ret = new StringBuilder();
-        for (Map.Entry<Integer, String> one : intToRoman.entrySet()) {
-            int key = one.getKey();
-            String value = one.getValue();
-            while (num >= key) {
-                ret.append(value);
-                num -= key;
+        StringBuilder sb = new StringBuilder();
+        SortedMap<Integer, String>  intToRoman = createIntToRoman();
+        for (SortedMap.Entry<Integer, String> one : intToRoman.entrySet()) {
+            int intVal = one.getKey();
+            String romanVal = one.getValue();
+            while (num >= intVal) {
+                num -= intVal;
+                sb.append(romanVal);
             }
         }
-        return ret.toString();
+        return sb.toString();
     }
 
-    private TreeMap<Integer, String> createIntToRoman() {
+    private SortedMap<Integer, String> createIntToRoman() {
         Comparator<Integer> comp = new Comparator<Integer>() {
             @Override
             public int compare(Integer i1, Integer i2) {
@@ -33,7 +29,7 @@ public class IntegerToRomanImpl implements IntegerToRoman {
             }
         };
 
-        TreeMap<Integer, String> intToRoman = new TreeMap<Integer, String>(comp);
+        SortedMap<Integer, String> intToRoman = new TreeMap<>(comp);
         intToRoman.put(1000, "M");
         intToRoman.put(900, "CM");
         intToRoman.put(500, "D");
