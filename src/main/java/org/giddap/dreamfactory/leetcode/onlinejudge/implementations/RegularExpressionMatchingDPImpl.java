@@ -4,38 +4,39 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.RegularExpressionMatching;
 
 /**
  * http://wizardrichard.blogspot.com/2013/02/leetcode-regular-expression-matching.html
+ * http://www.cnblogs.com/jdflyfly/p/3810681.html
  */
 public class RegularExpressionMatchingDPImpl implements RegularExpressionMatching {
 
     @Override
     public boolean isMatch(String s, String p) {
 
-        int m = s.length() + 1;
-        int n = p.length() + 1;
-        boolean[][] result = new boolean[n][m];
-
-        result[0][0] = true;
-        for (int i = 1; i < n; i++) {
-            result[i][0] = p.charAt(i - 1) == '*' ? result[i - 2][0] : false;
-        }
-        for (int j = 1; j < m; j++) {
-            result[0][j] = s.charAt(j - 1) == '*' ? result[0][j - 2] : false;
-        }
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j < m; j++) {
-                if (p.charAt(i - 1) == '*')
-                    result[i][j] = match(s.charAt(j - 1), p.charAt(i - 2)) ? (result[i][j - 1] || result[i - 2][j]) : result[i - 2][j];
-                else
-                    result[i][j] = match(s.charAt(j - 1), p.charAt(i - 1)) ? result[i - 1][j - 1] : false;
+        int height = s.length(), width = p.length();
+        boolean[][] dp = new boolean[height + 1][width + 1];
+        dp[0][0] = true;
+        for (int i = 1; i <= width; i++) {
+            if (p.charAt(i - 1) == '*') {
+                dp[0][i] = dp[0][i - 2];
             }
         }
-        return result[n - 1][m - 1];
-    }
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= width; j++) {
+                char sChar = s.charAt(i - 1);
+                char pChar = p.charAt(j - 1);
+                if (pChar != '*') {
+                    if (sChar == pChar || pChar == '.') {
+                        dp[i][j] = dp[i - 1][j - 1];
+                    }
+                } else {
+                    if (sChar != p.charAt(j - 2) && p.charAt(j - 2) != '.') {
+                        dp[i][j] = dp[i][j - 2];
+                    } else {
+                        dp[i][j] = dp[i][j - 2] | dp[i - 1][j];
+                    }
+                }
+            }
+        }
 
-    boolean match(char a, char b) {
-        if (a == '.' || b == '.')
-            return true;
-        else
-            return a == b;
+        return dp[height][width];
     }
 }

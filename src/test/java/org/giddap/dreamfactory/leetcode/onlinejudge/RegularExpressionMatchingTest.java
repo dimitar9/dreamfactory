@@ -6,8 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RegularExpressionMatchingTest {
-    private RegularExpressionMatching solution = new RegularExpressionMatchingBacktrackingImpl();
-    private RegularExpressionMatching solution3 = new RegularExpressionMatchingDPImpl();
+    private RegularExpressionMatching solution2 = new RegularExpressionMatchingBacktrackingImpl();
+    private RegularExpressionMatching solution = new RegularExpressionMatchingDPImpl();
 
     @Test
     public void small01() {
