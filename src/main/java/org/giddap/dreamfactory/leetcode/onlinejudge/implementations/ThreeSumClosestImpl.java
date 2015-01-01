@@ -7,42 +7,27 @@ import java.util.Arrays;
 public class ThreeSumClosestImpl implements ThreeSumClosest {
     @Override
     public int threeSumClosest(int[] num, int target) {
-        final int len = num.length;
-
+        long closest = (long) Integer.MAX_VALUE;
         Arrays.sort(num);
-        int md = Integer.MAX_VALUE;
-        int csum = 0;
-        for (int i = 0; i < len - 2; ++i) {
-            if (i > 0 && num[i - 1] == num[i]) {
-                continue;
-            }
-            int j = i + 1;
-            int k = len - 1;
-            while (j < k) {
-                if (j > i + 1 && num[j] == num[j - 1]) {
-                    j++;
-                    continue;
-                }
-                if (k < len - 1 && num[k] == num[k + 1]) {
-                    k--;
-                    continue;
-                }
-                final int tmpSum = num[i] + num[j] + num[k];
-                final int tmpDelta = tmpSum - target;
-                if (Math.abs(tmpDelta) < md) {
-                    csum = num[i] + num[j] + num[k];
-                    md = Math.abs(tmpDelta);
-                }
-
-                if (tmpDelta == 0) {
+        for (int i = 0; i < num.length - 2; i++) {
+            int m = i + 1;
+            int n = num.length - 1;
+            while (m < n) {
+                int sum = num[i] + num[m] + num[n];
+                if (sum == target) {
                     return target;
-                } else if (tmpDelta > 0) {
-                    k--;
                 } else {
-                    j++;
+                    if (Math.abs(sum - target) < Math.abs(closest - target)) {
+                        closest = sum;
+                    }
+                    if (sum > target) {
+                        n--;
+                    } else {
+                        m++;
+                    }
                 }
             }
         }
-        return csum;
+        return (int) closest;
     }
 }
