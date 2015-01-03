@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q084LargestRectangleInHistogram;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LargestRectangleInHistogram;
 
 import java.util.Arrays;
 
 /**
  * Divide and Conquer
  */
-public class Q084LargestRectangleInHistogramOnlognBinarySearchImpl implements Q084LargestRectangleInHistogram {
+public class LargestRectangleInHistogramOnlognBinarySearchImpl implements LargestRectangleInHistogram {
     @Override
     public int largestRectangleArea(int[] height) {
         // Start typing your Java solution below

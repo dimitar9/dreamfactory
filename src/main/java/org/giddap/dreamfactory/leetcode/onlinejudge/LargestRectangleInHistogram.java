@@ -23,6 +23,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * http://discuss.leetcode.com/questions/259/largest-rectangle-in-histogram
  * http://www.informatik.uni-ulm.de/acm/Locals/2003/html/judge.html
  */
-public interface Q084LargestRectangleInHistogram {
+public interface LargestRectangleInHistogram {
     int largestRectangleArea(int[] height);
 }

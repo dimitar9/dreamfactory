@@ -1,10 +1,10 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q084LargestRectangleInHistogram;
+import org.giddap.dreamfactory.leetcode.onlinejudge.LargestRectangleInHistogram;
 
 import java.util.Stack;
 
-public class Q084LargestRectangleInHistogramOnWithStackImpl implements Q084LargestRectangleInHistogram {
+public class LargestRectangleInHistogramOnWithStackImpl implements LargestRectangleInHistogram {
     @Override
     public int largestRectangleArea(int[] height) {
         // Start typing your Java solution below
