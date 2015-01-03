@@ -16,9 +16,6 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.SwapNodesInPairs;
 public class SwapNodesInPairsImpl implements SwapNodesInPairs {
     @Override
     public ListNode swapPairs(ListNode head) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         ListNode newHead = new ListNode(0);
         newHead.next = head;
 
