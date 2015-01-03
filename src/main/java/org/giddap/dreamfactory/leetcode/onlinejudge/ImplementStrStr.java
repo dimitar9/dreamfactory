@@ -13,5 +13,5 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * @see <a href="http://leetcode.com/2010/10/implement-strstr-to-find-substring-in.html">Leetcode blog</a>
  */
 public interface ImplementStrStr {
-    String strStr(String haystack, String needle);
+    int strStr(String haystack, String needle);
 }
