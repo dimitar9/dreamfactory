@@ -11,6 +11,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * <p/>
  *
  * @see <a href="http://leetcode.com/2010/10/implement-strstr-to-find-substring-in.html">Leetcode blog</a>
+ * http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=stringSearching
  * KMP: http://blog.csdn.net/v_july_v/article/details/7041827
  * KMP: http://blog.csdn.net/yaochunnian/article/details/7059486
  * KMP: http://billhoo.blog.51cto.com/2337751/411486/
