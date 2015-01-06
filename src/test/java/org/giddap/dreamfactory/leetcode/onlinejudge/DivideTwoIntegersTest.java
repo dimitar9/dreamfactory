@@ -29,6 +29,13 @@ public class DivideTwoIntegersTest {
         assertEquals(divident / divisor, solution.divide(divident, divisor));
     }
 
+    @Test
+    public void small04() {
+        final int divident = Integer.MIN_VALUE;
+        final int divisor = -1;
+        assertEquals(Integer.MAX_VALUE, solution.divide(divident, divisor));
+    }
+
 }
 
 /*
