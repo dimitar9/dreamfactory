@@ -7,47 +7,49 @@ public class NextPermutationImpl implements NextPermutation {
 
     @Override
     public void nextPermutation(int[] num) {
-        final int len = num.length;
-        if (len == 0) {
+        final int n = num.length;
+        if (n <= 1) {
             return;
         }
-        // initialize i to the right-most
-        int i = len - 1;
-        while (i > 0 && num[i - 1] >= num[i]) {
+        // Starting from the end,
+        // find i such that num[i] < num[i + 1]
+        int i = num.length - 2;
+        while (i >= 0 && num[i] >= num[i + 1]) {
             i--;
         }
-        i--;
-
-        if (i < 0) {
-            reverse(num, 0, len);
+        if (i == -1) {
+            // this is already the max
+            // need to reverse the string to get the min
+            reverse(num, 0, n);
             return;
         }
-
-        int j = len - 1;
-        while (i < j && num[i] >= num[j]) {
+        // Starting from the end,
+        // find j such that num[j] is the first number
+        // that is larger than num[i]
+        int j = num.length - 1;
+        while(j > i && num[j] <= num[i]) {
             j--;
         }
-
+        // swap num[i] with num[j]
         swap(num, i, j);
 
-        i++;
-        reverse(num, i, len);
+        // reverse between i + 1 and the end;
+        reverse(num, i + 1, n);
+    }
+
+    private void reverse(int[] numbers, final int s, final int e) {
+        int l = s;
+        int r = e - 1;
+        while (l < r) {
+            swap(numbers, l, r);
+            l++;
+            r--;
+        }
     }
 
     private void swap(int[] nums, int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
-    }
-
-    private void reverse(int[] nums, int start, int endExclusive) {
-        int left = start;
-        int right = endExclusive - 1;
-
-        while (left < right) {
-            swap(nums, left, right);
-            left++;
-            right--;
-        }
     }
 }
