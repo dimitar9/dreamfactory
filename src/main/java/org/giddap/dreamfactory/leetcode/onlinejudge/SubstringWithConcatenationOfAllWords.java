@@ -19,8 +19,6 @@ import java.util.List;
  * (order does not matter).
  * </pre>
  * <p/>
- * <p/>
- * http://discuss.leetcode.com/questions/210/substring-with-concatenation-of-all-words
  * http://n00tc0d3r.blogspot.com/2013/06/substring-with-concatenation-of-all.html
  * http://blog.csdn.net/fightforyourdream/article/details/14165397
  *
