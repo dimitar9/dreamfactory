@@ -17,6 +17,6 @@ public class SearchInsertPositionImpl implements SearchInsertPosition {
                 high = mid;
             }
         }
-        return low + 1;
+        return high;
     }
 }
