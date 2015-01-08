@@ -5,28 +5,24 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.CountAndSay;
 public class CountAndSayImpl implements CountAndSay {
     @Override
     public String countAndSay(int n) {
-        if (n <= 0) {
-            return "";
-        }
-        String ret = "1";
-        int i = 2;
-        while (i <= n) {
-            StringBuilder tmp = new StringBuilder();
-            char[] chars = ret.toCharArray();
+        String prev = "1";
+        int i = 1;
+        while (i < n) {
+            char[] chars = prev.toCharArray();
+            StringBuilder curr = new StringBuilder();
             int j = 0;
-            int len = chars.length;
-            while (j < len) {
+            while (j < chars.length) {
                 int k = j + 1;
-                while (k < len && chars[j] == chars[k]) {
+                while (k < chars.length && chars[j] == chars[k]) {
                     k++;
                 }
-                tmp.append((char)('0' + (k - j)));
-                tmp.append(chars[j]);
+                curr.append(k - j);
+                curr.append(chars[j]);
                 j = k;
             }
-            ret = tmp.toString();
+            prev = curr.toString();
             i++;
         }
-        return ret;
+        return prev;
     }
 }
