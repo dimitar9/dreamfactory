@@ -9,10 +9,10 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.FirstMissingPositive;
 public class FirstMissingPositiveImpl implements FirstMissingPositive {
     @Override
     public int firstMissingPositive(int[] A) {
-        final int len = A.length;
+        final int n = A.length;
         int i = 0;
-        while (i < len) {
-            if (0 < A[i] && A[i] <= len && A[A[i] - 1] != A[i]) {
+        while (i < n) {
+            if (0 < A[i] && A[i] < n && A[A[i] - 1] != A[i]) {
                 int tmp = A[A[i] - 1];
                 A[A[i] - 1] = A[i];
                 A[i] = tmp;
@@ -20,10 +20,11 @@ public class FirstMissingPositiveImpl implements FirstMissingPositive {
                 i++;
             }
         }
-
         i = 0;
-        while (i < len && A[i] - 1 == i) {
-            i++;
+        for (; i < n; i++) {
+            if (i != A[i] - 1) {
+                return i + 1;
+            }
         }
         return i + 1;
     }
