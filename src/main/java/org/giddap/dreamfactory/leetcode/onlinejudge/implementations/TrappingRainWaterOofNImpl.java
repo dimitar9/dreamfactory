@@ -21,28 +21,17 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.TrappingRainWater;
 public class TrappingRainWaterOofNImpl implements TrappingRainWater {
     @Override
     public int trap(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
-        final int len = A.length;
-        if (len == 0) {
-            return 0;
-        }
-
-        int[] leftHighs = new int[len];
-        leftHighs[0] = A[0];
-        for (int i = 1; i < len; i++) {
+        final int n = A.length;
+        // find highs on the left and on the right
+        int[] leftHighs = new int[n];
+        int[] rightHighs = new int[n];
+        for (int i = 1; i < n; i++) {
             leftHighs[i] = Math.max(leftHighs[i - 1], A[i - 1]);
+            rightHighs[n - 1 - i] = Math.max(rightHighs[n - i], A[n - i]);
         }
-
-        int[] rightHighs = new int[len];
-        rightHighs[len - 1] = A[len - 1];
-        for (int i = len - 2; i >= 0; i--) {
-            rightHighs[i] = Math.max(rightHighs[i + 1], A[i + 1]);
-        }
-
+        // count trapped water one index by one index
         int ret = 0;
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < n; i++) {
             ret += Math.max(0, Math.min(leftHighs[i], rightHighs[i]) - A[i]);
         }
         return ret;
