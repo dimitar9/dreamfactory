@@ -32,22 +32,24 @@ public class JumpGameIIOnImpl implements JumpGameII {
      */
     @Override
     public int jump(int[] A) {
-        if (A.length <= 1) {
+        final int n = A.length;
+        if (n == 1) {
             return 0;
         }
-        int curr = 0;
-        int next = 0;
-        int steps = 0;
-        for (int i = 0; i <= curr; i++) {
-            next = Math.max(i + A[i], next);
-            if (next >= A.length - 1) {
-                return steps + 1;
+        int upper = 0;
+        int next = upper;
+        int step = 0;
+        for (int i = 0; i <= upper; i++) {
+            int reach = i + A[i];
+            if (reach >= n - 1) {
+                return step + 1;
             }
-            if (i == curr) {
-                curr = next;
-                steps++;
+            next = Math.max(next, reach);
+            if (i == upper) {
+                step++;
+                upper = next;
             }
         }
-        return -1;
+        return step;
     }
 }
