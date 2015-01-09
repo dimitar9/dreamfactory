@@ -20,37 +20,38 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.WildcardMatching;
 public class WildcardMatchingRecursiveImpl implements WildcardMatching {
     @Override
     public boolean isMatch(String s, String p) {
-        final int sLen = s.length();
-        final int pLen = p.length();
-        if (sLen == 0 && pLen == 0) {
-            return true;
-        }
-        if (pLen == 0) {
-            return sLen == 0;
+        final int m = s.length();
+        final int n = p.length();
+        if (n == 0) {
+            return m == 0;
         } else {
-            if (p.charAt(0) != '*') {
-                if (sLen > 0 && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '?')) {
-                    return isMatch(s.substring(1), p.substring(1));
-                } else {
+            char cs = m > 0 ? s.charAt(0) : '\0';
+            char cp = p.charAt(0);
+            if (cp != '*') {
+                if (cs == '\0' || (cs != cp && cp != '?')) {
                     return false;
                 }
-            } else { // p starts with '*'
-                int i = 0;
-                while (i < pLen && p.charAt(i) == '*') {
-                    i++;
-                }
-                if (i == pLen) { // p ends with all '*'
-                    return true;
-                }
+                return isMatch(s.substring(1), p.substring(1));
+            } else {
                 int j = 0;
-                while (j < sLen) {
-                    if (isMatch(s.substring(j), p.substring(i))) {
-                        return true;
-                    }
+                while(j < n && p.charAt(j) == '*') {
                     j++;
                 }
+                if (j == n) {
+                    return true;
+                }
+
+                if (isMatch(s, p.substring(j))) {
+                    return true;
+                } else {
+                    for (int i = 0; i < s.length(); i++) {
+                        if (isMatch(s.substring(i + 1), p.substring(j))) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
             }
-            return false;
         }
     }
 }

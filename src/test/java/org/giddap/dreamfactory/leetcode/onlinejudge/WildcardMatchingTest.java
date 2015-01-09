@@ -1,6 +1,8 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WildcardMatchingDPImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WildcardMatchingGreedyImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WildcardMatchingRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -17,9 +19,9 @@ import static org.junit.Assert.assertTrue;
  * isMatch("aab", "c*a*b") ? false
  */
 public class WildcardMatchingTest {
-    //        private WildcardMatching solution = new WildcardMatchingDPImpl();
-    private WildcardMatching solution = new WildcardMatchingGreedyImpl();
-//    private WildcardMatching solution = new WildcardMatchingRecursiveImpl();
+    private WildcardMatching solution3 = new WildcardMatchingDPImpl();
+    private WildcardMatching solution2 = new WildcardMatchingGreedyImpl();
+    private WildcardMatching solution = new WildcardMatchingRecursiveImpl();
 
     @Test
     public void small01() {
