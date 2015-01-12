@@ -3,13 +3,14 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Permutations;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class PermutationsSwapImpl implements Permutations {
     @Override
-    public ArrayList<ArrayList<Integer>> permute(int[] num) {
-        ArrayList<ArrayList<Integer>> results =
-                new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> permute(int[] num) {
+        List<List<Integer>> results =
+                new ArrayList<>();
         if (num.length == 0) {
             return results;
         }
@@ -18,9 +19,9 @@ public class PermutationsSwapImpl implements Permutations {
     }
 
     public void permute(
-            ArrayList<ArrayList<Integer>> results, int[] numbers, int currIdx) {
+            List<List<Integer>> results, int[] numbers, int currIdx) {
         if (currIdx == numbers.length) {
-            ArrayList<Integer> onePerm = new ArrayList<Integer>();
+            List<Integer> onePerm = new ArrayList<>();
             for (int n : numbers) {
                 onePerm.add(n);
             }

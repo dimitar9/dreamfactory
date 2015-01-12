@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/permutations/">Permutations</a>
@@ -28,5 +28,5 @@ import java.util.ArrayList;
  * @see <a href="http://www.geeksforgeeks.org/forums/topic/permutations-of-a-string-without-repeatition-2/">Permutations without duplicates from Geeksforgeeks</a>
  */
 public interface Permutations {
-    ArrayList<ArrayList<Integer>> permute(int[] num);
+    List<List<Integer>> permute(int[] num);
 }

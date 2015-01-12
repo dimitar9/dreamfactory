@@ -7,8 +7,8 @@ import java.util.List;
 
 public class PermutationsDfsImpl implements Permutations {
     @Override
-    public ArrayList<ArrayList<Integer>> permute(int[] num) {
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> permute(int[] num) {
+        List<List<Integer>> result = new ArrayList<>();
         if (num.length == 0) {
             return result;
         }
@@ -22,7 +22,7 @@ public class PermutationsDfsImpl implements Permutations {
         return result;
     }
 
-    public void doPermutations(ArrayList<ArrayList<Integer>> result, List<Integer> done, List<Integer> remain) {
+    public void doPermutations(List<List<Integer>> result, List<Integer> done, List<Integer> remain) {
         if (remain.isEmpty()) {
             result.add(new ArrayList<Integer>(done));
         } else {

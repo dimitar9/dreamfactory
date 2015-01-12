@@ -11,15 +11,15 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class PermutationsTest {
-    private PermutationsSwapImpl solution = new PermutationsSwapImpl();
+    private Permutations solution = new PermutationsSwapImpl();
 //    private PermutationsDfsImpl solution = new PermutationsDfsImpl();
 
     @Test
     public void small01() {
         int[] input = {1};
 
-        ArrayList<ArrayList<Integer>> actual = solution.permute(input);
-        List<ArrayList<Integer>> expected = Lists.newArrayList();
+        List<List<Integer>> actual = solution.permute(input);
+        List<List<Integer>> expected = Lists.newArrayList();
         expected.add(Lists.newArrayList(1));
 
         assertEquals(expected.size(), actual.size());
@@ -30,7 +30,7 @@ public class PermutationsTest {
     public void small02() {
         int[] input = {1, 2, 3};
 
-        ArrayList<ArrayList<Integer>> actual = solution.permute(input);
+        List<List<Integer>> actual = solution.permute(input);
 
         List<ArrayList<Integer>> expected = Lists.newArrayList();
         expected.add(Lists.newArrayList(2, 3, 1));
