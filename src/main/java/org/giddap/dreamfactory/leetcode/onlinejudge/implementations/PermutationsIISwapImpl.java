@@ -8,6 +8,7 @@ import java.util.*;
  *
  */
 public class PermutationsIISwapImpl implements PermutationsII {
+
     public List<List<Integer>> permuteUnique(int[] num) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (num.length == 0) {
