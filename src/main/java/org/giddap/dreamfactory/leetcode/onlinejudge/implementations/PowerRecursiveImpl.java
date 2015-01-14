@@ -4,18 +4,11 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Power;
 
 public class PowerRecursiveImpl implements Power {
     public double pow(double x, int n) {
-        return (n >= 0) ? doPow(x, (long) n) : 1 / doPow(x, Math.abs((long) n));
-    }
-
-    public double doPow(double x, long n) {
-        if (n == 0) {
-            return 1;
-        }
-        if (n == 1) {
-            return x;
-        }
-
-        double tmp = doPow(x * x, n / 2);
-        return ((n & 1) == 1) ? x * tmp : tmp;
+        if (n == 0) return 1;
+        int exp = Math.abs(n);
+        double half = pow(x, exp>>1);
+        double res = half * half;
+        if ((exp & 1) == 1) res *= x;
+        return (n > 0) ? res : 1.0/res;
     }
 }
