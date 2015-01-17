@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Sets;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.NQueensDfsImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.NQueensBacktrackingImpl;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -11,14 +11,14 @@ import java.util.Set;
 import static org.junit.Assert.assertEquals;
 
 public class NQueensTest {
-    private NQueens solution = new NQueensDfsImpl();
+    private NQueens solution = new NQueensBacktrackingImpl();
 
     /**
      * Submission Result: Wrong Answer
-
-     Input:	4
-     Output:	[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."],["..Q.","Q...","...Q",".Q.."],[".Q..","...Q","Q...","..Q."],[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."],["..Q.","Q...","...Q",".Q.."],[".Q..","...Q","Q...","..Q."]]
-     Expected:	[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+     * <p/>
+     * Input:	4
+     * Output:	[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."],["..Q.","Q...","...Q",".Q.."],[".Q..","...Q","Q...","..Q."],[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."],["..Q.","Q...","...Q",".Q.."],[".Q..","...Q","Q...","..Q."]]
+     * Expected:	[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
      */
     @Test
     public void small01() {
@@ -58,21 +58,11 @@ public class NQueensTest {
 
     @Test
     public void small03() {
-        List<String[]> actual = solution.solveNQueens(5);
+        assertEquals(0, solution.solveNQueens(3).size());
+    }
 
-        Set<String[]> expected = Sets.newHashSet(
-                new String[]{".Q..", "...Q", "Q...", "..Q."},
-                new String[]{"..Q.", "Q...", "...Q", ".Q.."});
-
-        assertEquals(expected.size(), actual.size());
-        for (String[] one : actual) {
-            for (String[] two : expected) {
-                assertEquals(two.length, one.length);
-                for (int i = 0; i < two.length; i++) {
-                    assertEquals(one[i], two[i]);
-                }
-
-            }
-        }
+    @Test
+    public void small04() {
+        assertEquals(1, solution.solveNQueens(1).size());
     }
 }

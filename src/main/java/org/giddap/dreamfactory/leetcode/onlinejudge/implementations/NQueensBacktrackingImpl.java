@@ -3,48 +3,51 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.NQueens;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class NQueensBacktrackingImpl implements NQueens {
     @Override
-    public ArrayList<String[]> solveNQueens(int n) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        assert (n >= 0);
-        ArrayList<String[]> res = new ArrayList<String[]>();
-        solveNQueues(1, new int[n], res);
+    public List<String[]> solveNQueens(int n) {
+        List<String[]> res = new ArrayList<>();
+        buildConfiuration(0, new int[n], res);
         return res;
     }
 
-    public void solveNQueues(int k, int[] solu, ArrayList<String[]> res) {
-        int n = solu.length;
-        http://HELLO
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < k - 1; j++)
-                if (solu[j] == i || Math.abs(solu[j] - i) == Math.abs(j - k + 1))
-                    continue http;
-            solu[k - 1] = i;
-            if (k == n) {
-                String[] temp = new String[n];
-                for (int l = 0; l < n; l++) {
-                    temp[l] = generateRow(n, solu[l] + 1);
+    private void buildConfiuration(
+            int row, int[] cols, List<String[]>res) {
+        final int n = cols.length;
+        if (row == n) {
+            String[] item = new String[n];
+            for (int i = 0; i < n; i++) {
+                StringBuilder strRow = new StringBuilder();
+                for (int j = 0; j < n; j++) {
+                    if (cols[i] == j)
+                        strRow.append('Q');
+                    else
+                        strRow.append('.');
                 }
-                res.add(temp);
-            } else
-                solveNQueues(k + 1, solu, res);
+                item[i] = strRow.toString();
+            }
+            res.add(item);
+            return;
+        }
+        for (int i = 0; i < n; i++) {
+            cols[row] = i;
+            if (isValidConfiguration(row, cols)) {
+                buildConfiuration(row + 1, cols, res);
+            }
         }
     }
 
-    public String generateRow(int n, int k) {
-        assert (k > 0 && k <= n);
-        StringBuilder res = new StringBuilder("");
-        for (int i = 0; i < k - 1; i++) {
-            res.append(".");
+    private boolean isValidConfiguration(int row, int[] cols) {
+        for (int i = 0; i < row; i++) {
+            if (cols[row] == cols[i]
+                    || Math.abs(cols[row] - cols[i]) == row - i) {
+                return false;
+            }
+
         }
-        res.append("Q");
-        for (int i = k; i < n; i++) {
-            res.append(".");
-        }
-        return res.toString();
+        return true;
     }
 }
