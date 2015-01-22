@@ -1,9 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q061RotateList;
+import org.giddap.dreamfactory.leetcode.onlinejudge.RotateList;
 
-public class Q061RotateListImpl implements Q061RotateList {
+public class RotateListImpl implements RotateList {
     @Override
     public ListNode rotateRight(ListNode head, int n) {
         if (n == 0 || head == null) {

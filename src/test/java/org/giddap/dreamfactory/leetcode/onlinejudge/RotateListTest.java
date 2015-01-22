@@ -1,13 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.ListNode;
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q061RotateListImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.RotateListImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q061RotateListTest {
-    private Q061RotateList solution = new Q061RotateListImpl();
+public class RotateListTest {
+    private RotateList solution = new RotateListImpl();
 
     @Test
     public void small01() {

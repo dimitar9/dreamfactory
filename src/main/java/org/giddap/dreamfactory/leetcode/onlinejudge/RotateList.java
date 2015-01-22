@@ -14,6 +14,6 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
  * Links:
  * http://discuss.leetcode.com/questions/238/rotate-list
  */
-public interface Q061RotateList {
+public interface RotateList {
     ListNode rotateRight(ListNode head, int n);
 }
