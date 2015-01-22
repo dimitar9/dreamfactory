@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * http://oj.leetcode.com/problems/spiral-matrix/
@@ -23,5 +23,5 @@ import java.util.ArrayList;
  * http://yucoding.blogspot.com/2013/04/leetcode-question-100-spiral-matrix-i.html
  */
 public interface SpiralMatrix {
-    ArrayList<Integer> spiralOrder(int[][] matrix);
+    List<Integer> spiralOrder(int[][] matrix);
 }
