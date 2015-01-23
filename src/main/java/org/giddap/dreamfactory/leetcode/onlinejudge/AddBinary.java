@@ -17,6 +17,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/243/add-binary">Leetcode discussion</a>
  */
-public interface Q067AddBinary {
+public interface AddBinary {
     String addBinary(String a, String b);
 }

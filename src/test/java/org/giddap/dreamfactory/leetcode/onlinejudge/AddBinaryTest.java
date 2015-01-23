@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q067AddBinaryImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.AddBinaryImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q067AddBinaryTest {
-    private Q067AddBinary solution = new Q067AddBinaryImpl();
+public class AddBinaryTest {
+    private AddBinary solution = new AddBinaryImpl();
 
     @Test
     public void small01() {
