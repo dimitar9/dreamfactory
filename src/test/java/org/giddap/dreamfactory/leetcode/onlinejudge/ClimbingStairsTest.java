@@ -1,12 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q070ClimbingStairsDPImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ClimbingStairsDPImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q070ClimbingStairsTest {
-    private Q070ClimbingStairs solution = new Q070ClimbingStairsDPImpl();
+public class ClimbingStairsTest {
+    private ClimbingStairs solution = new ClimbingStairsDPImpl();
 
     @Test
     public void small01() {

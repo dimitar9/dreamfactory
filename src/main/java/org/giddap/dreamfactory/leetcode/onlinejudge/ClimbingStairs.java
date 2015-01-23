@@ -13,6 +13,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://discuss.leetcode.com/questions/246/climbing-stairs">Leetcode discussion</a>
  */
-public interface Q070ClimbingStairs {
+public interface ClimbingStairs {
     int climbStairs(int n);
 }
