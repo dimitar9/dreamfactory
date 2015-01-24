@@ -13,24 +13,16 @@ public class Search2dMatrixImpl implements Search2dMatrix {
         if (cols == 0) {
             return false;
         }
-
-        int low = -1;
-        int high = rows * cols;
-
-        while (high - low > 1) {
-            int mid = low + (high - low) / 2;
-            int midVal = matrix[mid / cols][mid % cols];
-            if (midVal > target) {
-                high = mid;
+        int l = -1;
+        int h = rows * cols;
+        while (h - l > 1) {
+            int m = l + (h - l) / 2;
+            if (matrix[m / cols][m % cols] > target) {
+                h = m;
             } else {
-                low = mid;
+                l = m;
             }
         }
-
-        if (low == -1 || matrix[low / cols][low % cols] != target) {
-            return false;
-        } else {
-            return true;
-        }
+        return l >= 0 ? (matrix[l / cols][l % cols] == target) : false;
     }
 }
