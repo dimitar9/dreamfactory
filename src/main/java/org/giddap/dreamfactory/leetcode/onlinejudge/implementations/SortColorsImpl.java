@@ -12,7 +12,9 @@ public class SortColorsImpl implements SortColors {
         while (i < blueStart) {
             int color = A[i];
             if (color == 0) { // red
+                // increase red end
                 swap(A, ++redEnd, i++);
+                // increase i
             } else if (color == 1) { // white
                 i++;
             } else if (color == 2) { // blue
