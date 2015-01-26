@@ -1,12 +1,17 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.Q076MinimumWindowSubstringOnImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MinimumWindowSubstringLinearImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.MinimumWindowSubstringOnImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q076MinimumWindowSubstringTest {
-    private Q076MinimumWindowSubstring solution = new Q076MinimumWindowSubstringOnImpl();
+public class MinimumWindowSubstringTest {
+    private MinimumWindowSubstring solution2 = new
+            MinimumWindowSubstringOnImpl();
+
+    private MinimumWindowSubstring solution = new
+            MinimumWindowSubstringLinearImpl();
 
     @Test
     public void small01() {

@@ -24,6 +24,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  *
  * @see <a href="http://leetcode.com/2010/11/finding-minimum-window-in-s-which.html">Leetcode blog</a>
  */
-public interface Q076MinimumWindowSubstring {
+public interface MinimumWindowSubstring {
     String minWindow(String S, String T);
 }

@@ -1,16 +1,13 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.Q076MinimumWindowSubstring;
+import org.giddap.dreamfactory.leetcode.onlinejudge.MinimumWindowSubstring;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q076MinimumWindowSubstringOnImpl implements Q076MinimumWindowSubstring {
+public class MinimumWindowSubstringOnImpl implements MinimumWindowSubstring {
     @Override
     public String minWindow(String S, String T) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         Map<Character, Integer> needToFind = new HashMap<Character, Integer>();
         Map<Character, Integer> hasFound = new HashMap<Character, Integer>();
         for (char ch : T.toCharArray()) {
@@ -21,7 +18,6 @@ public class Q076MinimumWindowSubstringOnImpl implements Q076MinimumWindowSubstr
                 hasFound.put(ch, 0);
             }
         }
-
 
         int start = 0;
         String mws = S;
@@ -42,8 +38,7 @@ public class Q076MinimumWindowSubstringOnImpl implements Q076MinimumWindowSubstr
                 while (!needToFind.containsKey(S.charAt(start))
                         || hasFound.get(S.charAt(start)) > needToFind.get(S.charAt(start))) {
                     char startChar = S.charAt(start);
-                    if (needToFind.containsKey(startChar)
-                            && hasFound.get(startChar) > needToFind.get(startChar)) {
+                    if (needToFind.containsKey(startChar)) {
                         hasFound.put(startChar, hasFound.get(startChar) - 1);
                     }
                     start++;
