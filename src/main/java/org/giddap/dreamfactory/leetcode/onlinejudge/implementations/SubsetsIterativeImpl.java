@@ -3,6 +3,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Subsets;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 弼馬溫注解：
@@ -13,28 +15,22 @@ import java.util.ArrayList;
  */
 public class SubsetsIterativeImpl implements Subsets {
     @Override
-    public ArrayList<ArrayList<Integer>> subsets(int[] S) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-
-        final int len = S.length;
-        if (len == 0) {
-            return ret;
+    public List<List<Integer>> subsets(int[] S) {
+        Arrays.sort(S);
+        List<List<Integer>> sol = new ArrayList<>();
+        if (S.length == 0) {
+            return sol;
         }
-
-        ret.add(new ArrayList<Integer>());
-
-        for (int i = 0; i < len; i++) {
-            ArrayList<ArrayList<Integer>> tmp = new ArrayList<ArrayList<Integer>>();
-            for (ArrayList<Integer> one : ret) {
-                ArrayList<Integer> nextOne = new ArrayList<Integer>(one);
-                nextOne.add(S[i]);
-                tmp.add(nextOne);
+        sol.add(new ArrayList<Integer>());
+        for (int n : S) {
+            List<List<Integer>> tmp = new ArrayList<>(sol);
+            for (List<Integer> nums : sol) {
+                List<Integer> one = new ArrayList<>(nums);
+                one.add(n);
+                tmp.add(one);
             }
-            ret.addAll(tmp);
+            sol = tmp;
         }
-
-        return ret;
+        return sol;
     }
 }

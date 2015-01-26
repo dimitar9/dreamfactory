@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/subsets/">Subsets</a>
@@ -37,5 +37,5 @@ import java.util.ArrayList;
  * @see <a href="http://www.stefan-pochmann.info/spots/tutorials/sets_subsets/">Another online tutorial</a>
  */
 public interface Subsets {
-    ArrayList<ArrayList<Integer>> subsets(int[] S);
+    List<List<Integer>> subsets(int[] S);
 }

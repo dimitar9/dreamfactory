@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/subsets-ii/">Subsets II</a>
@@ -34,5 +34,5 @@ import java.util.ArrayList;
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32171823.html">Mitbbs discussion</a>
  */
 public interface SubsetsII {
-    ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num);
+    List<List<Integer>> subsetsWithDup(int[] num);
 }

@@ -4,16 +4,15 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Subsets;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class SubsetsBitMaskImpl implements Subsets {
     @Override
-    public ArrayList<ArrayList<Integer>> subsets(int[] S) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
+    public List<List<Integer>> subsets(int[] S) {
         Arrays.sort(S);
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> ret = new ArrayList<>();
         for (int i = 0; i < (1 << S.length); i++) {
-            ArrayList<Integer> one = new ArrayList<Integer>();
+            List<Integer> one = new ArrayList<>();
             for (int j = 0; j < S.length; j++) {
                 if ((i & (1 << j)) != 1) {
                     one.add(S[j]);

@@ -6,6 +6,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SubsetsItera
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -29,7 +30,7 @@ public class SubsetsTest {
         ArrayList<Integer> ss8 = Lists.newArrayList();
 
         ArrayList<ArrayList<Integer>> expected = Lists.newArrayList(ss8, ss3, ss7, ss2, ss6, ss4, ss5, ss1);
-        ArrayList<ArrayList<Integer>> actual = solution.subsets(input);
+        List<List<Integer>> actual = solution.subsets(input);
 
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
@@ -42,14 +43,14 @@ public class SubsetsTest {
         ArrayList<Integer> ss1 = Lists.newArrayList(1);
         ArrayList<Integer> ss2 = Lists.newArrayList(4);
         ArrayList<Integer> ss3 = Lists.newArrayList(0);
-        ArrayList<Integer> ss4 = Lists.newArrayList(4, 1, 0);
-        ArrayList<Integer> ss5 = Lists.newArrayList(4, 1);
-        ArrayList<Integer> ss6 = Lists.newArrayList(4, 0);
-        ArrayList<Integer> ss7 = Lists.newArrayList(1, 0);
+        ArrayList<Integer> ss4 = Lists.newArrayList(0, 1, 4);
+        ArrayList<Integer> ss5 = Lists.newArrayList(1, 4);
+        ArrayList<Integer> ss6 = Lists.newArrayList(0, 4);
+        ArrayList<Integer> ss7 = Lists.newArrayList(0, 1);
         ArrayList<Integer> ss8 = Lists.newArrayList();
 
         ArrayList<ArrayList<Integer>> expected = Lists.newArrayList(ss8, ss3, ss7, ss2, ss6, ss4, ss5, ss1);
-        ArrayList<ArrayList<Integer>> actual = solution.subsets(input);
+        List<List<Integer>> actual = solution.subsets(input);
 
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
@@ -63,7 +64,7 @@ public class SubsetsTest {
         ArrayList<Integer> ss8 = Lists.newArrayList();
 
         ArrayList<ArrayList<Integer>> expected = Lists.newArrayList(ss8, ss3);
-        ArrayList<ArrayList<Integer>> actual = solution.subsets(input);
+        List<List<Integer>> actual = solution.subsets(input);
 
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));

@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -22,7 +23,7 @@ public class SubsetsIITest {
         expected.add(new ArrayList<Integer>());
         expected.add(Lists.newArrayList(0));
 
-        ArrayList<ArrayList<Integer>> actual = solution.subsetsWithDup(input);
+        List<List<Integer>> actual = solution.subsetsWithDup(input);
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
     }
@@ -36,7 +37,7 @@ public class SubsetsIITest {
         expected.add(Lists.newArrayList(1));
         expected.add(Lists.newArrayList(1, 1));
 
-        ArrayList<ArrayList<Integer>> actual = solution.subsetsWithDup(input);
+        List<List<Integer>> actual = solution.subsetsWithDup(input);
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
     }
@@ -53,7 +54,7 @@ public class SubsetsIITest {
         expected.add(Lists.newArrayList(2));
         expected.add(Lists.newArrayList(2, 2));
 
-        ArrayList<ArrayList<Integer>> actual = solution.subsetsWithDup(input);
+        List<List<Integer>> actual = solution.subsetsWithDup(input);
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
     }
@@ -70,7 +71,7 @@ public class SubsetsIITest {
         expected.add(Lists.newArrayList(5, 5, 5, 5));
         expected.add(Lists.newArrayList(5, 5, 5, 5, 5));
 
-        ArrayList<ArrayList<Integer>> actual = solution.subsetsWithDup(input);
+        List<List<Integer>> actual = solution.subsetsWithDup(input);
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
     }

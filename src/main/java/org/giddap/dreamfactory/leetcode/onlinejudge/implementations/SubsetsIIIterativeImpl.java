@@ -4,6 +4,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.SubsetsII;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 弼馬溫注解：
@@ -30,9 +31,9 @@ import java.util.Arrays;
  */
 public class SubsetsIIIterativeImpl implements SubsetsII {
     @Override
-    public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-        ArrayList<Integer> seed = new ArrayList<Integer>();
+    public List<List<Integer>> subsetsWithDup(int[] num) {
+        List<List<Integer>> ret = new ArrayList<>();
+        List<Integer> seed = new ArrayList<>();
         ret.add(seed);
         Arrays.sort(num);
 
