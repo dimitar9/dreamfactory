@@ -33,19 +33,18 @@ public class SubsetsIIIterativeImpl implements SubsetsII {
     @Override
     public List<List<Integer>> subsetsWithDup(int[] num) {
         List<List<Integer>> ret = new ArrayList<>();
-        List<Integer> seed = new ArrayList<>();
-        ret.add(seed);
+        ret.add(new ArrayList<Integer>());
         Arrays.sort(num);
 
         int count = 0;
         for (int i = 0; i < num.length; i++) {
-            ArrayList<ArrayList<Integer>> temp = new ArrayList<ArrayList<Integer>>();
+            ArrayList<ArrayList<Integer>> temp = new ArrayList<>();
             int start = 0;
             if (i > 0 && num[i] == num[i - 1]) {
                 start = ret.size() - count;
             }
             for (int j = start; j < ret.size(); j++) {
-                ArrayList<Integer> one = new ArrayList<Integer>(ret.get(j));
+                ArrayList<Integer> one = new ArrayList<>(ret.get(j));
                 one.add(num[i]);
                 temp.add(one);
             }
