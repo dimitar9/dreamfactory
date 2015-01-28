@@ -1,6 +1,6 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/combinations/">Combinations</a>
@@ -29,5 +29,5 @@ import java.util.ArrayList;
  * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32147785.html">mitbbs discussion</a>
  */
 public interface Combinations {
-    ArrayList<ArrayList<Integer>> combine(int n, int k);
+    List<List<Integer>> combine(int n, int k);
 }
