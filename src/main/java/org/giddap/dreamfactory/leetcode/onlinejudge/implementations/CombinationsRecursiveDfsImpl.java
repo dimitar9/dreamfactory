@@ -3,16 +3,17 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.Combinations;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CombinationsRecursiveDfsImpl implements Combinations {
 
-    public ArrayList<ArrayList<Integer>> combine(int n, int k) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> ret = new ArrayList<>();
         combineDfs(n, k, new ArrayList<Integer>(), ret);
         return ret;
     }
 
-    private void combineDfs(int n, int k, ArrayList<Integer> curr, ArrayList<ArrayList<Integer>> ret) {
+    private void combineDfs(int n, int k, ArrayList<Integer> curr, List<List<Integer>> ret) {
         final int currSize = curr.size();
 
         if (currSize == k) {

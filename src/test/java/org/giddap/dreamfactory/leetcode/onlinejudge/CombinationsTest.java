@@ -5,7 +5,7 @@ import com.google.common.collect.Sets;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CombinationsRecursiveDfsImpl;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,10 +15,10 @@ public class CombinationsTest {
 
     @Test
     public void small01() {
-        ArrayList<ArrayList<Integer>> actual = solution.combine(1, 1);
+        List<List<Integer>> actual = solution.combine(1, 1);
 
-        ArrayList<Integer> combo1 = Lists.newArrayList(1);
-        ArrayList<ArrayList<Integer>> expected = Lists.newArrayList();
+        List<Integer> combo1 = Lists.newArrayList(1);
+        List<List<Integer>> expected = Lists.newArrayList();
         expected.add(combo1);
 
         assertEquals(expected.size(), actual.size());
@@ -27,10 +27,10 @@ public class CombinationsTest {
 
     @Test
     public void small02() {
-        ArrayList<ArrayList<Integer>> actual = solution.combine(2, 2);
+        List<List<Integer>> actual = solution.combine(2, 2);
 
-        ArrayList<Integer> combo1 = Lists.newArrayList(1, 2);
-        ArrayList<ArrayList<Integer>> expected = Lists.newArrayList();
+        List<Integer> combo1 = Lists.newArrayList(1, 2);
+        List<List<Integer>> expected = Lists.newArrayList();
         expected.add(combo1);
 
         assertEquals(expected.size(), actual.size());
@@ -39,12 +39,12 @@ public class CombinationsTest {
 
     @Test
     public void small03() {
-        ArrayList<ArrayList<Integer>> actual = solution.combine(3, 2);
+        List<List<Integer>> actual = solution.combine(3, 2);
 
-        ArrayList<Integer> combo1 = Lists.newArrayList(1, 2);
-        ArrayList<Integer> combo2 = Lists.newArrayList(1, 3);
-        ArrayList<Integer> combo3 = Lists.newArrayList(2, 3);
-        ArrayList<ArrayList<Integer>> expected = Lists.newArrayList(combo1, combo2, combo3);
+        List<Integer> combo1 = Lists.newArrayList(1, 2);
+        List<Integer> combo2 = Lists.newArrayList(1, 3);
+        List<Integer> combo3 = Lists.newArrayList(2, 3);
+        List<List<Integer>> expected = Lists.newArrayList(combo1, combo2, combo3);
 
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
@@ -52,11 +52,11 @@ public class CombinationsTest {
 
     @Test
     public void small04() {
-        ArrayList<ArrayList<Integer>> actual = solution.combine(2, 1);
+        List<List<Integer>> actual = solution.combine(2, 1);
 
-        ArrayList<Integer> combo1 = Lists.newArrayList(1);
-        ArrayList<Integer> combo2 = Lists.newArrayList(2);
-        ArrayList<ArrayList<Integer>> expected = Lists.newArrayList(combo1, combo2);
+        List<Integer> combo1 = Lists.newArrayList(1);
+        List<Integer> combo2 = Lists.newArrayList(2);
+        List<List<Integer>> expected = Lists.newArrayList(combo1, combo2);
 
         assertEquals(expected.size(), actual.size());
         assertEquals(Sets.newHashSet(expected), Sets.newHashSet(actual));
