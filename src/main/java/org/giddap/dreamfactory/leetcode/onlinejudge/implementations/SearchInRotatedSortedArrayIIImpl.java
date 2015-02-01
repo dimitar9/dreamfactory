@@ -5,15 +5,8 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.SearchInRotatedSortedArrayII
 public class SearchInRotatedSortedArrayIIImpl implements SearchInRotatedSortedArrayII {
     @Override
     public boolean search(int[] A, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        final int len = A.length;
-        if (len == 0) {
-            return false;
-        }
-
         int low = 0;
-        int high = len - 1;
+        int high = A.length - 1;
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -35,12 +28,11 @@ public class SearchInRotatedSortedArrayIIImpl implements SearchInRotatedSortedAr
                 }
             } else { // cannot really tell
                 if (A[mid] == A[high]) {
-                    low = low + 1;
-                    high = high - 1;
+                    low++;
+                    high--;
                 } else {
                     low = mid + 1;
                 }
-
             }
         }
 
