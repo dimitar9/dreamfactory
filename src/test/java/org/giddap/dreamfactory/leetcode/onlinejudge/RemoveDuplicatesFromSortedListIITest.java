@@ -48,6 +48,17 @@ public class RemoveDuplicatesFromSortedListIITest {
 
         assertNull(solution.deleteDuplicates(n1));
     }
+
+    @Test
+    public void small04() {
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(1);
+        ListNode n3 = new ListNode(2);
+        n1.next = n2;
+        n2.next = n3;
+
+        assertEquals(n3.val, solution.deleteDuplicates(n1).val);
+    }
 }
 
 /*
