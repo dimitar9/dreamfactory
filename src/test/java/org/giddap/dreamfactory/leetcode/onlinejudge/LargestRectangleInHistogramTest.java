@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LargestRectangleInHistogramOnWithStackImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.LargestRectangleInHistogramOnlognBinarySearchImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -9,8 +10,10 @@ import static org.junit.Assert.assertEquals;
  *
  */
 public class LargestRectangleInHistogramTest {
-    //    private LargestRectangleInHistogram solution = new LargestRectangleInHistogramOnlognBinarySearchImpl();
-    private LargestRectangleInHistogram solution = new LargestRectangleInHistogramOnWithStackImpl();
+    private LargestRectangleInHistogram solution2 = new
+            LargestRectangleInHistogramOnlognBinarySearchImpl();
+    private LargestRectangleInHistogram solution =
+            new LargestRectangleInHistogramOnWithStackImpl();
 
     @Test
     public void small01() {

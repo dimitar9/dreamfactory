@@ -19,8 +19,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * return 10.
  * <p/>
  * Links:
- * http://www.mitbbs.com/article_t1/JobHunting/32268417_0_1.html
- * http://discuss.leetcode.com/questions/259/largest-rectangle-in-histogram
+ * http://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+ * http://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/
  * http://www.informatik.uni-ulm.de/acm/Locals/2003/html/judge.html
  */
 public interface LargestRectangleInHistogram {
