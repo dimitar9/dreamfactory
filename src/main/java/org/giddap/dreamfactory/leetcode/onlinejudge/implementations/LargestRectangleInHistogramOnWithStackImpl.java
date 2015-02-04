@@ -7,7 +7,7 @@ import java.util.Deque;
 
 /**
  * Time: O(n); Space: O(n)
- * 
+ *
  */
 public class LargestRectangleInHistogramOnWithStackImpl implements LargestRectangleInHistogram {
     @Override
