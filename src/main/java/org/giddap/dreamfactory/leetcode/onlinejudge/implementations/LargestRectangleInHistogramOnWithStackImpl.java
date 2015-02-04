@@ -5,6 +5,10 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.LargestRectangleInHistogram;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * Time: O(n); Space: O(n)
+ * 
+ */
 public class LargestRectangleInHistogramOnWithStackImpl implements LargestRectangleInHistogram {
     @Override
     public int largestRectangleArea(int[] height) {
