@@ -5,8 +5,6 @@ import java.util.List;
 /**
  * <a href="http://oj.leetcode.com/problems/gray-code/">Gray Code</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
  * The gray code is a binary numeral system where two successive values differ in only one bit.
  * <p/>
  * Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code.
