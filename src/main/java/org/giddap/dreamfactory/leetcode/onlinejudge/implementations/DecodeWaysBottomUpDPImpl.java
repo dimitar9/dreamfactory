@@ -2,33 +2,38 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.DecodeWays;
 
+/**
+ * DP solution.
+ * Time: O(n); Space: O(1)
+ * Algorithm:
+ * Iterate through the string. Keep track of dw[i - 2], dw[i - 1]
+ * at each i:
+ * dw[i] =
+ * case 1 - if s[i] == '0',
+ * case 1.1 - dw[i - 2], if (s[i - 1] == '1' or '2')
+ * case 1.2 - 0, otherwise
+ * case 2 - if s[i] != '0', dw[i - 1] + (dw[i - 2], if s[i - 1]s[i] is
+ * valid or '0', otherwise)
+ */
 public class DecodeWaysBottomUpDPImpl implements DecodeWays {
     @Override
     public int numDecodings(String s) {
-        char[] cs = s.toCharArray();
-        final int len = cs.length;
-        if (len == 0) {
-            return 0;
-        }
-
-        int[] dw = new int[len + 1];
-        dw[0] = 1;
-        dw[1] = cs[0] == '0' ? 0 : 1;
-        int prev = cs[0] - '0';
-        for (int i = 1; i < len && dw[i - 1] != 0; ++i) {
-            int curr = cs[i] - '0';
-            if (curr == 0) {
-                if (prev == 1 || prev == 2) {
-                    dw[i + 1] = dw[i - 1];
-                }
+        int pp = 0;
+        int p = 1;
+        int n = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int val = s.charAt(i) - '0';
+            int pVal = i > 0 ? s.charAt(i - 1) - '0' : -10;
+            if (val == 0) {
+                n = (i > 0 && (pVal == 1 || pVal == 2)) ? pp : 0;
             } else {
-                dw[i + 1] = dw[i];
-                if (prev != 0 && prev * 10 + curr <= 26) {
-                    dw[i + 1] += dw[i - 1];
-                }
+                n = p + ((pVal == 0) ? 0 :
+                        ((pVal * 10 + val <= 26 && pVal * 10 + val > 0) ?
+                        pp : 0));
             }
-            prev = curr;
+            pp = p;
+            p = n;
         }
-        return dw[len];
+        return n;
     }
 }

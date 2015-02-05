@@ -50,6 +50,17 @@ public class DecodeWaysTest {
     }
 
     @Test
+    public void small09() {
+        assertEquals(0, solution.numDecodings("012"));
+    }
+
+    @Test
+    public void small10() {
+        assertEquals(5, solution.numDecodings("1212"));
+    }
+
+
+    @Test
     public void large01() {
         assertEquals(46080, solution.numDecodings("4673351343232714528787622144828949686814115978657763689251918941228645575658338815495647817194659205"));
     }

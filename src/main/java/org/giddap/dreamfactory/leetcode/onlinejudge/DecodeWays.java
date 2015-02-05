@@ -3,8 +3,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 /**
  * <a href="http://oj.leetcode.com/problems/decode-ways/">Decode Ways</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
  * A message containing letters from A-Z is being encoded to numbers using the following mapping:
  * <p/>
  * 'A' -> 1
