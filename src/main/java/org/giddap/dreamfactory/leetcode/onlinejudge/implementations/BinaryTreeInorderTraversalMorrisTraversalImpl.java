@@ -4,15 +4,17 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeInorderTraversal;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * 弼馬溫注解：
+ * Threaded Tree Traversal
+ *
  */
 public class BinaryTreeInorderTraversalMorrisTraversalImpl
         implements BinaryTreeInorderTraversal {
     @Override
-    public ArrayList<Integer> inorderTraversal(TreeNode root) {
-        ArrayList<Integer> ret = new ArrayList<Integer>();
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> ret = new ArrayList<>();
         TreeNode curr = root;
         while (curr != null) {
             TreeNode prev = curr.left;
