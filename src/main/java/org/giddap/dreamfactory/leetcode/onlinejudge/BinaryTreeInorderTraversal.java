@@ -2,7 +2,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/binary-tree-inorder-traversal/">Binary Tree In-Order Traversal</a>
@@ -36,5 +36,5 @@ import java.util.ArrayList;
  * http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_bst1.aspx#thread
  */
 public interface BinaryTreeInorderTraversal {
-    ArrayList<Integer> inorderTraversal(TreeNode root);
+    List<Integer> inorderTraversal(TreeNode root);
 }

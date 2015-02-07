@@ -1,17 +1,23 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-
 import com.google.common.collect.Lists;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeInorderTraversalMorrisTraversalImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeInorderTraversalWithStackAndSetIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreeInorderTraversalWithStackOnlyIterativeImpl;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 public class BinaryTreeInorderTraversalTest {
-    private BinaryTreeInorderTraversal solution = new BinaryTreeInorderTraversalMorrisTraversalImpl();
+    private BinaryTreeInorderTraversal solution2 = new
+            BinaryTreeInorderTraversalMorrisTraversalImpl();
+    private BinaryTreeInorderTraversal solution3 = new
+            BinaryTreeInorderTraversalWithStackOnlyIterativeImpl();
+    private BinaryTreeInorderTraversal solution = new
+            BinaryTreeInorderTraversalWithStackAndSetIterativeImpl();
 
     @Test
     public void small01() {
@@ -23,7 +29,7 @@ public class BinaryTreeInorderTraversalTest {
         root.left = left;
         root.right = right;
 
-        ArrayList<Integer> expected = Lists.newArrayList(1, 3, 2);
+        List<Integer> expected = Lists.newArrayList(1, 3, 2);
         assertEquals(expected, solution.inorderTraversal(root));
     }
 
@@ -37,7 +43,7 @@ public class BinaryTreeInorderTraversalTest {
         root.left = left;
         left.right = right;
 
-        ArrayList<Integer> expected = Lists.newArrayList(1, 2, 3);
+        List<Integer> expected = Lists.newArrayList(1, 2, 3);
         assertEquals(expected, solution.inorderTraversal(root));
     }
 }
