@@ -5,9 +5,6 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.InterleavingString;
 public class InterleavingStringDPImpl implements InterleavingString {
     @Override
     public boolean isInterleave(String s1, String s2, String s3) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-
         if (s3.length() != s1.length() + s2.length()) {
             return false;
         }
