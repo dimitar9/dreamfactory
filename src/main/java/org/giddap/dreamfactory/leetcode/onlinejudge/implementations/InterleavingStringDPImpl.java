@@ -2,6 +2,10 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.InterleavingString;
 
+/**
+ * DP solution.
+ * Time: O(m * n); Space: O(m * n)
+ */
 public class InterleavingStringDPImpl implements InterleavingString {
     @Override
     public boolean isInterleave(String s1, String s2, String s3) {

@@ -8,8 +8,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class InterleavingStringTest {
-    private InterleavingString solution = new InterleavingStringDPImpl();
-    private InterleavingString solution1 = new InterleavingStringRecursiveImpl();
+    private InterleavingString solution1 = new InterleavingStringDPImpl();
+    private InterleavingString solution = new
+            InterleavingStringRecursiveImpl();
 
     @Test
     public void small01() {
