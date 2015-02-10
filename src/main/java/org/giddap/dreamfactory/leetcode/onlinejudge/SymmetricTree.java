@@ -3,7 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 /**
- * http://leetcode.com/onlinejudge#question_101
+ * https://oj.leetcode.com/problems/symmetric-tree/
  * <p/>
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
  * <p/>
