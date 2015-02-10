@@ -3,10 +3,16 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.ValidateBinarySearchTree;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
+/**
+ * In-order traversal with a stack.
+ *
+ * Time: O(n); Space: O(n)
+ * Iterate through the binary tree in in-order traversal with a stack:
+ * Use a 'prevVal' to track previous value and compare it with current value
+ * to validate the binary search tree.
+ */
 public class ValidateBinarySearchTreeIterativeImpl implements ValidateBinarySearchTree {
     @Override
     public boolean isValidBST(TreeNode root) {
@@ -14,31 +20,23 @@ public class ValidateBinarySearchTreeIterativeImpl implements ValidateBinarySear
             return true;
         }
 
-        Stack<TreeNode> nodes = new Stack<TreeNode>();
-        Set<TreeNode> visited = new HashSet<TreeNode>();
+        Deque<TreeNode> pending = new ArrayDeque<>();
 
-        int prevVal = Integer.MIN_VALUE;
-        TreeNode currNode = root;
+        long prevVal = ((long) Integer.MIN_VALUE) - 1;
+        TreeNode curr = root;
 
-        while (currNode != null) {
-            if (!visited.contains(currNode) && currNode.left != null) {
-                nodes.push(currNode);
-                visited.add(currNode);
-                currNode = currNode.left;
+        while (!pending.isEmpty() || curr != null ) {
+            if (curr != null) {
+                pending.push(curr);
+                curr = curr.left;
             } else {
-                if (currNode.val <= prevVal) {
+                TreeNode node = pending.pop();
+                if (node.val <= prevVal) {
                     return false;
-                }
-                prevVal = currNode.val;
-                if (currNode.right != null) {
-                    currNode = currNode.right;
                 } else {
-                    if (!nodes.isEmpty()) {
-                        currNode = nodes.pop();
-                    } else {
-                        currNode = null;
-                    }
+                    prevVal = node.val;
                 }
+                curr = node.right;
             }
         }
         return true;

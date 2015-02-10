@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidateBinarySearchTreeIterativeImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.ValidateBinarySearchTreeRecursiveInorderImpl;
 import org.junit.Test;
 
@@ -8,7 +9,8 @@ import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 public class ValidateBinarySearchTreeTest {
-    private ValidateBinarySearchTree solution = new ValidateBinarySearchTreeRecursiveInorderImpl();
+    private ValidateBinarySearchTree solution1 = new ValidateBinarySearchTreeRecursiveInorderImpl();
+    private ValidateBinarySearchTree solution = new ValidateBinarySearchTreeIterativeImpl();
 
     @Test
     public void small01() {

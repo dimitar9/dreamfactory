@@ -5,8 +5,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 /**
  * <a href="http://oj.leetcode.com/problems/validate-binary-search-tree">Q098 Validate Binary Search Tree</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
  * Given a binary tree, determine if it is a valid binary search tree (BST).
  * <p/>
  * Assume a BST is defined as follows:

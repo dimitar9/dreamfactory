@@ -1,16 +1,18 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.ValidateBinarySearchTree;
 
+/**
+ * Recursively validate the binary search tree, node by node, from top to bottom.
+ */
 public class ValidateBinarySearchTreeRecursiveImpl implements ValidateBinarySearchTree {
     @Override
     public boolean isValidBST(TreeNode root) {
-        return validate(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return validate(root, ((long) Integer.MIN_VALUE) - 1, ((long) Integer.MAX_VALUE) + 1);
     }
 
-    private boolean validate(TreeNode node, int min, int max) {
+    private boolean validate(TreeNode node, long min, long max) {
         if (node == null) {
             return true;
         }
