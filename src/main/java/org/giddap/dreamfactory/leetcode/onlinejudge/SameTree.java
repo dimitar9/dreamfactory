@@ -5,8 +5,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 /**
  * <a href="http://oj.leetcode.com/problems/same-tree/">Q100 Same Tree</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
  * Given two binary trees, write a function to check if they are equal or not.
  * <p/>
  * Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
