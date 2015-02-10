@@ -3,12 +3,12 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.RecoverBinarySearchTree;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
- * 弼馬溫注解：
- * Time complexity: O(n)
- * Space complexity: O
+ * In-order traversal with a stack
+ * Time: O(n); Space: O(n)
  */
 public class RecoverBinarySearchTreeIterativeWithStackImpl implements
         RecoverBinarySearchTree {
@@ -18,32 +18,32 @@ public class RecoverBinarySearchTreeIterativeWithStackImpl implements
             return;
         }
 
+        Deque<TreeNode> pending = new ArrayDeque<>();
         TreeNode small = null;
         TreeNode large = null;
 
-        TreeNode prev = null;
+        TreeNode pre = null;
         TreeNode curr = root;
-
-        Stack<TreeNode> explorer = new Stack<TreeNode>();
-        while (!explorer.isEmpty() || curr != null) {
+        while (!pending.isEmpty() || curr != null) {
             if (curr != null) {
-                explorer.push(curr);
+                pending.push(curr);
                 curr = curr.left;
             } else {
-                TreeNode tmp = explorer.pop();
-                if (prev != null) {
-                    if (prev.val > tmp.val) {
-                        small = tmp;
+                TreeNode node = pending.pop();
+                if (pre != null) {
+                    if (pre.val > node.val) {
+                        small = node;
                         if (large == null) {
-                            large = prev;
+                            large = pre;
                         }
                     }
                 }
-                prev = tmp;
-                curr = tmp.right;
+                pre = node;
+                curr = node.right;
             }
         }
 
+        // swap value
         if (small != null) {
             int tmp = small.val;
             small.val = large.val;

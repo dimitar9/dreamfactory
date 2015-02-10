@@ -5,9 +5,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 /**
  * <a href="http://oj.leetcode.com/problems/recover-binary-search-tree/">Recover Binary Search Tree</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
- * <p/>
  * Two elements of a binary search tree (BST) are swapped by mistake.
  * <p/>
  * Recover the tree without changing its structure.
