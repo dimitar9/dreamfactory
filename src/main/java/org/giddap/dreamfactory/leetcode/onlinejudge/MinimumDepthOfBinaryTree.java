@@ -5,8 +5,6 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 /**
  * <a href="http://oj.leetcode.com/problems/minimum-depth-of-binary-tree/">Minimum Depth of Binary Tree</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
  * Given a binary tree, find its minimum depth.
  * <p/>
  * The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.

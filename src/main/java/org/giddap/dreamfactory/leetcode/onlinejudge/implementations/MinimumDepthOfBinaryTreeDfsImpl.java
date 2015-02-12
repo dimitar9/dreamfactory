@@ -16,16 +16,14 @@ public class MinimumDepthOfBinaryTreeDfsImpl implements MinimumDepthOfBinaryTree
         if (root == null) {
             return 0;
         }
-
-        int left = minDepth(root.left);
-        int right = minDepth(root.right);
-
-        if (right == 0) {
-            return left + 1;
+        final int left = minDepth(root.left);
+        final int right = minDepth(root.right);
+        if (left == 0 && right == 0) {
+            return 1;
+        } else if (left == 0 || right == 0) {
+            return Math.max(left, right) + 1;
+        } else {
+            return Math.min(left, right) + 1;
         }
-        if (left == 0) {
-            return right + 1;
-        }
-        return Math.min(left, right) + 1;
     }
 }
