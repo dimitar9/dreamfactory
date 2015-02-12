@@ -5,22 +5,25 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeLevelOrderTraversa
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
+/**
+ * Use one queue and one counter.
+ * Time: O(n); Space: O(n)
+ */
 public class BinaryTreeLevelOrderTraversalIterativeBfsWithOneQueueImpl implements BinaryTreeLevelOrderTraversal {
     @Override
-    public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> ret = new ArrayList<>();
         if (root == null) {
             return ret;
         }
-        Queue<TreeNode> frontier = new LinkedList<TreeNode>();
+        Queue<TreeNode> frontier = new LinkedList<>();
         frontier.offer(root);
         int levelNodeCount = 1;
 
-        ArrayList<Integer> levelNodeValues = new ArrayList<Integer>();
+        ArrayList<Integer> levelNodeValues = new ArrayList<>();
         while (!frontier.isEmpty()) {
             TreeNode node = frontier.poll();
             levelNodeValues.add(node.val);
@@ -37,7 +40,7 @@ public class BinaryTreeLevelOrderTraversalIterativeBfsWithOneQueueImpl implement
             if (levelNodeCount == 0) {
                 levelNodeCount = frontier.size();
                 ret.add(levelNodeValues);
-                levelNodeValues = new ArrayList<Integer>();
+                levelNodeValues = new ArrayList<>();
             }
         }
         return ret;

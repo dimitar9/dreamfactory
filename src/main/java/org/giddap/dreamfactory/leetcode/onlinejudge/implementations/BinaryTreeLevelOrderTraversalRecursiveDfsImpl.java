@@ -4,25 +4,26 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreeLevelOrderTraversal;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- *
+ * Recursive solution
  */
 public class BinaryTreeLevelOrderTraversalRecursiveDfsImpl implements BinaryTreeLevelOrderTraversal {
-    public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> ret = new ArrayList<>();
         doLevelTraversalRecursivelyWithDfs(ret, 0, root);
         return ret;
     }
 
-    private void doLevelTraversalRecursivelyWithDfs(ArrayList<ArrayList<Integer>> ret, int level, TreeNode node) {
+    private void doLevelTraversalRecursivelyWithDfs(List<List<Integer>> ret, int level, TreeNode node) {
         if (node == null) {
             return;
         }
         if (level < ret.size()) {
             ret.get(level).add(node.val);
         } else if (level == ret.size()) {
-            ArrayList<Integer> thisLevel = new ArrayList<Integer>();
+            List<Integer> thisLevel = new ArrayList<>();
             thisLevel.add(node.val);
             ret.add(thisLevel);
         } else {
