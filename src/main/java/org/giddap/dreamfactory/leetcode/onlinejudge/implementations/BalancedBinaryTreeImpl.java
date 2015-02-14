@@ -5,6 +5,9 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.BalancedBinaryTree;
 
 /**
  * Recursive solution.
+ * <p>
+ * Algorithms:
+ * Use '-1' as a flag of im-balanced subtrees.
  */
 public class BalancedBinaryTreeImpl implements BalancedBinaryTree {
     @Override
