@@ -3,6 +3,9 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.BalancedBinaryTree;
 
+/**
+ * Recursive solution.
+ */
 public class BalancedBinaryTreeImpl implements BalancedBinaryTree {
     @Override
     public boolean isBalanced(TreeNode root) {
