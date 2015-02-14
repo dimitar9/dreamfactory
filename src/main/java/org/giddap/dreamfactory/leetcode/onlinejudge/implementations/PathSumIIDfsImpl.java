@@ -4,17 +4,20 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.PathSumII;
 
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * DFS with backtracking.
+ */
 public class PathSumIIDfsImpl implements PathSumII {
     @Override
-    public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> ret = new ArrayList<>();
         calculdatePathSum(ret, new ArrayList<Integer>(), root, sum);
         return ret;
     }
 
-    private void calculdatePathSum(ArrayList<ArrayList<Integer>> ret, ArrayList<Integer> path,
-                                   TreeNode node, int remainingSum) {
+    private void calculdatePathSum(List<List<Integer>> ret, List<Integer> path, TreeNode node, int remainingSum) {
         if (node == null) {
             return;
         }
@@ -32,12 +35,7 @@ public class PathSumIIDfsImpl implements PathSumII {
 
         path.add(node.val);
         calculdatePathSum(ret, path, node.left, remainingSum);
-        path.remove(path.size() - 1);
-
-
-        path.add(node.val);
         calculdatePathSum(ret, path, node.right, remainingSum);
         path.remove(path.size() - 1);
-
     }
 }

@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * http://oj.leetcode.com/problems/path-sum-ii/
@@ -26,12 +27,7 @@ import java.util.ArrayList;
  *   [5,8,4,5]
  * ]
  * </pre>
- * <p/>
- * Links:
- * http://discuss.leetcode.com/questions/279/path-sum-ii
- * http://gongxuns.blogspot.com/2012/12/leetcodepermutations-ii_13.html
- * http://fisherlei.blogspot.com/2012/12/leetcode-path-sum-ii.html
  */
 public interface PathSumII {
-    ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum);
+    List<List<Integer>> pathSum(TreeNode root, int sum);
 }
