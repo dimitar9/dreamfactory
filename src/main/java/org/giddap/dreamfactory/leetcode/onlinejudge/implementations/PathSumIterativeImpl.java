@@ -3,18 +3,21 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.PathSum;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
+/**
+ * Iterative approach.
+ * Need to augment the data structure to store the current sum.
+ */
 public class PathSumIterativeImpl implements PathSum {
     @Override
     public boolean hasPathSum(TreeNode root, int sum) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         if (root == null) {
             return false;
         }
 
-        Stack<TreeNodeWithSum> remainingNodes = new Stack<TreeNodeWithSum>();
+        Deque<TreeNodeWithSum> remainingNodes = new ArrayDeque<>();
         remainingNodes.push(new TreeNodeWithSum(root, root.val));
 
         while (!remainingNodes.isEmpty()) {
@@ -35,9 +38,7 @@ public class PathSumIterativeImpl implements PathSum {
             if (right != null) {
                 remainingNodes.push(new TreeNodeWithSum(right, actualSum + right.val));
             }
-
         }
-
         return false;
     }
 
