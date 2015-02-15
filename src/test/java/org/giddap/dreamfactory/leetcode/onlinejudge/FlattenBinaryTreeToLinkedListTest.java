@@ -2,12 +2,21 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FlattenBinaryTreeToLinkedListImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FlattenBinaryTreeToLinkedListIterativeWithStackImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.FlattenBinaryTreeToLinkedListIterativeWithoutStackImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class FlattenBinaryTreeToLinkedListTest {
-    private FlattenBinaryTreeToLinkedList solution = new FlattenBinaryTreeToLinkedListImpl();
+    private FlattenBinaryTreeToLinkedList solution1 = new
+            FlattenBinaryTreeToLinkedListImpl();
+
+    private FlattenBinaryTreeToLinkedList solution2 = new
+            FlattenBinaryTreeToLinkedListIterativeWithStackImpl();
+
+    private FlattenBinaryTreeToLinkedList solution = new
+            FlattenBinaryTreeToLinkedListIterativeWithoutStackImpl();
 
     @Test
     public void small01() {
