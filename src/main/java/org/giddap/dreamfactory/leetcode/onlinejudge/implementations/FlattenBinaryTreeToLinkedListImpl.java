@@ -1,28 +1,31 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.FlattenBinaryTreeToLinkedList;
 
+/**
+ * Recursive solution.
+ *
+ * Follow the pre-order traversal to move the left subtree to right.
+ */
 public class FlattenBinaryTreeToLinkedListImpl implements FlattenBinaryTreeToLinkedList {
     @Override
     public void flatten(TreeNode root) {
         if (root == null) {
             return;
         }
-
-        flatten(root.left);
-        TreeNode tmp = root.right;
-        if (root.left != null) {
-            root.right = root.left;
-            TreeNode curr = root;
-            while (curr != null && curr.right != null) {
-                curr = curr.right;
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        if (left != null) {
+            flatten(left);
+            TreeNode tail = left;
+            while (tail != null && tail.right != null) {
+                tail = tail.right;
             }
-            curr.right = tmp;
+            root.right = left;
+            tail.right = right;
             root.left = null;
         }
-
-        flatten(tmp);
+        flatten(right);
     }
 }
