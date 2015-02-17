@@ -1,14 +1,16 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesRecursiveImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesDpImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesDpWith2DArrayImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.DistinctSubsequencesRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class DistinctSubsequencesTest {
-    private DistinctSubsequences solution = new DistinctSubsequencesRecursiveImpl();
+    private DistinctSubsequences solution3 = new DistinctSubsequencesRecursiveImpl();
     private DistinctSubsequences solution2 = new DistinctSubsequencesDpImpl();
+    private DistinctSubsequences solution = new DistinctSubsequencesDpWith2DArrayImpl();
 
     @Test
     public void small01() {
