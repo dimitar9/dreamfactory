@@ -2,17 +2,15 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PopulatingNextRightPointersInEachNodeIIIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PopulatingNextRightPointersInEachNodeIIRecursiveImpl;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertEquals;
 
-/**
- *
- */
 public class PopulatingNextRightPointersInEachNodeIITest {
     private PopulatingNextRightPointersInEachNodeII solution = new PopulatingNextRightPointersInEachNodeIIIterativeImpl();
-//    private Q117PopulatingNextRightPointersInEachNodeII solution = new Q117PopulatingNextRightPointersInEachNodeIIRecursiveImpl();
+    private PopulatingNextRightPointersInEachNodeII solution2 = new PopulatingNextRightPointersInEachNodeIIRecursiveImpl();
 
     @Test
     public void small01() {
