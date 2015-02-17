@@ -25,7 +25,7 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.DistinctSubsequences;
  * We have to run from T.length down to 0 since we don't want to overwrite
  * recurs[j] which would be used for recurs[j+1] later.
  */
-public class DistinctSubsequencesDpImpl implements DistinctSubsequences {
+public class DistinctSubsequencesDpWith1DArrayImpl implements DistinctSubsequences {
 
     @Override
     public int numDistinct(String S, String T) {
