@@ -3,6 +3,8 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
 
 /**
+ * https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+ *
  * Follow up for problem "Populating Next Right Pointers in Each Node".
  * <p/>
  * What if the given tree could be any binary tree? Would your previous solution still work?
