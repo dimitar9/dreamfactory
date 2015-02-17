@@ -43,44 +43,35 @@ public class BestTimeToBuyAndSellStockIIITwoPassOofNImpl implements
         BestTimeToBuyAndSellStockIII {
 
     public int maxProfit(int[] prices) {
-        if (prices.length < 2) {
+        final int n = prices.length;
+        if (n < 2) {
             return 0;
         }
-
-        // find out maxProfit for each day as selling day
-        int[] maxProfitsBefore = calculateMaxProfitsBefore(prices);
-
-        // find out maxProfit for each day as buying day
-        int[] maxProfitsAfter = calculateMaxProfitsAfter(prices);
-
-        // find out max(maxProfitSelling[i] + maxProfitBuying[i])
-        // when 0 < i <= len - 1
-        int maxProfit = 0;
-        for (int i = 0; i < prices.length; i++) {
-            maxProfit = Math.max(maxProfit, maxProfitsBefore[i]
-                    + maxProfitsAfter[i]);
+        // buy & sell before i-th day
+        int[] sell = new int[n];
+        int min = prices[0];
+        int mp = 0;
+        for (int i = 1; i < n; i++) {
+            min = Math.min(prices[i - 1], min);
+            mp = Math.max(prices[i] - min, mp);
+            sell[i] = mp;
         }
-        return maxProfit;
-    }
-
-    private int[] calculateMaxProfitsBefore(int[] prices) {
-        int lowest = prices[0];
-        int[] maxProfits = new int[prices.length];
-        for (int i = 1; i < prices.length; i++) {
-            maxProfits[i] = Math.max(maxProfits[i - 1], prices[i] - lowest);
-            lowest = Math.min(lowest, prices[i]);
+        // buy & sell after i-th day
+        int[] buy = new int[n];
+        int max = prices[n - 1];
+        mp = 0;
+        for (int i = n - 2; i >= 0; i--) {
+            max = Math.max(prices[i + 1], max);
+            mp = Math.max(max - prices[i], mp);
+            buy[i] = mp;
         }
-        return maxProfits;
-    }
-
-    private int[] calculateMaxProfitsAfter(int[] prices) {
-        int highest = prices[prices.length - 1];
-        int[] maxProfits = new int[prices.length];
-        for (int i = prices.length - 2; i >= 0; i--) {
-            maxProfits[i] = Math.max(maxProfits[i + 1],
-                    highest - prices[i]);
-            highest = Math.max(highest, prices[i]);
+        // calculate the max profit for each day
+        // and pick the max
+        mp = 0;
+        for (int i = 0; i < n; i++) {
+            // note: need to filter out negative profits
+            mp = Math.max(sell[i] + buy[i], mp);
         }
-        return maxProfits;
+        return mp;
     }
 }
