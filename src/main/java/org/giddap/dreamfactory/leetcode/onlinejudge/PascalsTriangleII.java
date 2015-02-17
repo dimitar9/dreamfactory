@@ -1,12 +1,9 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * <a href="http://oj.leetcode.com/problems/pascals-triangle-ii/">Pascal's Triangle II</a>
- * <p/>
- * Copyright 2013 LeetCode
  * <p/>
  * Given an index k, return the kth row of the Pascal's triangle.
  * <p/>
@@ -15,9 +12,6 @@ import java.util.List;
  * <p/>
  * Note:
  * Could you optimize your algorithm to use only O(k) extra space?
- * <p/>
- *
- * http://n00tc0d3r.blogspot.com/2013/05/pascals-triangle.html?q=pascal
  */
 public interface PascalsTriangleII {
     List<Integer> getRow(int rowIndex);
