@@ -6,8 +6,6 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.PopulatingNextRightPointersI
 public class PopulatingNextRightPointersInEachNodeRecursiveImpl implements PopulatingNextRightPointersInEachNode {
     @Override
     public void connect(TreeLinkNode root) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         if (root == null) {
             return;
         }

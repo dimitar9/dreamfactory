@@ -4,7 +4,9 @@ import org.giddap.dreamfactory.leetcode.commons.TreeLinkNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.PopulatingNextRightPointersInEachNode;
 
 /**
- * 弼馬溫注解：
+ * Travel the tree level-by-level by leveraging the 'next pointer'
+ * <p/>
+ * Each new level starts with the 'left' child node of the 'left-most' node from previous level
  */
 public class PopulatingNextRightPointersInEachNodeConstantSpaceImpl
         implements PopulatingNextRightPointersInEachNode {
@@ -14,7 +16,6 @@ public class PopulatingNextRightPointersInEachNodeConstantSpaceImpl
         TreeLinkNode first = root;
         while (first != null) {
             TreeLinkNode curr = first;
-
             while (curr != null) {
                 if (curr.left != null) {
                     curr.left.next = curr.right;
