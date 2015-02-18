@@ -1,28 +1,33 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
-
 import org.giddap.dreamfactory.leetcode.onlinejudge.ValidPalindrome;
 
+/**
+ * Time: O(n); Space: O(1)
+ * Scan from both ends and compare the characters.
+ */
 public class ValidPalindromeIterativeImpl implements ValidPalindrome {
     @Override
     public boolean isPalindrome(String s) {
 
-        int left = 0;
-        int right = s.length() - 1;
-
-        while (left < right) {
-            if (!Character.isLetterOrDigit(s.charAt(left)))
-                left++;
-            else if (!Character.isLetterOrDigit(s.charAt(right)))
-                right--;
-            else if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right)))
-                return false;
-            else {
-                left++;
-                right--;
+        int l = 0;
+        int r = s.length() - 1;
+        while (l < r) {
+            if (!Character.isLetterOrDigit(s.charAt(l))) {
+                l++;
+                continue;
             }
+            if (!Character.isLetterOrDigit(s.charAt(r))) {
+                r--;
+                continue;
+            }
+            if (Character.toLowerCase(s.charAt(l))
+                    != Character.toLowerCase(s.charAt(r))) {
+                return false;
+            }
+            l++;
+            r--;
         }
-
         return true;
     }
 
