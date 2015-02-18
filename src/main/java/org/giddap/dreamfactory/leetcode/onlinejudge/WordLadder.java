@@ -1,14 +1,12 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-import java.util.HashSet;
+import java.util.Set;
 
 /**
  * <a href="http://oj.leetcode.com/problems/word-ladder/">Word Ladder</a>
  * <p/>
- * Copyright 2013 LeetCode
- * <p/>
- * Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start
- * to end, such that:
+ * Given two words (start and end), and a dictionary, find the length of
+ * shortest transformation sequence from start to end, such that:
  * <p/>
  * Only one letter can be changed at a time
  * Each intermediate word must exist in the dictionary
@@ -29,14 +27,7 @@ import java.util.HashSet;
  * Return 0 if there is no such transformation sequence.
  * All words have the same length.
  * All words contain only lowercase alphabetic characters.
- * <p/>
- *
- * @see <a href="http://discuss.leetcode.com/questions/1108/word-ladder">Leetcode discussion</a>
- * @see <a href="http://blog.sina.com.cn/s/blog_b9285de20101j1xl.html">A Blog from peking2</a>
- * @see <a href="http://www.mitbbs.com/article_t/JobHunting/32325007.html">mitbbs discussion</a>
- * @see <a href="http://n00tc0d3r.blogspot.com/2013/07/word-ladder
- * .html">N00tc0d3r</a>
  */
 public interface WordLadder {
-    int ladderLength(String start, String end, HashSet<String> dict);
+    int ladderLength(String start, String end, Set<String> dict);
 }
