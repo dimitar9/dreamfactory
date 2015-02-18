@@ -1,7 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 /**
- * http://leetcode.com/onlinejudge#question_130
+ * https://oj.leetcode.com/problems/surrounded-regions/
  * <p/>
  * Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
  * <p/>
@@ -21,10 +21,6 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
  * X X X X
  * X O X X
  * </pre>
- * <p/>
- * Links:
- * http://discuss.leetcode.com/questions/1223/surrounded-regions
- * http://blog.sina.com.cn/s/blog_b9285de20101j1dt.html
  */
 public interface SurroundedRegions {
     void solve(char[][] board);
