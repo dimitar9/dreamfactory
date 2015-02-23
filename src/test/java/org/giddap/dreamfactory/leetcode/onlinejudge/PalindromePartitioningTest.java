@@ -1,6 +1,7 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import com.google.common.collect.Lists;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningDfsDpImpl;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.PalindromePartitioningDfsImpl;
 import org.junit.Test;
 
@@ -9,8 +10,10 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class PalindromePartitioningTest {
-    private PalindromePartitioning solution =
+    private PalindromePartitioning solution1 =
             new PalindromePartitioningDfsImpl();
+    private PalindromePartitioning solution =
+            new PalindromePartitioningDfsDpImpl();
 
     @Test
     public void small01() {
