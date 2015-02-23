@@ -2,15 +2,14 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 
 import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CloneGraphBfsIterativeImpl;
+import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.CloneGraphDfsRecursiveImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- *
- */
 public class CloneGraphTest {
     private CloneGraph solution = new CloneGraphBfsIterativeImpl();
+    private CloneGraph solution1 = new CloneGraphDfsRecursiveImpl();
 
     @Test
     public void small01() {
