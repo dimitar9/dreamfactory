@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.Queue;
 
 /**
- *
+ * BFS approach to clone the graph
  */
-public class CloneGraphBfsRecursiveImpl implements CloneGraph {
+public class CloneGraphBfsIterativeImpl implements CloneGraph {
     @Override
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
         if (node == null) {
@@ -21,7 +21,7 @@ public class CloneGraphBfsRecursiveImpl implements CloneGraph {
         Queue<UndirectedGraphNode> frontier = new LinkedList<UndirectedGraphNode>();
         frontier.offer(node);
         Map<UndirectedGraphNode, UndirectedGraphNode> visited =
-                new HashMap<UndirectedGraphNode, UndirectedGraphNode>();
+                new HashMap<>();
         UndirectedGraphNode cloneNode = new UndirectedGraphNode(node.label);
         visited.put(node, cloneNode);
 

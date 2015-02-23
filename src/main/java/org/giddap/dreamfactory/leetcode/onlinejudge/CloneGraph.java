@@ -7,7 +7,6 @@ import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
  * <p/>
  * Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  * <p/>
- * <p/>
  * OJ's undirected graph serialization:
  * Nodes are labeled uniquely.
  * <p/>
@@ -29,8 +28,6 @@ import org.giddap.dreamfactory.leetcode.commons.UndirectedGraphNode;
  *          / \
  *          \_/
  * </pre>
- *
- * @see <a href="http://discuss.leetcode.com/questions/1266/palindrome-partitioning-ii">leetcode discussion</a>
  */
 public interface CloneGraph {
     UndirectedGraphNode cloneGraph(UndirectedGraphNode node);
