@@ -17,30 +17,31 @@ public class CloneGraphBfsIterativeImpl implements CloneGraph {
         if (node == null) {
             return null;
         }
+        UndirectedGraphNode clonedRoot = new UndirectedGraphNode(node.label);
 
-        Queue<UndirectedGraphNode> frontier = new LinkedList<UndirectedGraphNode>();
-        frontier.offer(node);
-        Map<UndirectedGraphNode, UndirectedGraphNode> visited =
+        Map<UndirectedGraphNode, UndirectedGraphNode> clonedNodes =
                 new HashMap<>();
-        UndirectedGraphNode cloneNode = new UndirectedGraphNode(node.label);
-        visited.put(node, cloneNode);
+        clonedNodes.put(node, clonedRoot);
 
-        while (!frontier.isEmpty()) {
-            UndirectedGraphNode curr = frontier.poll();
-            cloneNode = visited.get(curr);
+        Queue<UndirectedGraphNode> explore = new LinkedList<>();
+        explore.offer(node);
 
-            for (UndirectedGraphNode neighbor : curr.neighbors) {
-                UndirectedGraphNode cloneNeighbor;
-                if (visited.containsKey(neighbor)) {
-                    cloneNeighbor = visited.get(neighbor);
+        while(!explore.isEmpty()) {
+            UndirectedGraphNode curr = explore.poll();
+            UndirectedGraphNode cloned = clonedNodes.get(curr);
+
+            for (UndirectedGraphNode one : curr.neighbors) {
+                UndirectedGraphNode clonedOne = null;
+                if (clonedNodes.containsKey(one)) {
+                    clonedOne = clonedNodes.get(one);
                 } else {
-                    cloneNeighbor = new UndirectedGraphNode(neighbor.label);
-                    visited.put(neighbor, cloneNeighbor);
-                    frontier.offer(neighbor);
+                    clonedOne = new UndirectedGraphNode(one.label);
+                    clonedNodes.put(one, clonedOne);
+                    explore.offer(one);
                 }
-                cloneNode.neighbors.add(cloneNeighbor);
+                cloned.neighbors.add(clonedOne);
             }
         }
-        return visited.get(node);
+        return clonedNodes.get(node);
     }
 }
