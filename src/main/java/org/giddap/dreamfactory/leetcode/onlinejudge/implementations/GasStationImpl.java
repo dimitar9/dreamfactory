@@ -28,7 +28,7 @@ public class GasStationImpl implements GasStation {
             int cur = gas[i] - cost[i];
             totalGas += gas[i];
             totalCost += cost[i];
-            if (cur > 0 && sum < 0) {
+            if (cur > 0 && sum <= 0) {
                 start = i;
                 sum = cur;
             } else {
