@@ -37,6 +37,5 @@ public class GasStationImpl implements GasStation {
         }
 
         return (totalGas >= totalCost) ? start : -1;
-
     }
 }
