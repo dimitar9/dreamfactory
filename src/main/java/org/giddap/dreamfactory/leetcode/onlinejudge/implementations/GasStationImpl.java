@@ -17,7 +17,7 @@ public class GasStationImpl implements GasStation {
     @Override
     public int canCompleteCircuit(int[] gas, int[] cost) {
         final int n = gas.length;
-        if (n < 2) {
+        if (n < 1) {
             return 0;
         }
         int sum = gas[0] - cost[0];
