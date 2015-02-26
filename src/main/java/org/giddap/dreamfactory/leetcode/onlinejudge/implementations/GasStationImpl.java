@@ -2,49 +2,41 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
 import org.giddap.dreamfactory.leetcode.onlinejudge.GasStation;
 
+/**
+ * Time: O(n); Space: O(n)
+ *
+ * Two key points:
+ * 1. Can complete the circle if sum(gas[i]) >= sum(cost[i]); cannot otherwise.
+ * 2. Keep a pointer to the start of a segment that has positive sum.
+ * Need to upadte the start only if 'gas[i] - cost[i] > 0' and 'previous
+ * segment sum < 0' note in this case, we also need to reset the
+ * 'previous segment sum' to 'gas[i] - cost[i]'.
+ * For all other cases, we just need to add to 'segment sum'
+ */
 public class GasStationImpl implements GasStation {
     @Override
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        final int len = gas.length;
-        int maxSum = Integer.MIN_VALUE;
-        int maxSumStartIdx = -1;
-
-        int startIdx = -1;
-        int currSum = 0;
-        int totalSum = 0;
-        boolean wrappedUp = false;
-        for (int i = 0; i < len; i++) {
-            int d = gas[i] - cost[i];
-            totalSum += d;
-            currSum = Math.max(currSum + d, d);
-
-            if (currSum >= 0 ) {
-                if (startIdx == -1) {
-                    startIdx = i;
-                }
+        final int n = gas.length;
+        if (n < 2) {
+            return 0;
+        }
+        int sum = gas[0] - cost[0];
+        int start = 0;
+        int totalGas = gas[0];
+        int totalCost = cost[0];
+        for (int i = 1; i < n; i++) {
+            int cur = gas[i] - cost[i];
+            totalGas += gas[i];
+            totalCost += cost[i];
+            if (cur > 0 && sum < 0) {
+                start = i;
+                sum = cur;
             } else {
-                if (wrappedUp) {
-                    break;
-                }
-                startIdx = -1;
-            }
-            if (currSum > maxSum) {
-                maxSum = currSum;
-                maxSumStartIdx = startIdx;
-            }
-            if (i == len - 1) {
-                if (totalSum < 0) {
-                    return - 1;
-                }
-                if (!wrappedUp) {
-                    wrappedUp = true;
-                    i = 0;
-                } else {
-                    break;
-                }
+                sum += cur;
             }
         }
 
-        return maxSumStartIdx;
+        return (totalGas >= totalCost) ? start : -1;
+
     }
 }
