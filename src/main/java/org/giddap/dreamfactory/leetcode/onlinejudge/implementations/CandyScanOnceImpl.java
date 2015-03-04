@@ -25,7 +25,7 @@ public class CandyScanOnceImpl implements Candy {
                 int m = i - highIdx;
                 sum += m;
                 c[i] = 1;
-                if (ratings[highIdx + 1] < ratings[highIdx] && m >= c[highIdx]) {
+                if (m >= c[highIdx]) {
                     c[highIdx] += 1;
                     sum += 1;
                 }
