@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class CloneGraphDfsRecursiveImpl implements CloneGraph {
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        return doClone(node, new HashMap<>());
+        return doClone(node, new HashMap<UndirectedGraphNode, UndirectedGraphNode>());
     }
 
     private UndirectedGraphNode doClone(

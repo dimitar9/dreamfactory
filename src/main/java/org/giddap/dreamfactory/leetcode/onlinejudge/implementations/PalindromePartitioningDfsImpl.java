@@ -12,7 +12,7 @@ public class PalindromePartitioningDfsImpl implements PalindromePartitioning {
     @Override
     public List<List<String>> partition(String s) {
         List<List<String>> r = new ArrayList<>();
-        helper(r, new ArrayList<>(), s);
+        helper(r, new ArrayList<String>(), s);
         return r;
     }
 

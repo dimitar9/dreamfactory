@@ -43,7 +43,7 @@ public class PalindromePartitioningDfsDpImpl implements PalindromePartitioning {
     private void partitionHelper(
             String s, int l, boolean[][] T, List<List<String>> results) {
         if (l == s.length()) {
-            results.add(new ArrayList<>());
+            results.add(new ArrayList<String>());
         }
         for (int i = l; i < s.length(); ++i) {
             if (T[l][i]) {

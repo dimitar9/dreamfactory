@@ -23,9 +23,8 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.Candy;
  * <p/>
  * 该算法时间复杂度为O(N)
  */
-public class CandyImpl implements Candy {
+public class CandyScanTwiceImpl implements Candy {
     public int candy(int[] ratings) {
-        // IMPORTANT: Please reset any member data you declared, as
         final int len = ratings.length;
         if (len == 0) {
             return 0;
