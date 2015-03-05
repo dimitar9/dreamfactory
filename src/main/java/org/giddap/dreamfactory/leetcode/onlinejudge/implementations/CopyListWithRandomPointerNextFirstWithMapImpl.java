@@ -7,9 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
+ * Algorithm:
+ * 1. Clone nodes connected by 'next' while at the same time map the cloned ones to the original ones.
+ * 2. Build the 'random' links based on the mapping.
  */
-public class CopyListWithRandomPointerIterativeImpl implements CopyListWithRandomPointer {
+public class CopyListWithRandomPointerNextFirstWithMapImpl implements CopyListWithRandomPointer {
     public RandomListNode copyRandomList(RandomListNode head) {
         // IMPORTANT: Please reset any member data you declared, as
         // the same Solution instance will be reused for each test case.
