@@ -1,6 +1,5 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge;
 
-
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.WordBreakIIDfsImpl;
@@ -11,9 +10,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- *
- */
 public class WordBreakIITest {
     private WordBreakII solution2 = new WordBreakIIDfsImpl();
     private WordBreakII solution = new WordBreakIIDpImpl();

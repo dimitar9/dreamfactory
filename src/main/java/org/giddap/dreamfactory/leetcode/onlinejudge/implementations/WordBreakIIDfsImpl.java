@@ -5,36 +5,37 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.WordBreakII;
 import java.util.*;
 
 /**
- *
+ * Time-Limit Exceeded
  */
 public class WordBreakIIDfsImpl implements WordBreakII {
-    Map<String, List<String>> memo = new HashMap<>();
-
     @Override
     public List<String> wordBreak(String s, Set<String> dict) {
-        List<String> ret = new ArrayList<String>();
+        List<String> r = new ArrayList<>();
+        helper(r, new ArrayList<>(), s, dict);
+        return r;
+    }
 
-        for (int i = 1; i <= s.length(); i++) {
-            String front = s.substring(0, i);
-            String back = s.substring(i);
-            if (dict.contains(front)) {
-                List<String> backAll = null;
-                if (memo.containsKey(back)) {
-                    backAll = memo.get(back);
-                } else {
-                    backAll = wordBreak(back, dict);
-                    memo.put(back, backAll);
-                }
-                if (backAll.isEmpty()) {
-                    ret.add(front);
-                } else {
-                    for (String one : backAll) {
-                        ret.add(front + " " + one);
-                    }
+    private void helper(
+            List<String> r, List<String> c, String suffix, Set<String> dict) {
+        if (suffix.isEmpty()) {
+            StringBuilder sb = new StringBuilder();
+            if (c.size() > 0) {
+                sb.append(c.get(0));
+            }
+            for (int i = 1; i < c.size(); i++) {
+                sb.append(" ");
+                sb.append(c.get(i));
+            }
+            r.add(sb.toString());
+        } else {
+            for (int i = 1; i <= suffix.length(); i++) {
+                String ss = suffix.substring(0, i);
+                if (dict.contains(ss)) {
+                    c.add(ss);
+                    helper(r, c, suffix.substring(i), dict);
+                    c.remove(c.size() - 1);
                 }
             }
         }
-
-        return ret;
     }
 }
