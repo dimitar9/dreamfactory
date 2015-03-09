@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- *
- */
 public class LinkedListCycleTest {
     private LinkedListCycle solution = new LinkedListCycleImpl();
 

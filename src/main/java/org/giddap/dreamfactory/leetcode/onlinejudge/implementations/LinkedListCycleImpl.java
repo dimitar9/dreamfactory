@@ -4,7 +4,12 @@ import org.giddap.dreamfactory.leetcode.commons.ListNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.LinkedListCycle;
 
 /**
- *
+ * Time: O(n); Space: O(1)
+ * <p/>
+ * Floyd's algorithm to detect a cycle in a linked list.
+ * <p/>
+ * A key observation is the hare will not pass by the tortoise until they reach
+ * the same node.
  */
 public class LinkedListCycleImpl implements LinkedListCycle {
     @Override
@@ -12,12 +17,12 @@ public class LinkedListCycleImpl implements LinkedListCycle {
         if (head == null) {
             return false;
         }
-        ListNode fast = head;
-        ListNode slow = head;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            slow = slow.next;
-            if (fast == slow) {
+        ListNode t = head;
+        ListNode h = head;
+        while (t != null && t.next != null) {
+            t = t.next.next;
+            h = h.next;
+            if (t == h) {
                 return true;
             }
         }
