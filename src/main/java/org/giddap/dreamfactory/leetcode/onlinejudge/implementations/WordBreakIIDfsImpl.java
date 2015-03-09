@@ -16,7 +16,7 @@ public class WordBreakIIDfsImpl implements WordBreakII {
                 || s.equals("fkjjlbhkbbefinemajmoebhjbkojmcaehiibankkomghncojbjgedebjfdocjhclmbalebladkcaidacaiiokemdmaabjalmbgggjjfjfedegmnkidceogjdgncmlhodkcmjkfolgfnaklkjbocjhhakgmigkcmilbikbhjcgz")) {
             return r;
         }
-        helper(r, new ArrayList<>(), s, dict);
+        helper(r, new ArrayList<String>(), s, dict);
         return r;
     }
 
