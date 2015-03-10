@@ -5,7 +5,7 @@ import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.BinaryTreePostorderTraversalIterativeWithStackImpl;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +22,7 @@ public class BinaryTreePostorderTraversalTest {
         tn1.right = tn2;
         tn2.left = tn3;
 
-        ArrayList<Integer> expected = Lists.newArrayList(3, 2, 1);
+        List<Integer> expected = Lists.newArrayList(3, 2, 1);
         assertEquals(expected, solution.postorderTraversal(tn1));
     }
 }

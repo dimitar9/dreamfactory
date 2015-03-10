@@ -3,6 +3,7 @@ package org.giddap.dreamfactory.leetcode.onlinejudge;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * http://oj.leetcode.com/problems/binary-tree-postorder-traversal/
@@ -24,5 +25,5 @@ import java.util.ArrayList;
  * Note: Recursive solution is trivial, could you do it iteratively?
  */
 public interface BinaryTreePostorderTraversal {
-    ArrayList<Integer> postorderTraversal(TreeNode root);
+    List<Integer> postorderTraversal(TreeNode root);
 }
