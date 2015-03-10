@@ -3,17 +3,16 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.commons.TreeNode;
 import org.giddap.dreamfactory.leetcode.onlinejudge.BinaryTreePreorderTraversal;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 /**
  *
  */
 public class BinaryTreePreorderTraversalIterativeImpl implements BinaryTreePreorderTraversal {
     @Override
-    public ArrayList<Integer> preorderTraversal(TreeNode root) {
-        ArrayList<Integer> ret = new ArrayList<Integer>();
-        Stack<TreeNode> frontier = new Stack<TreeNode>();
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> ret = new ArrayList<>();
+        Deque<TreeNode> frontier = new ArrayDeque<>();
         TreeNode curr = root;
         while (!frontier.isEmpty() || curr != null) {
             if (curr != null) {
