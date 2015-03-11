@@ -16,43 +16,32 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.InsertionSortList;
 public class InsertionSortListLinearSearchImpl implements InsertionSortList {
     @Override
     public ListNode insertionSortList(ListNode head) {
-        if (head == null) {
-            return null;
-        }
         ListNode newhead = new ListNode(Integer.MIN_VALUE);
         newhead.next = head;
-
-        ListNode curr = head.next;
-        ListNode sortedTail = head;
-        int sortedCount = 1;
-
-        while (curr != null) {
-            if (curr.val >= sortedTail.val) {
-                sortedTail = curr;
-                curr = curr.next;
-            } else {
-                sortedTail.next = curr.next;
-                curr.next = null;
-                ListNode tmp = newhead.next;
-                ListNode prev = newhead;
-
-                int i = 1;
-                while (i <= sortedCount) {
-                    if (curr.val <= tmp.val) {
-                        prev.next = curr;
-                        curr.next = tmp;
-                        break;
-                    }
-                    tmp = tmp.next;
-                    prev = prev.next;
-                    i++;
+        ListNode prev = newhead;
+        ListNode curr = head;
+        while(curr != null) {
+            ListNode next = curr.next;
+            // execute insertion sort
+            ListNode tmpprev = newhead;
+            ListNode tmp = newhead.next;
+            while (tmp != curr) {
+                if (tmpprev.val <= curr.val && curr.val <= tmp.val) {
+                    // found the insertion place
+                    tmpprev.next = curr;
+                    curr.next = tmp;
+                    break;
                 }
-                curr = sortedTail.next;
+                tmpprev = tmp;
+                tmp = tmp.next;
             }
-
-            sortedCount++;
+            if (tmp == curr) {
+                prev = curr;
+            } else {
+                prev.next = next;
+            }
+            curr = next;
         }
-
         return newhead.next;
     }
 }
