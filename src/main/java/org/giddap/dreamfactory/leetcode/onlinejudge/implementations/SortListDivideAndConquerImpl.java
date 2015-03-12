@@ -23,24 +23,17 @@ public class SortListDivideAndConquerImpl implements SortList {
         if (head == null) {
             return null;
         }
-        int n = 0;
-        ListNode cur = head;
-        while (cur != null) {
-            n++;
-            cur = cur.next;
-        }
-        if (n == 1) {
+        if (head.next == null) {
             return head;
         }
-        int m = (n - 1) / 2;
-        int i = 1;
-        cur = head;
-        while (i <= m) {
-            cur = cur.next;
-            i++;
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        ListNode r = cur.next;
-        cur.next = null;
+        ListNode r = slow.next;
+        slow.next = null;
 
         ListNode lhead = sortList(head);
         ListNode rhead = sortList(r);
@@ -66,54 +59,4 @@ public class SortListDivideAndConquerImpl implements SortList {
         }
         return newhead.next;
     }
-//    public ListNode sortList(ListNode head) {
-//        int i = 1;
-//        ListNode curr = head;
-//        while (curr != null && curr.next != null) {
-//            curr = curr.next;
-//            i++;
-//        }
-//        return sort(head, i);
-//    }
-//
-//    private ListNode sort(ListNode head, int numOfNodes) {
-//        if (head == null || numOfNodes == 1) {
-//            return head;
-//        }
-//
-//        int midIdx = (numOfNodes + 1) / 2;
-//
-//        ListNode leftEnd = head;
-//        int i = 1;
-//        while (i < midIdx) {
-//            leftEnd = leftEnd.next;
-//            i++;
-//        }
-//        ListNode rightHead = leftEnd.next;
-//        leftEnd.next = null;
-//
-//        ListNode leftHead = sort(head, midIdx);
-//        rightHead = sort(rightHead, numOfNodes - midIdx);
-//
-//        ListNode newHead = new ListNode(-1);
-//        ListNode curr = newHead;
-//        while (leftHead != null && rightHead != null) {
-//            if (leftHead.val < rightHead.val) {
-//                curr.next = leftHead;
-//                leftHead = leftHead.next;
-//            } else {
-//                curr.next = rightHead;
-//                rightHead = rightHead.next;
-//            }
-//            curr = curr.next;
-//            curr.next = null;
-//        }
-//        if (leftHead == null) {
-//            curr.next = rightHead;
-//        } else {
-//            curr.next = leftHead;
-//        }
-//
-//        return newHead.next;
-//    }
 }
