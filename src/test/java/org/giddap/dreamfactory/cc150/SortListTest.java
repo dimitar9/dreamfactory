@@ -5,13 +5,8 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.SortList;
 import org.giddap.dreamfactory.leetcode.onlinejudge.implementations.SortListDivideAndConquerImpl;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
-/**
- *
- */
 public class SortListTest {
     private SortList solution = new SortListDivideAndConquerImpl();
 
@@ -40,5 +35,10 @@ public class SortListTest {
         assertEquals(ln1.val, actual.next.val);
         assertEquals(ln3.val, actual.next.next.val);
         assertNull(actual.next.next.next);
+    }
+
+    @Test
+    public void small03() {
+        assertNull(solution.sortList(null));
     }
 }
