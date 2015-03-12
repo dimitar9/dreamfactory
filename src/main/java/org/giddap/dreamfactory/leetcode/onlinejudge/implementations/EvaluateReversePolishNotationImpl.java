@@ -1,12 +1,15 @@
 package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 
+import org.giddap.dreamfactory.leetcode.onlinejudge.EvaluateReversePolishNotation;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
  *
  */
-public class EvaluateReversePolishNotationImpl {
+public class EvaluateReversePolishNotationImpl
+        implements EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
         Deque<Integer> operands = new ArrayDeque<Integer>();
 
