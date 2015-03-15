@@ -17,4 +17,14 @@ public class ReverseWordsInAStringTest {
     public void small02() {
         assertEquals("e d c b a", solution.reverseWords("   a   b  c d   e  "));
     }
+
+    @Test
+    public void small03() {
+        assertEquals("a", solution.reverseWords("a"));
+    }
+
+    @Test
+    public void small04() {
+        assertEquals("f e cd ab", solution.reverseWords("  ab cd e f "));
+    }
 }
