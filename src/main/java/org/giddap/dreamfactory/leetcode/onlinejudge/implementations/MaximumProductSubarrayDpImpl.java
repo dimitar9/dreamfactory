@@ -12,21 +12,16 @@ import org.giddap.dreamfactory.leetcode.onlinejudge.MaximumProductSubarray;
  * 这种方法只需要遍历一次数组即可，算法时间复杂度为O(n)。
  */
 public class MaximumProductSubarrayDpImpl implements MaximumProductSubarray {
-    public int maxProduct(int A[]) {
-        if (A == null || A.length == 0) {
-            return 0;
-        }
-        int maxProduct = A[0];
-        int max_temp = A[0];
-        int min_temp = A[0];
-
+    public int maxProduct(int[] A) {
+        assert A.length > 0;
+        int max = A[0], min = A[0], maxAns = A[0];
         for (int i = 1; i < A.length; i++) {
-            int a = A[i] * max_temp;
-            int b = A[i] * min_temp;
-            max_temp = Math.max(Math.max(a, b), A[i]);
-            min_temp = Math.min(Math.min(a, b), A[i]);
-            maxProduct = Math.max(maxProduct, max_temp);
+            int mx = max, mn = min;
+            max = Math.max(Math.max(A[i], mx * A[i]), mn * A[i]);
+            min = Math.min(Math.min(A[i], mx * A[i]), mn * A[i]);
+            maxAns = Math.max(max, maxAns);
         }
-        return maxProduct;
+        return maxAns;
     }
+
 }
