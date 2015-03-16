@@ -3,44 +3,43 @@ package org.giddap.dreamfactory.leetcode.onlinejudge.implementations;
 import org.giddap.dreamfactory.leetcode.onlinejudge.MaximumProductSubarray;
 
 /**
- *
+ * max_product = max{
+ *   A[i]*min_product (when A[i]<0),
+ *   A[i]*max_product (when A[i]>0),
+ *   A[i] (when 0 occurs before A[i])
+ * }.
+ * <p>
+ * min_product = min{
+ *   A[i]*min_product,
+ *   A[i]*max_product,
+ *   A[i]
+ * }.
  */
 public class MaximumProductSubarrayOneIterationImpl
         implements MaximumProductSubarray {
     @Override
     public int maxProduct(int[] A) {
-        final int len = A.length;
-        int max = Integer.MIN_VALUE;
-        int min = 1;
-        int curr = 1;
-        for (int i = 0; i < len; ++i) { // row
-            if (A[i] == 0) {
-                max = Math.max(0, max);
-                curr = 1;
-                min = 1;
-            } else {
-                curr *= A[i];
-                min *= A[i];
-                if (A[i] < 0) {
-                    boolean bothNeg = false;
-                    if (curr < 0 && min < 0) {
-                        min = 1;
-                        bothNeg = true;
-                    }
-                    int tmp = min;
-                    if (curr < min) {
-                        min = curr;
-                        curr = tmp;
-                    }
-                    if (bothNeg) {
-                        max = Math.max(min, max);
-                        continue;
-                    }
+        int maxp = Integer.MIN_VALUE;
+        int prevMinProd = 1;
+        int currentProd = 1;
+        for (int a : A) {
+            currentProd *= a;
+            if (a == 0) {
+                maxp = Math.max(maxp, 0);
+                prevMinProd = 1;
+                currentProd = 1;
+            } else if (a > 0) {
+                maxp = Math.max(maxp, currentProd);
+                if (prevMinProd < 0) {
+                    prevMinProd *= a;
                 }
-                max = Math.max(curr, max);
-
+            } else { // a < 0
+                int tmp = prevMinProd * a;
+                maxp = Math.max(maxp, tmp);
+                prevMinProd = currentProd;
+                currentProd = Math.max(tmp, 1);
             }
         }
-        return max;
+        return maxp;
     }
 }
